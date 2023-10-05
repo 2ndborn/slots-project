@@ -36,7 +36,33 @@ body {
 }
 
 .score-lives {
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    background-color: lightblue;
+    padding-top: 10px;
+    
 }
 
+.score-lives li {
+    display: inline-block;
+}
+
+.score-lives li span {
+    margin: 0 10px;
+    font-size: 250%;
+}
+
+.score-lives div p {
+    margin: 20px 0;
+    font-size: 200%;    
+}
+
+.score {
+    margin-left: 5px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 1px 5px;
+}
