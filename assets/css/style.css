@@ -54,33 +54,60 @@ nav {
     padding: 40px 25px 45px 25px;
 }
 
+.active-page {
+    border-bottom: 1px solid #fff;
+}
+
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 417px;
 }
 
-section button {
-    display: block;
+.home-screen {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 10%;
-    background-color: red;
-    border-radius: 5px;
-   
 }
 
-section button a {
+.buttons {
+    width: 225px;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;  
+}
+
+.buttons a {
     text-decoration: none;
     color: black;
 }
 
+.instruct-btn {
+    text-align: right;
+}
+
+/**********************************Feedback***********************/
+.f-container {
+    text-align: center;
+}
+
+.feedback-form {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.feedback-form div{
+    margin: 15px 0;
+}
+
+.feedback-button {
+    width: 10%;
+}
+
+/**********************************Footer***********************/
 .footer {
     position: relative;
     display: flex;
     width: 100%;  
     background-color: grey;    
 }
+
