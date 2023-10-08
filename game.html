@@ -17,14 +17,17 @@
 <body>
     <div class="slot-container">
         <div class="slot-container2">
-            <div class="slot"></div>
-            <div class="slot"></div>
+            <span id="operand1" class="slot"></span>
+            <span id="operand2" class="slot"></span>
         </div>
+    </div>
+    <div class="submit-container">
+        <button data-type="begin-game" id="new-game">NEW GAME</button>
     </div>
     
     <div class="score-lives">
         <div>
-            <p>Score:<span class="score">0</span></p>
+            <p>Score:<span id="score">0</span></p>
         </div>
         <div>
             <ul>
@@ -34,6 +37,9 @@
             </ul>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/game.js"></script>
 </body>
 
 </html>

@@ -54,6 +54,10 @@ nav {
     padding: 40px 25px 45px 25px;
 }
 
+h2 {
+    margin: 25px 0;
+}
+
 .active-page {
     border-bottom: 1px solid #fff;
 }
@@ -76,16 +80,35 @@ section {
     border-radius: 5px;  
 }
 
+.buttons:hover {
+
+}
+
 .buttons a {
     text-decoration: none;
     color: black;
 }
 
+/**********************************Instructions***********************/
+
+.i-container {
+    text-align: center;
+}
+
 .instruct-btn {
-    text-align: right;
+    margin: 25px 0;
+}
+
+.p-container {
+    margin: 50px 0;
+}
+
+.p-container p {
+    padding: 50px 25px;
 }
 
 /**********************************Feedback***********************/
+
 .f-container {
     text-align: center;
 }
