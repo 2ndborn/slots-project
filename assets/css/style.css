@@ -8,7 +8,7 @@ body {
 }
 
 /*******************************header*****************/
-header { 
+header {
     position: relative;
     background-color: rgb(9, 9, 9, 0.1);
     width: 100%;
@@ -59,7 +59,7 @@ nav {
 
 #menu li a:hover {
     box-shadow: 0 -10px 10px #fff inset,
-    500px 0 0 rgba(218, 215, 215, 0.03) inset;
+        500px 0 0 rgba(218, 215, 215, 0.03) inset;
     padding: 40px 25px 45px 25px;
 }
 
@@ -87,7 +87,7 @@ section {
     height: 50px;
     background-color: rgb(255, 47, 0);
     border-radius: 5px;
-    border: 3px solid; 
+    border: 3px solid;
 }
 
 .buttons:hover {
@@ -112,6 +112,7 @@ section {
     border-radius: 10px;
     color: rgb(255, 255, 255);
 }
+
 .i-container {
     text-align: center;
 }
@@ -134,11 +135,12 @@ section {
     background-color: rgba(9, 8, 8, 0.5);
     margin: 10px 310px;
     padding-top: 1px;
-    padding-bottom: 0.25px;     
+    padding-bottom: 0.25px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    
+
 }
+
 .f-container {
     text-align: center;
 }
@@ -148,7 +150,7 @@ section {
     width: 85%;
 }
 
-.feedback-form div{
+.feedback-form div {
     margin: 10px 0;
 }
 
@@ -160,7 +162,6 @@ section {
 .footer {
     position: relative;
     display: flex;
-    width: 100%;  
-    background-color: grey;    
+    width: 100%;
+    background-color: grey;
 }
-

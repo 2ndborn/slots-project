@@ -11,18 +11,26 @@
  * The game must display the “Begin” button to enable the user to play again.
  * */
 
-$(document).ready(function() {
-    $('button').on('click', function() {
+let num1;
+let num2;
+
+document.getElementById('new-game').addEventListener('click', function () {
+    document.getElementById('submit-answer').classList.remove('hide');
+    document.getElementById('new-game').classList.add('hide');
+});
+
+$(document).ready(function () {
+    $('button').on('click', function () {
         newGame();
-        $(this).text('SUBMIT')
-        
-    })
-})
+        $(this).text('SUBMIT');
+
+    });
+});
 
 let newGame = () => {
-    let num1 = Math.floor(Math.random() * 9) + 1;
-    let num2 = Math.floor(Math.random() * 9) + 1;
-    displayNumbers(num1, num2);    
+    num1 = Math.floor(Math.random() * 9) + 1;
+    num2 = Math.floor(Math.random() * 9) + 1;
+    displayNumbers(num1, num2);
 };
 
 
@@ -36,11 +44,11 @@ function displayNumbers(operand1, operand2) {
     setTimeout(function () {
         document.getElementById('operand1').textContent = "";
         document.getElementById('operand2').textContent = "";
-        }, 2000);
+    }, 3000);
 }
 
 function recordAnswer() {
-    let operand1 = parseInt(document.getElementById('operand1').innerText);
+    let operand1 = parseInt(document.getElementById('ope1').innerText);
     let operand2 = parseInt(document.getElementById('operand2').innerText);
 }
 
@@ -51,10 +59,10 @@ function checkAnswer() {
     let correctAnswer1 = userAnswer1 === operand1;
     let correctAnswer2 = userAnswer2 === operand2;
 
-    if (correctAnswer1 & correctAnswer2) {
+    if (correctAnswer1 && correctAnswer2) {
         alert('Congratualation! You answered correctly!!!');
-    } else {
-        alert('Unfortunatly that was the wrong answer.')
+    } else; {
+        alert('Unfortunatly that was the wrong answer.');
     }
 }
 
