@@ -58,13 +58,13 @@ nav {
 }
 
 #menu li a:hover {
-    box-shadow: 0 -5px 0px #fff inset,
+    box-shadow: 0 -10px 10px #fff inset,
     500px 0 0 rgba(218, 215, 215, 0.03) inset;
     padding: 40px 25px 45px 25px;
 }
 
 h2 {
-    margin: 25px 0;
+    margin: 5px 0;
 }
 
 .active-page {
@@ -104,7 +104,14 @@ section {
 }
 
 /**********************************Instructions***********************/
-
+.inst-bg {
+    background-color: rgba(9, 8, 8, 0.5);
+    margin: 5px 175px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
 .i-container {
     text-align: center;
 }
@@ -119,21 +126,30 @@ section {
 
 .p-container p {
     padding: 50px 25px;
+    font-size: large;
 }
 
 /**********************************Feedback***********************/
-
+.feedback-bg {
+    background-color: rgba(9, 8, 8, 0.5);
+    margin: 10px 310px;
+    padding-top: 1px;
+    padding-bottom: 0.25px;     
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    
+}
 .f-container {
     text-align: center;
 }
 
 .feedback-form {
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 7.5%;
+    width: 85%;
 }
 
 .feedback-form div{
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .feedback-button {
