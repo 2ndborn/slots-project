@@ -13,16 +13,16 @@
 
 $(document).ready(function() {
     $('button').on('click', function() {
-        $(this).text('SUBMIT');
         newGame();
+        $(this).text('SUBMIT')
+        
     })
 })
 
 let newGame = () => {
     let num1 = Math.floor(Math.random() * 9) + 1;
     let num2 = Math.floor(Math.random() * 9) + 1;
-    displayNumbers(num1, num2);
-    
+    displayNumbers(num1, num2);    
 };
 
 
@@ -34,14 +34,28 @@ function displayNumbers(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     setTimeout(function () {
-        document.getElementById('operand1').textContent = `<input type="number">`;
+        document.getElementById('operand1').textContent = "";
         document.getElementById('operand2').textContent = "";
-    }, 2000);
+        }, 2000);
+}
 
+function recordAnswer() {
+    let operand1 = parseInt(document.getElementById('operand1').innerText);
+    let operand2 = parseInt(document.getElementById('operand2').innerText);
 }
 
 function checkAnswer() {
+    let userAnswer1 = parseInt(document.getElementsByClassName('answer-box1').value);
+    let userAnswer2 = parseInt(document.getElementsByClassName('answer-box2').value);
+    let recordAnswer = recordAnswer();
+    let correctAnswer1 = userAnswer1 === operand1;
+    let correctAnswer2 = userAnswer2 === operand2;
 
+    if (correctAnswer1 & correctAnswer2) {
+        alert('Congratualation! You answered correctly!!!');
+    } else {
+        alert('Unfortunatly that was the wrong answer.')
+    }
 }
 
 function incrementScore() {
