@@ -81,6 +81,13 @@ body {
     margin: auto;
 }
 
+#new-game {
+    width: 225px;
+    height: 50px;
+    background-color: green;
+    border-radius: 5px;
+}
+
 #submit-answer {
     width: 225px;
     height: 50px;

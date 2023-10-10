@@ -13,20 +13,22 @@
 
 let num1;
 let num2;
+let score;
 
+/**
+ * This function starts a new game by calling the newGame() function.
+ * The new game button is then replaced with the submit button.
+ */
 document.getElementById('new-game').addEventListener('click', function () {
     document.getElementById('submit-answer').classList.remove('hide');
     document.getElementById('new-game').classList.add('hide');
+    newGame()
 });
 
-$(document).ready(function () {
-    $('button').on('click', function () {
-        newGame();
-        $(this).text('SUBMIT');
 
-    });
-});
-
+/**
+ * This function generates 2 random numbers and calls the displayNumbers function
+ */
 let newGame = () => {
     num1 = Math.floor(Math.random() * 9) + 1;
     num2 = Math.floor(Math.random() * 9) + 1;
@@ -38,17 +40,24 @@ function newTurn() {
 
 }
 
+/**
+ * This function add the randomly generated number to window.
+ * After 3 seconds operand 1 & 2 are hidden and replaced with 
+ * answer box 1 & 2.
+ */
 function displayNumbers(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     setTimeout(function () {
-        document.getElementById('operand1').textContent = "";
-        document.getElementById('operand2').textContent = "";
+        document.getElementById('operand1').classList.add('hide');
+        document.getElementById('operand2').classList.add('hide');
+        document.getElementById('answer-box1').classList.remove('hide');
+        document.getElementById('answer-box2').classList.remove('hide');
     }, 3000);
 }
 
 function recordAnswer() {
-    let operand1 = parseInt(document.getElementById('ope1').innerText);
+    num1 = parseInt(document.getElementById('operand1').innerText);
     let operand2 = parseInt(document.getElementById('operand2').innerText);
 }
 
@@ -56,7 +65,7 @@ function checkAnswer() {
     let userAnswer1 = parseInt(document.getElementsByClassName('answer-box1').value);
     let userAnswer2 = parseInt(document.getElementsByClassName('answer-box2').value);
     let recordAnswer = recordAnswer();
-    let correctAnswer1 = userAnswer1 === operand1;
+    let correctAnswer1 = userAnswer1 === num1;
     let correctAnswer2 = userAnswer2 === operand2;
 
     if (correctAnswer1 && correctAnswer2) {
