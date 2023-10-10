@@ -13,7 +13,6 @@
 
 let num1;
 let num2;
-let score;
 
 /**
  * This function starts a new game by calling the newGame() function.
@@ -32,8 +31,16 @@ document.getElementById('new-game').addEventListener('click', function () {
 document.getElementById('submit').addEventListener('click', function () {
     document.getElementById('continue').classList.remove('hide');
     document.getElementById('submit').classList.add('hide');
-    recordAnswer();
+    recordNumbers();
 });
+/*
+document.getElementById('answer-box2').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        document.getElementById('continue').classList.remove('hide');
+        document.getElementById('submit').classList.add('hide');
+        recordNumbers();
+    }
+});*/
 
 /**
  * This function allows the user to generate another set of random numbers.
@@ -82,16 +89,27 @@ function displayNumbers(operand1, operand2) {
         document.getElementById('operand2').classList.add('hide');
         document.getElementById('answer-box1').classList.remove('hide');
         document.getElementById('answer-box2').classList.remove('hide');
-    }, 3000);
+        document.getElementById('answer-box1').focus();
+    }, 1500);
 }
-
-function recordAnswer() {
+/**
+ * This function records the numbers displayed by the by operands 1 and 2
+ * and converts them from strings to integers.
+ * Calls the function check answer
+ */
+function recordNumbers() {
     let operand1 = parseInt(document.getElementById('operand1').innerText);
     let operand2 = parseInt(document.getElementById('operand2').innerText);
-    checkAnswer();
+    checkAnswers();
 }
 
-function checkAnswer() {
+/**
+ * This function records the values of the users answers and converts them from strings
+ * to integers.
+ * defines what a correct answer is and displays a difference alert based on the users answer.
+ */
+
+function checkAnswers() {
     let userAnswer1 = parseInt(document.getElementById('answer-box1').value);
     let userAnswer2 = parseInt(document.getElementById('answer-box2').value);
     let correctAnswer1 = userAnswer1 === num1;
@@ -99,16 +117,44 @@ function checkAnswer() {
 
     if (correctAnswer1 && correctAnswer2) {
         alert('Congratualation! You answered correctly!!!');
+        incrementScore();
     } else {
-        alert('Unfortunatly that was the wrong answer.');
+        alert(`Unfortunatly the correct answer was ${num1} and ${num2}.`);
+        incrementWrongAnswer()
     }
 }
 
+/**Gets the current score and increases by 1 point. */
 function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
 
+function incrementWrongAnswer() {
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldScore;
 }
 
 function removeLife() {
+    let lifeOne = document.getElementById('life1');
+    let lifeTwo = document.getElementById('life2');
+    let lifeThree = document.getElementById('life3');
+
+    if (incorrect === 1) {
+        lifeOne.removeAttribute();
+    } else {
+        if (incorrect === 2) {
+            lifeTwo.removeAttribute();
+        } else {
+            if (incorrect === 3) {
+                lifeThree.removeAttribute();
+                gameOver();
+            }
+        }
+    }
+}
+
+function gameOver() {
 
 }
 

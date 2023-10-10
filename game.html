@@ -26,7 +26,7 @@
       <div class="slot-container2">
         <span id="operand1" class="slot"></span>
         <span id="operand2" class="slot"></span>
-        <input id="answer-box1" class="slot hide" type="number" />
+        <input id="answer-box1" class="slot hide" type="number" min="1" max="1"/>
         <input id="answer-box2" class="slot hide" type="number" />
       </div>
       <div class="submit-container">
@@ -39,15 +39,16 @@
           <p>Score:<span id="score">0</span></p>
         </div>
         <div>
+            <p>incorrect:<span id="incorrect">0</span></p>
           <ul>
             <li>
-              <span><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+              <span><i id="life1" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
             </li>
             <li>
-              <span><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+              <span><i id="life2" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
             </li>
             <li>
-              <span><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+              <span><i id="life3" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
             </li>
           </ul>
         </div>
