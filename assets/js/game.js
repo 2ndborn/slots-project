@@ -13,6 +13,8 @@
 
 let num1;
 let num2;
+let correct = [];
+let incorrect = [];
 
 /**
  * This function starts a new game by calling the newGame() function.
@@ -133,25 +135,32 @@ function incrementScore() {
 function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById('incorrect').innerText);
     document.getElementById('incorrect').innerText = ++oldScore;
+    incorrect.push(oldScore);
+    removeLife();
 }
 
+/**
+ * Removes a users life after ever incorrect answer.
+ */
 function removeLife() {
     let lifeOne = document.getElementById('life1');
     let lifeTwo = document.getElementById('life2');
     let lifeThree = document.getElementById('life3');
 
-    if (incorrect === 1) {
-        lifeOne.removeAttribute();
-    } else {
-        if (incorrect === 2) {
-            lifeTwo.removeAttribute();
+    for(let i of incorrect) {
+        if (i === 1) {
+            lifeOne.classList.add('hide');
         } else {
-            if (incorrect === 3) {
-                lifeThree.removeAttribute();
-                gameOver();
+            if (i === 2) {
+                lifeTwo.classList.add('hide');
+            } else {
+                if (i === 3) {
+                    lifeThree.classList.add('hide');
+                    gameOver();
+                }
             }
         }
-    }
+    }    
 }
 
 function gameOver() {
