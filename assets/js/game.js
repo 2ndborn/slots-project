@@ -57,6 +57,10 @@ document.getElementById('continue').addEventListener('click', function () {
     newTurn();
 });
 
+document.getElementById('retry').addEventListener('click', function() {
+    retry();
+})
+
 /**
  * This function generates 2 random numbers and calls the displayNumbers function
  */
@@ -132,6 +136,9 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldScore;
 }
 
+/**
+ * Get the wrong answers and push to incorrect array.
+ */
 function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById('incorrect').innerText);
     document.getElementById('incorrect').innerText = ++oldScore;
@@ -164,7 +171,27 @@ function removeLife() {
 }
 
 function gameOver() {
+    alert('Game Over');
+    document.getElementById('retry').classList.remove('hide');
+    document.getElementById('answer-box1').classList.add('hide');
+    document.getElementById('answer-box2').classList.add('hide');
+    document.getElementById('retry').classList.remove('hide');
+    document.getElementById('continue').classList.add('hide');
+}
 
+function retry() {
+    incorrect = [];
+    document.getElementById('retry').classList.add('hide');
+    document.getElementById('score').innerText = "0";
+    document.getElementById('life1').classList.remove('hide');
+    document.getElementById('life2').classList.remove('hide');
+    document.getElementById('life3').classList.remove('hide');
+    document.getElementById('answer-box1').classList.add('hide');
+    document.getElementById('answer-box2').classList.add('hide');
+    document.getElementById('operand1').classList.remove('hide');
+    document.getElementById('operand2').classList.remove('hide');
+    document.getElementById('submit').classList.remove('hide');
+    runGame()
 }
 
 

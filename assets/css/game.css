@@ -102,6 +102,17 @@ body {
     border-radius: 5px;
 }
 
+#retry {
+    width: 225px;
+    height: 50px;
+    background-color: rgb(55, 0, 255);
+    border-radius: 5px;
+}
+
+#retry span {
+    margin-left: 10px;
+}
+
 .hide {
     display: none;
 }
