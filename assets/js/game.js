@@ -20,24 +20,53 @@ let score;
  * The new game button is then replaced with the submit button.
  */
 document.getElementById('new-game').addEventListener('click', function () {
-    document.getElementById('submit-answer').classList.remove('hide');
+    document.getElementById('submit').classList.remove('hide');
     document.getElementById('new-game').classList.add('hide');
-    newGame()
+    runGame()
 });
 
+/**
+ * This function submits the users answer and replaces the submit button with the continue button.
+ * Then it calls the record answer function.
+ */
+document.getElementById('submit').addEventListener('click', function () {
+    document.getElementById('continue').classList.remove('hide');
+    document.getElementById('submit').classList.add('hide');
+    recordAnswer();
+});
+
+/**
+ * This function allows the user to generate another set of random numbers.
+ * The continue button is replaced with the submit button.
+ * Answer boxes 1 & 2 are reset to zero.
+ */
+document.getElementById('continue').addEventListener('click', function () {
+    document.getElementById('submit').classList.remove('hide');
+    document.getElementById('continue').classList.add('hide');
+    document.getElementById('answer-box1').value = "";
+    document.getElementById('answer-box2').value = "";
+    newTurn();
+});
 
 /**
  * This function generates 2 random numbers and calls the displayNumbers function
  */
-let newGame = () => {
+let runGame = () => {
     num1 = Math.floor(Math.random() * 9) + 1;
     num2 = Math.floor(Math.random() * 9) + 1;
     displayNumbers(num1, num2);
 };
 
-
+/**
+ * This function calls the run game function so the user can have another turn.
+ * hides answer box 1 & 2 and replaces them with operand 1 & 2.
+ */
 function newTurn() {
-
+    document.getElementById('answer-box1').classList.add('hide');
+    document.getElementById('answer-box2').classList.add('hide');
+    document.getElementById('operand1').classList.remove('hide');
+    document.getElementById('operand2').classList.remove('hide');
+    runGame();
 }
 
 /**
@@ -57,20 +86,20 @@ function displayNumbers(operand1, operand2) {
 }
 
 function recordAnswer() {
-    num1 = parseInt(document.getElementById('operand1').innerText);
+    let operand1 = parseInt(document.getElementById('operand1').innerText);
     let operand2 = parseInt(document.getElementById('operand2').innerText);
+    checkAnswer();
 }
 
 function checkAnswer() {
-    let userAnswer1 = parseInt(document.getElementsByClassName('answer-box1').value);
-    let userAnswer2 = parseInt(document.getElementsByClassName('answer-box2').value);
-    let recordAnswer = recordAnswer();
+    let userAnswer1 = parseInt(document.getElementById('answer-box1').value);
+    let userAnswer2 = parseInt(document.getElementById('answer-box2').value);
     let correctAnswer1 = userAnswer1 === num1;
-    let correctAnswer2 = userAnswer2 === operand2;
+    let correctAnswer2 = userAnswer2 === num2;
 
     if (correctAnswer1 && correctAnswer2) {
         alert('Congratualation! You answered correctly!!!');
-    } else; {
+    } else {
         alert('Unfortunatly that was the wrong answer.');
     }
 }

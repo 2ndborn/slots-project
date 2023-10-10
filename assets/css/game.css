@@ -88,10 +88,17 @@ body {
     border-radius: 5px;
 }
 
-#submit-answer {
+#submit {
     width: 225px;
     height: 50px;
     background-color: red;
+    border-radius: 5px;
+}
+
+#continue {
+    width: 225px;
+    height: 50px;
+    background-color: orange;
     border-radius: 5px;
 }
 
