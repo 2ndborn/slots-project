@@ -33,6 +33,8 @@ document.getElementById('new-game').addEventListener('click', function () {
 document.getElementById('submit').addEventListener('click', function () {
     document.getElementById('continue').classList.remove('hide');
     document.getElementById('submit').classList.add('hide');
+    document.getElementById('answer-box1').disabled = true;
+    document.getElementById('answer-box2').disabled = true;
     recordNumbers();
 });
 /*
@@ -54,6 +56,8 @@ document.getElementById('continue').addEventListener('click', function () {
     document.getElementById('continue').classList.add('hide');
     document.getElementById('answer-box1').value = "";
     document.getElementById('answer-box2').value = "";
+    document.getElementById('answer-box1').disabled = false;
+    document.getElementById('answer-box2').disabled = false;
     newTurn();
 });
 
