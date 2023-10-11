@@ -162,6 +162,26 @@ section {
 .footer {
     position: relative;
     display: flex;
+    justify-content: end;
     width: 100%;
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
 }
+
+.footer div {
+    margin-top: 5px;
+}
+
+.social-media {
+    margin: 0 45px;
+}
+
+.social-media i {
+    margin: 0 20px;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: #fff;
+}
+
