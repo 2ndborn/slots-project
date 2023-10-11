@@ -1,39 +1,72 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Slots
 
-Welcome,
+**Project Goals**
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Slots is a memory game that encourages the user to remember a temporarily shown sequence of numbers. The user must key the numbers in the exact sequence that they appeared.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+**User Goals**
 
-## Codeanywhere Reminders
+- Play a fun game that challenges the user’s memory.
+- Controls are easy to understand.
+- Users range from 5 and above.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+**Business and Development Goals**
 
-`python3 -m http.server`
+- To provide a fun memory game that is easy to play.
+- To challenge the memory of users aged 5 and over.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+**User Stories**
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+-	Appealing home page that has a background image of numbers in slots.
+-	Navigation bar that features a Home, Instructions, and Feedback.
+-	Users will see a "Play" button located in the centre of the page that will take them to the main game.
+-	Users can also access the play button via the "Instructions" page.
+-	The main game will have the following:
+  -	A "New Game", "Submit" and "Continue" button.
+  -	4 retangles (slots) in the centre of the screen.
+  -	A Score box (to tally the users correct answers)
+  -	3 light bulbs (representative of the amount of wrong answers the user can give).
+-	The user will first be presented with the "New Game" button that will disappear and start a new game when clicked.
+-	The main game will have 4 slots that will be populated with a random sequence of numbers.  The numbers will be shown for a total of 3 seconds before being hidden.
+-	User will repeat the sequence in order of appearance and press the "Submit" button.
+-	Users that give a correct answer will receive a message “Congratulations your answer is correct” and 1 point will be added to their score.
+-	Users that give the wrong answer will receive the message "You have given the wrong answer" and one of light bulbs will disappear.
+-	Once the user acknowledges the message the "Continue" button will appear. On clicking this button users will be able to continue the game.
+-	As the user progresses through the game, the time the numbers are shown will decreases, giving the user less time to remember.
+-	Once the users light bulbs have all disappeared the game is over and the user will be show a "Game Over" message.
+-	Once the user acknowledges to the message the new game button will reappear.
 
-`http_server`
+**Features**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+-	Page Consistency
+  -	Each page has the “Slots” header in the top left corner of the page. Clicking on the text transfers the user to the top of the home page.
+  -	Tablet users will view the header “Slots” in the top left corner of the page. Clicking on the text will refresh the home page.
+  -	Mobile users will view the header “Slots” in the centre of the page. Clicking on the text will refresh the home page.
+  -	Navigation Bar
+    -	Each page will have a navigation bar containing 3 options Home, Instructions, and Feedback.
+    -	On clicking the “Instructions” tab the user will be transported to view instructions on how to play the game.
+    -	On clicking the “Feedback” tab the user will be transported a page where they could give feedback on their experience playing the game.
+    -	On mobile and tablet devices, users can access the navigation bar via the hamburger icon.
+- Users playing on a tablet or mobile devices will interactive via touch screen.
+- Users of desktop will use the keyboard.
+- Home Page
+  - Background Image featuring lots of numbers.
+  - The "Play" button is located in the centre of the screen.
+  - The "Play" button opens a new tab to the main game.
+-	Instructions Page
+  -	Step by step instruction on how to play the game.
+  -	Another "Play" button opens tab to the main game.
+-	Feedback Page
+  -	Contact form to be completed by the user to give feedback about their experience with the game.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+**Future Features**
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-	Users will be given the option of a leaderboard.
+-	Users will be given a multi-player option.
+-	User will be given the option and flash mode (the slot sequences will be random).
+-	Bonus points
 
-To log into the Heroku toolbelt CLI:
+**Typography and Colour**
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+**Wireframes**
+![Slots wireframe image](file:///C:/Users/mfran/Documents/slots.wireframe.pdf)
