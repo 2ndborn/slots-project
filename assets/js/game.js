@@ -166,7 +166,9 @@ function removeLife() {
         }
     }
 }
-
+/**
+ * This function ends the game.
+ */
 function gameOver() {
     alert('Game Over. Refresh the page to play again.');
     document.getElementById('answer-box1').classList.add('hide');

@@ -104,7 +104,7 @@ section {
 
 /**********************************Instructions***********************/
 .inst-bg {
-    background-color: rgba(9, 8, 8, 0.5);
+    background-color: rgb(0, 0, 0, 0.8);
     margin: 5px 175px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -112,21 +112,31 @@ section {
     color: rgb(255, 255, 255);
 }
 
+.inst-bg h2 {
+    padding-top: 7px;
+}
+
 .i-container {
     text-align: center;
 }
 
 .instruct-btn {
-    margin: 25px 0;
+    margin: 0 0 25px 0;
 }
 
 .p-container {
-    margin: 50px 0;
+    margin: 0;
+    height: 265px;
 }
 
 .p-container p {
-    padding: 50px 25px;
-    font-size: large;
+    padding: 25px 0 0 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.p-container span {
+    font-size: 20px;
 }
 
 /**********************************Feedback***********************/
