@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
+
 body {
+    font-family: 'Roboto', sans-serif;
     background-image: url("../images/slots.picture.png");
     background-repeat: no-repeat;
     background-position: center;
