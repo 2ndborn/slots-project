@@ -23,7 +23,7 @@ let incorrect = [];
 document.getElementById('new-game').addEventListener('click', function () {
     document.getElementById('submit').classList.remove('hide');
     document.getElementById('new-game').classList.add('hide');
-    runGame()
+    runGame();
 });
 
 /**
@@ -57,14 +57,10 @@ document.getElementById('continue').addEventListener('click', function () {
     newTurn();
 });
 
-document.getElementById('retry').addEventListener('click', function() {
-    retry();
-})
-
 /**
  * This function generates 2 random numbers and calls the displayNumbers function
  */
-let runGame = () => {
+function runGame() {
     num1 = Math.floor(Math.random() * 9) + 1;
     num2 = Math.floor(Math.random() * 9) + 1;
     displayNumbers(num1, num2);
@@ -126,7 +122,7 @@ function checkAnswers() {
         incrementScore();
     } else {
         alert(`Unfortunatly the correct answer was ${num1} and ${num2}.`);
-        incrementWrongAnswer()
+        incrementWrongAnswer();
     }
 }
 
@@ -134,6 +130,7 @@ function checkAnswers() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
+    correct.push(oldScore);
 }
 
 /**
@@ -154,7 +151,7 @@ function removeLife() {
     let lifeTwo = document.getElementById('life2');
     let lifeThree = document.getElementById('life3');
 
-    for(let i of incorrect) {
+    for (let i of incorrect) {
         if (i === 1) {
             lifeOne.classList.add('hide');
         } else {
@@ -167,33 +164,12 @@ function removeLife() {
                 }
             }
         }
-    }    
+    }
 }
 
 function gameOver() {
-    alert('Game Over');
-    document.getElementById('retry').classList.remove('hide');
+    alert('Game Over. Refresh the page to play again.');
     document.getElementById('answer-box1').classList.add('hide');
     document.getElementById('answer-box2').classList.add('hide');
-    document.getElementById('retry').classList.remove('hide');
     document.getElementById('continue').classList.add('hide');
 }
-
-function retry() {
-    incorrect = [];
-    document.getElementById('retry').classList.add('hide');
-    document.getElementById('score').innerText = "0";
-    document.getElementById('life1').classList.remove('hide');
-    document.getElementById('life2').classList.remove('hide');
-    document.getElementById('life3').classList.remove('hide');
-    document.getElementById('answer-box1').classList.add('hide');
-    document.getElementById('answer-box2').classList.add('hide');
-    document.getElementById('operand1').classList.remove('hide');
-    document.getElementById('operand2').classList.remove('hide');
-    document.getElementById('submit').classList.remove('hide');
-    runGame()
-}
-
-
-
-

@@ -91,8 +91,7 @@ section {
 }
 
 .buttons:hover {
-    background-color: rgb(103, 255, 8);
-    border: rgb(255, 255, 255);
+    background-color: rgb(103, 255, 8);   
 
 }
 

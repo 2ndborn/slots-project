@@ -86,20 +86,47 @@ body {
     height: 50px;
     background-color: green;
     border-radius: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 3px solid;
+}
+
+#new-game:hover {    
+    background-color: rgb(128, 252, 45);    
+    font-size: 25px;
+    font-weight: 800;    
 }
 
 #submit {
     width: 225px;
     height: 50px;
-    background-color: red;
+    background-color: rgb(192, 7, 7);
     border-radius: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 3px solid;
+}
+
+#submit:hover {
+    background-color: rgb(255, 0, 0);
+    font-size: 25px;
+    font-weight: 800;
 }
 
 #continue {
     width: 225px;
     height: 50px;
-    background-color: orange;
+    background-color: rgb(245, 110, 0);
     border-radius: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 3px solid;
+}
+
+#continue:hover {
+    background-color: rgb(245, 217, 78);
+    font-size: 25px;
+    font-weight: 800;
 }
 
 #retry {
