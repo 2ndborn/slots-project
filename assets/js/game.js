@@ -1,36 +1,26 @@
-/**
- * The game needs to response to the user pressing the “Begin” button on the main game screen to starts the game.
- * The game needs to place random numbers into the slots and then remove them after 2 seconds.
- * The game needs to response to the user entering numbers into the slots by moving on to the next slot(when using the keyboard).
- * The game needs to response to the user pressing the “Submit” button by checking whether the answers given match the numbers that originally appeared.
- * If the answers match the game must inform the user that they have given the correct answer and then add one point to their score.
- * If the answer doesn’t match the game must inform the user that they have given the wrong answer and remove a life(one of the light bulbs) from the window.
- * After a turn is completed, the game displays a “Continue” button.
- * The game need to response to the user pressing the “Continue” button by placing another set of random numbers into the slots.
- * The game must response to the user’s 3rd incorrect answer by notifying them that the game is over.
- * The game must display the “Begin” button to enable the user to play again.
- * */
 
 let num1;
 let num2;
 let correct = [];
 let incorrect = [];
 
+/**
+ * Initializes click functions that increments the game.
+ */
 function initializeGame() {
     document.getElementById('new-game').addEventListener('click', newGame);
     document.getElementById('submit').addEventListener('click', submitAnswer);
     document.getElementById('continue').addEventListener('click', continuePlaying);
-}
+};
 
 /**
  * This function starts a new game by calling the newGame() function.
  * The new game button is then replaced with the submit button.
  */
 function newGame() {
-    unhideElement('submit');
     hideElement('new-game');
     runGame();
-    keyNum();
+    moveCursor();
     revealSubmit();
 };
 
@@ -46,7 +36,7 @@ function submitAnswer() {
     recordNumbers();
 };
 
-function keyNum() {
+function moveCursor() {
     document.getElementById('answer-box1').addEventListener('keyup', function(event) {
         if (event.key <= 9) {
             document.getElementById('answer-box2').focus();
@@ -55,22 +45,19 @@ function keyNum() {
 };
 
 function revealSubmit() {
-    let answerBox1 = parseInt(document.getElementById('answer-box1').value);
-    let answerBox2 = parseInt(document.getElementById('answer-box2').value);
-    
-
-    if (answerBox1.value && answerBox2.value) {
-        console.log('Tada!!!')
-    }
-}
+    document.getElementById('answer-box2').addEventListener('keyup', function (event) {
+        if (event.key <= 9) {
+            unhideElement('submit');
+        }
+    });
+};
 
 /**
  * This function allows the user to generate another set of random numbers.
  * The continue button is replaced with the submit button.
  * Answer boxes 1 & 2 are reset to zero.
  */
-function continuePlaying() {
-    unhideElement('submit');
+function continuePlaying() {    
     hideElement('continue');
     document.getElementById('answer-box1').value = "";
     document.getElementById('answer-box2').value = "";
