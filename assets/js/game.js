@@ -30,6 +30,8 @@ function newGame() {
     unhideElement('submit');
     hideElement('new-game');
     runGame();
+    keyNum();
+    revealSubmit();
 };
 
 /**
@@ -43,14 +45,24 @@ function submitAnswer() {
     disableElement('answer-box2');
     recordNumbers();
 };
-/*
-document.getElementById('answer-box2').addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        document.getElementById('continue').classList.remove('hide');
-        document.getElementById('submit').classList.add('hide');
-        recordNumbers();
+
+function keyNum() {
+    document.getElementById('answer-box1').addEventListener('keyup', function(event) {
+        if (event.key <= 9) {
+            document.getElementById('answer-box2').focus();
+        }
+    });
+};
+
+function revealSubmit() {
+    let answerBox1 = parseInt(document.getElementById('answer-box1').value);
+    let answerBox2 = parseInt(document.getElementById('answer-box2').value);
+    
+
+    if (answerBox1.value && answerBox2.value) {
+        console.log('Tada!!!')
     }
-});*/
+}
 
 /**
  * This function allows the user to generate another set of random numbers.
@@ -72,28 +84,28 @@ function continuePlaying() {
  */
 function hideElement(elementId) {
     document.getElementById(elementId).classList.add('hide');
-}
+};
 
 /**
  * Reveals an element when called.
  */
 function unhideElement(elementId) {
     document.getElementById(elementId).classList.remove('hide');
-}
+};
 
 /**
  * Disables an element when called.
  */
 function disableElement(elementId) {
     document.getElementById(elementId).disabled = true;
-}
+};
 
 /**
  * Enables an element when called.
  */
 function enableElement(elementId) {
     document.getElementById(elementId).disabled = false;
-}
+};
 
 /**
  * loaded the DOM and initializes the game.
@@ -119,7 +131,7 @@ function newTurn() {
     unhideElement('operand1');
     unhideElement('operand2');
     runGame();
-}
+};
 
 /**
  * This function add the randomly generated number to window.
@@ -136,7 +148,8 @@ function displayNumbers(operand1, operand2) {
         unhideElement('answer-box2');
         document.getElementById('answer-box1').focus();
     }, 1500);
-}
+};
+
 /**
  * This function records the numbers displayed by the by operands 1 and 2
  * and converts them from strings to integers.
@@ -146,7 +159,7 @@ function recordNumbers() {
     let operand1 = parseInt(document.getElementById('operand1').innerText);
     let operand2 = parseInt(document.getElementById('operand2').innerText);
     checkAnswers();
-}
+};
 
 /**
  * This function records the values of the users answers and converts them from strings
@@ -161,20 +174,20 @@ function checkAnswers() {
     let correctAnswer2 = userAnswer2 === num2;
 
     if (correctAnswer1 && correctAnswer2) {
-        alert('Congratualation! You answered correctly!!!');
+        alert('Congratulation! You answered correctly!!!');
         incrementScore();
     } else {
-        alert(`Unfortunatly the correct answer was ${num1} and ${num2}.`);
+        alert(`Unfortunately  the correct answer was ${num1} and ${num2}.`);
         incrementWrongAnswer();
-    }
-}
+    };
+};
 
 /**Gets the current score and increases by 1 point. */
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
     correct.push(oldScore);
-}
+};
 
 /**
  * Get the wrong answers and push to incorrect array.
@@ -184,7 +197,7 @@ function incrementWrongAnswer() {
     document.getElementById('incorrect').innerText = ++oldScore;
     incorrect.push(oldScore);
     removeLife();
-}
+};
 
 /**
  * Removes a users life after ever incorrect answer.
@@ -198,9 +211,9 @@ function removeLife() {
         } else if (i === 3) {
             hideElement("life3");
             gameOver();
-        }
-    }
-}
+        };
+    };
+};
 
 /**
  * This function ends the game.
@@ -210,7 +223,7 @@ function gameOver() {
     hideElement('answer-box2');
     hideElement('continue');
     finish();
-}
+};
 
 /**
  * Allows the user to refresh the page and continue playing
@@ -221,5 +234,7 @@ function finish() {
 
     if (playAgain == true) {
         location.reload();
-    }
-}
+    } else {
+        close;
+    };
+};
