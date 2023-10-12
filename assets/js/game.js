@@ -16,27 +16,33 @@ let num2;
 let correct = [];
 let incorrect = [];
 
+function initializeGame() {
+    document.getElementById('new-game').addEventListener('click', newGame);
+    document.getElementById('submit').addEventListener('click', submitAnswer);
+    document.getElementById('continue').addEventListener('click', continuePlaying);
+}
+
 /**
  * This function starts a new game by calling the newGame() function.
  * The new game button is then replaced with the submit button.
  */
-document.getElementById('new-game').addEventListener('click', function () {
-    document.getElementById('submit').classList.remove('hide');
-    document.getElementById('new-game').classList.add('hide');
+function newGame() {
+    unhideElement('submit');
+    hideElement('new-game');
     runGame();
-});
+};
 
 /**
  * This function submits the users answer and replaces the submit button with the continue button.
  * Then it calls the record answer function.
  */
-document.getElementById('submit').addEventListener('click', function () {
-    document.getElementById('continue').classList.remove('hide');
-    document.getElementById('submit').classList.add('hide');
-    document.getElementById('answer-box1').disabled = true;
-    document.getElementById('answer-box2').disabled = true;
+function submitAnswer() {
+    unhideElement('continue');
+    hideElement('submit');
+    disableElement('answer-box1');
+    disableElement('answer-box2');
     recordNumbers();
-});
+};
 /*
 document.getElementById('answer-box2').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -51,15 +57,48 @@ document.getElementById('answer-box2').addEventListener('keydown', function(even
  * The continue button is replaced with the submit button.
  * Answer boxes 1 & 2 are reset to zero.
  */
-document.getElementById('continue').addEventListener('click', function () {
-    document.getElementById('submit').classList.remove('hide');
-    document.getElementById('continue').classList.add('hide');
+function continuePlaying() {
+    unhideElement('submit');
+    hideElement('continue');
     document.getElementById('answer-box1').value = "";
     document.getElementById('answer-box2').value = "";
-    document.getElementById('answer-box1').disabled = false;
-    document.getElementById('answer-box2').disabled = false;
+    enableElement('answer-box1');
+    enableElement('answer-box2');
     newTurn();
-});
+};
+
+/**
+ * Hides an element when called.
+ */
+function hideElement(elementId) {
+    document.getElementById(elementId).classList.add('hide');
+}
+
+/**
+ * Reveals an element when called.
+ */
+function unhideElement(elementId) {
+    document.getElementById(elementId).classList.remove('hide');
+}
+
+/**
+ * Disables an element when called.
+ */
+function disableElement(elementId) {
+    document.getElementById(elementId).disabled = true;
+}
+
+/**
+ * Enables an element when called.
+ */
+function enableElement(elementId) {
+    document.getElementById(elementId).disabled = false;
+}
+
+/**
+ * loaded the DOM and initializes the game.
+ */
+document.addEventListener("DOMContentLoaded", initializeGame);
 
 /**
  * This function generates 2 random numbers and calls the displayNumbers function
@@ -75,10 +114,10 @@ function runGame() {
  * hides answer box 1 & 2 and replaces them with operand 1 & 2.
  */
 function newTurn() {
-    document.getElementById('answer-box1').classList.add('hide');
-    document.getElementById('answer-box2').classList.add('hide');
-    document.getElementById('operand1').classList.remove('hide');
-    document.getElementById('operand2').classList.remove('hide');
+    hideElement('answer-box1');
+    hideElement('answer-box2');
+    unhideElement('operand1');
+    unhideElement('operand2');
     runGame();
 }
 
@@ -91,10 +130,10 @@ function displayNumbers(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     setTimeout(function () {
-        document.getElementById('operand1').classList.add('hide');
-        document.getElementById('operand2').classList.add('hide');
-        document.getElementById('answer-box1').classList.remove('hide');
-        document.getElementById('answer-box2').classList.remove('hide');
+        hideElement('operand1');
+        hideElement('operand2');
+        unhideElement('answer-box1');
+        unhideElement('answer-box2');
         document.getElementById('answer-box1').focus();
     }, 1500);
 }
@@ -151,31 +190,36 @@ function incrementWrongAnswer() {
  * Removes a users life after ever incorrect answer.
  */
 function removeLife() {
-    let lifeOne = document.getElementById('life1');
-    let lifeTwo = document.getElementById('life2');
-    let lifeThree = document.getElementById('life3');
-
     for (let i of incorrect) {
         if (i === 1) {
-            lifeOne.classList.add('hide');
-        } else {
-            if (i === 2) {
-                lifeTwo.classList.add('hide');
-            } else {
-                if (i === 3) {
-                    lifeThree.classList.add('hide');
-                    gameOver();
-                }
-            }
+            hideElement("life1");
+        } else if (i === 2) {
+            hideElement("life2");
+        } else if (i === 3) {
+            hideElement("life3");
+            gameOver();
         }
     }
 }
+
 /**
  * This function ends the game.
  */
 function gameOver() {
-    alert('Game Over. Refresh the page to play again.');
-    document.getElementById('answer-box1').classList.add('hide');
-    document.getElementById('answer-box2').classList.add('hide');
-    document.getElementById('continue').classList.add('hide');
+    hideElement('answer-box1');
+    hideElement('answer-box2');
+    hideElement('continue');
+    finish();
+}
+
+/**
+ * Allows the user to refresh the page and continue playing
+ */
+function finish() {
+    let playAgain = confirm('Game Over\n\nPlay again?');
+    let close = window.close();
+
+    if (playAgain == true) {
+        location.reload();
+    }
 }
