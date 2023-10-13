@@ -11,6 +11,7 @@ body {
     transition: 0.6s;
     padding-left: 10%;
     padding-top: 30px;
+    overflow: hidden;
 }
 
 .slot-container {
@@ -131,4 +132,110 @@ body {
 
 .hide {
     display: none;
+}
+
+/**************************Media****************************/
+
+@media (max-width: 1024px) {
+    .slot {
+        width: 265px;
+        height: 440px;
+        font-size: 250px;
+    }
+
+    .slot-container {
+        padding-top: 178px;
+    }
+
+    .submit-container {
+        height: 150px;
+    }
+
+    #new-game {
+        width: 80%;
+        height: 75%;
+        font-size: 60px;
+    }
+
+    #continue {
+        width: 80%;
+        height: 75%;
+        font-size: 60px;
+    }
+
+    #submit {
+        width: 80%;
+        height: 75%;
+        font-size: 60px;
+    }
+
+    .slot-container2 {
+        height: 489px;
+    }
+
+    .score-lives-container {
+        height: 167px;
+    }
+
+    .score-lives-container div p {
+        font-size: 325%;
+    }
+
+    .score-lives-container li {
+        font-size: 372%;
+    }
+}
+
+@media (max-width: 390px) {
+    body {
+        overflow: hidden;
+        padding-left: 3px;
+    }
+
+    .slot-container {
+        width: 98%;
+        height: 799px;
+        padding-left: 0%;
+        margin-left: 0;
+        overflow: hidden;
+    }
+
+    .slot-container2 {
+        height: 332px;
+    }
+
+    .slot {
+        width: 148px;
+        height: 294px;
+        font-size: 200px;
+    }
+
+    #new-game {
+        width: 80%;
+        height: 50%;
+        font-size: 40px;
+    }
+    #submit {
+        width: 80%;
+        height: 50%;
+        font-size: 40px;
+    }
+
+    #continue {
+        width: 80%;
+        height: 50%;
+        font-size: 40px;
+    }
+
+    .score-lives-container {
+        height: 100px;
+    }
+
+    .score-lives-container div p {
+        font-size: 200%;
+    }
+
+    .score-lives-container li {
+        font-size: 350%;
+    }
 }

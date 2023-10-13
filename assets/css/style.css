@@ -2,14 +2,19 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#bg-image {
     background-image: url("../images/slots.picture.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     background-color: rgb(59, 56, 56);
+    overflow: hidden;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;    
 }
 
 /*******************************header*****************/
@@ -200,4 +205,212 @@ section {
 }
 
 /***********************Media Queries********************/
+@media (max-width: 1024px) {
+    body {
+        overflow: hidden;
+        height: 1366px;        
+    }
 
+    #bg-image{
+        height: 1366px;
+        background-size: cover;
+    }
+
+    #logo a img {
+        width: 58%;
+        padding-top: 28px;
+    }
+
+    #menu li a {        
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .home-screen {
+        height: 80%;
+    }
+
+    .buttons {
+        width: 50%;
+        height: 10%;
+        border-radius: 10px;
+        border: 5px solid;
+    }
+
+    .buttons a {
+        font-size: 60px;
+    }
+
+    .footer {
+        position: relative;
+        height: 100px;
+    }
+
+    .social-media a {
+        font-size: 30px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    .footer div {
+        margin-top: 15px;
+    }
+
+    .i-container {
+        height: 80%;
+    }
+
+    .inst-bg {
+        height: 90%;
+        width: 75%;
+        margin-left: 125px;
+    }
+
+    .inst-bg h2{
+        font-size: 75px;
+        margin-bottom: 17px;
+    }
+
+    .p-container {
+        height: 75%;
+        padding: 0 5px;
+    }
+
+    .p-container p {
+        font-size: 34px;
+        padding: 0 30px;
+    }
+
+    .f-container {
+        height: 80%;
+    }
+
+    .feedback-bg {
+        height: 90%;
+        width: 75%;
+        margin-left: 125px;
+    }
+
+    .feedback-bg h2{
+        font-size: 75px;
+        margin-bottom: 25px;
+    }
+
+    .feedback-form {
+        height: 75%;
+        margin-top: 50px;
+    }
+
+    .feedback-form button {
+        font-size: 10px;
+        height: 100px;
+        width: 75%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 390px) {
+    .home-screen {
+        height: 46%;
+    }
+
+    .buttons a {
+        font-size: 36px;
+    }
+
+    .footer p {
+        display: none;
+    }
+
+    .social-media {
+        margin-right: 100px;
+
+    }
+
+    #menu {
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 10px;
+    }
+
+    #menu li a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .inst-bg {
+        height: 90%;
+        width: 99%;
+        margin-left: 87px;
+    }
+
+    .i-container {
+        height: 630px;
+    }
+
+    .p-container p {
+        font-size: 18px;
+    }
+
+    .inst-bg {
+        margin-left: 2px;
+    }
+
+    .inst-bg h2 {
+        font-size: 22px;
+    }
+
+    .feedback-bg {
+        height: 0%;
+        width: 99%;
+        margin-left: 2px;
+    }
+
+    .feedback-bg h2 {
+        font-size: 30px;
+    }
+
+    .f-container {
+        height: 630px;
+    }
+}
+
+@media (max-width: 280px) {
+    .home-screen {
+        height: 26%;
+    }
+
+    header {
+        flex-flow: wrap-reverse;
+        justify-content: start;
+    }
+
+    nav {
+        justify-content: start;
+    }
+
+    #menu li a {
+        font-size: 7px;
+    }
+
+    #logo a img {
+        width: 58%;
+        margin-left: 45px;
+    }
+
+    .buttons a {
+        font-size: 25px;
+    }
+
+    .footer {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .social-media {
+       width: 200px;
+       height: 50px; 
+       margin-right:35px;
+    }
+}
