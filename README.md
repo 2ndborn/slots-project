@@ -1,3 +1,4 @@
+
 Slots
 Project Goals
 
@@ -85,20 +86,24 @@ Balsamiq for creating the wireframe
 Font Awesome for the icons
 Google fonts to search for the right fonts for the website
 Bootstrap to create forms and buttons.
+Chrome Developer Tools for testing.
 Testing
 
-Code Validation
+Code Validation (check README.docs for reports)
 
 <https://jigsaw.w3.org/css-validator/> - CSS
 <https://validator.w3.org/> - HTML
 <https://www.jslint.com/> - JavaScript
 Google Lighthouse - Performance
-Test Cases
+Test Cases - Check README.doc for testcases.pdf
 
-Fixed bugs
+Fixed bugs - Check README.doc for bugs.pdf
 
 Support screens and browser - Google Chrome to develop and test my website.
 
+1024 x 1366
+390 x 844
+Check README.doc for device.testing.pdf
 Deployment
 
 Gitpod: Check README.doc to view screenshots
