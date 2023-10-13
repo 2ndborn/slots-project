@@ -44,7 +44,6 @@ body {
     text-align: center;
 }
 
-
 .score-lives-container {
     display: flex;
     justify-content: center;
@@ -59,8 +58,6 @@ body {
     margin: 0 10px;
     font-size: 250%;
 }
-
-
 
 .score-lives-container div p {
     margin: 20px 0;
@@ -94,10 +91,10 @@ body {
     border: 3px solid;
 }
 
-#new-game:hover {    
-    background-color: rgb(128, 252, 45);    
+#new-game:hover {
+    background-color: rgb(128, 252, 45);
     font-size: 25px;
-    font-weight: 800;    
+    font-weight: 800;
 }
 
 #submit {
