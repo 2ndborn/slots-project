@@ -126,8 +126,9 @@ Click ![Wireframes](readme.doc/slots.wireframe.pdf) to view the wireframe images
 -	**Test Cases** - Used Google Chrome Developer Tools to test my website on the below platforms. 
 	-	1024 x 1366
 	-	390 x 844
-- ![Test Procedure](readme.doc/test.procedure.pdf)
 Click ![Device Test](readme.doc/device.testing.pdf) for device.testing.pdf
+- **Test Procedure**
+	- Click ![Test Procedure](readme.doc/test.procedure.pdf) to view the test procedure.
 -	**Fixed bugs** - Click![Bugs](readme.doc/bugs.fixed.pdf) to view bugs.pdf
 
 ## Deployment
