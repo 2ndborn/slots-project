@@ -1,4 +1,4 @@
-
+![README.doc](readme.doc/github.deploy.pdf)
 Slots
 Project Goals
 
