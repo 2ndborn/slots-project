@@ -200,6 +200,6 @@ function finish() {
     if (playAgain == true) {
         location.reload();
     } else {
-        close;
+        location.href="index.html";
     };
 }
