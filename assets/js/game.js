@@ -195,7 +195,7 @@ function gameOver() {
 /** * Allows the user to refresh the page and continue playing*/
 function finish() {
     let playAgain = confirm("Game Over\n\nPlay again?");
-    let close = window.open(index.html);
+    let close = window.open("index.html");
 
     if (playAgain == true) {
         location.reload();
