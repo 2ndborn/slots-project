@@ -200,6 +200,6 @@ function finish() {
     if (playAgain == true) {
         location.reload();
     } else {
-        location.href="index.html";
+        location.href="https://2ndborn.github.io/slots-project/";
     };
 }
