@@ -100,7 +100,7 @@ nav {
     border-bottom: 2px solid #fff;
 }
 
-a.icon {
+.topnav .icon {
     background-color: black;
     color: #fff;
     font-size: 40px;
