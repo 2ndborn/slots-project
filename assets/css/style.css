@@ -53,7 +53,7 @@ nav {
     transition: 0.5s;
 }
 
-#menu menu2 li {
+#menu #menu2 li {
     list-style-type: none;
 }
 
