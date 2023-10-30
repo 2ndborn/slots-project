@@ -97,6 +97,7 @@ nav {
 
 .topnav a.icon {
     background: black;
+    font-size: 25px;
     display: block;
     position: absolute;
     right: 0;
