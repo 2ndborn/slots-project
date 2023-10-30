@@ -73,8 +73,13 @@ nav {
     padding: 40px 25px 45px 25px;
 }
 
-#menu2 {
-    display: block;
+.topnav {
+    overflow: hidden;
+    background-color: rgb(9, 9, 9, 0.1);
+    position: relative;
+}
+
+.topnav #menu2 {
     display: none
 }
 
@@ -82,7 +87,7 @@ nav {
     list-style-type: none;
 }
 
-#menu2 li a {
+.topnav li a {
     color: #fff;
     text-decoration: none;
     display: block;
