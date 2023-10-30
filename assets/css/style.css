@@ -51,6 +51,7 @@ nav {
     align-items: center;
     z-index: 1;
     transition: 0.5s;
+    display: none;
 }
 
 #menu li {
