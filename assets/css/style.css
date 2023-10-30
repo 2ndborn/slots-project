@@ -79,7 +79,7 @@ nav {
     position: relative;
 }
 
-#menu2 {
+.topnav #menu2 {
     display: none
 }
 
@@ -95,6 +95,7 @@ nav {
     background: black;
     display: block;
     position: absolute;
+    padding: 10px 20px;
     right: 0;
     top: 0;
 }
