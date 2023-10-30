@@ -102,10 +102,10 @@ nav {
 a.icon {
     background-color: black;
     color: #fff;
-    font-size: 20px;
+    font-size: 40px;
     display: block;
     position: absolute;
-    padding: 40px;
+    padding: 10px 20px;
     border: 2px solid #fff;
     border-radius: 10px;
 }
