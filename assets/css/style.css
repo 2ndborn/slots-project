@@ -74,10 +74,7 @@ nav {
 }
 
 #menu2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     z-index: 1;
     transition: 0.5s;
     display: none
