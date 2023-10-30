@@ -75,8 +75,6 @@ nav {
 
 #menu2 {
     display: block;
-    z-index: 1;
-    transition: 0.5s;
     display: none
 }
 
