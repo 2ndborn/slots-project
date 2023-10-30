@@ -76,7 +76,7 @@ nav {
 #menu2 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     z-index: 1;
     transition: 0.5s;
