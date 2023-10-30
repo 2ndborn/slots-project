@@ -80,6 +80,10 @@ nav {
     position: relative;
 }
 
+.topnav #menu2 {
+    display: none;
+}
+
 #menu2 {
     display: none;
 }
