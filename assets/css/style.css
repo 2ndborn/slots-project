@@ -53,7 +53,7 @@ nav {
     transition: 0.5s;
 }
 
-#menu li {
+#menu menu2 li {
     list-style-type: none;
 }
 
@@ -71,6 +71,10 @@ nav {
     box-shadow: 0 -10px 10px #fff inset,
         500px 0 0 rgba(218, 215, 215, 0.03) inset;
     padding: 40px 25px 45px 25px;
+}
+
+#menu2 {
+
 }
 
 h2 {
