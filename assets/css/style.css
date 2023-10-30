@@ -98,12 +98,14 @@ nav {
 #menu2 li a:hover {
     border-bottom: 2px solid #fff;
 }
+
 a.icon {
     background-color: black;
     color: #fff;
     font-size: 20px;
     display: block;
     position: absolute;
+    padding: 40px;
 }
 
 h2 {
