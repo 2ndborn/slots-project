@@ -98,6 +98,11 @@ nav {
 #menu2 li a:hover {
     border-bottom: 2px solid #fff;
 }
+a.icon {
+    background-color: black;
+    display: block;
+    position: absolute;
+}
 
 h2 {
     margin: 5px 0;
