@@ -480,6 +480,18 @@ section {
     .buttons a {
         font-size: 30px;
     }
+
+    .f-container {
+        height: 36%;
+    }
+
+    .feedback-bg h2 {
+        font-size: 28px;
+    }
+
+    .feedback-bg {
+        height: 92%;
+    }
 }
 
 @media (max-width: 390px) {
