@@ -440,6 +440,10 @@ section {
     nav {
         display: none;
     }
+
+    #logo a img {
+        width: 40%;
+    }
 }
 
 @media (max-width: 390px) {
