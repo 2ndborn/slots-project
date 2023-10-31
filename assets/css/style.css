@@ -95,8 +95,8 @@ nav {
     display: block;
     position: absolute;
     padding: 10px 20px;
-    right: 0;
-    top: 0;
+    right: 1px;
+    top: 1px;
 }
 
 .topnav a:hover {
