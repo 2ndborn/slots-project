@@ -504,6 +504,10 @@ section {
         height: 51%;
     }
 
+    .buttons {
+        height: 12%;
+    }
+
     footer div p {
         display: none;
     }
