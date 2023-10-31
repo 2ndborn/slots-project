@@ -363,12 +363,16 @@ section {
     }
 
     .i-container {
-        height: 73%;
+        height: 69%;
     }
 
     .p-container p {
         font-size: 31px;
         padding: 0 4%;
+    }
+
+    .inst-bg {
+        margin-top: 30px;
     }
 
     .inst-bg h2 {
