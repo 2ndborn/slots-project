@@ -469,6 +469,10 @@ section {
         font-size: 42px;
     }
 
+    .p-container {
+        height: 68%;
+    }
+
     .p-container p {
         font-size: 17px;
     }
