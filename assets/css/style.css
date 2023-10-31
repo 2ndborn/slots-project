@@ -528,6 +528,19 @@ section {
     .i-container {
         height: 49%;
     }
+
+    .f-container {
+        height: 49%;
+    }
+
+    .feedback-bg {
+        height: 79%;
+        width: 85%;
+    }
+
+    .feedback-bg {
+        margin-left: 9%;
+    }
 }
 
 @media (max-width: 390px) {
