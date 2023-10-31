@@ -589,6 +589,10 @@ section {
     .home-screen {
         height: 35%;
     }
+
+    .i-container {
+        height: 33%;
+    }
 }
 /*
 @media (max-width: 280px) {
