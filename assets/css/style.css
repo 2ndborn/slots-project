@@ -499,6 +499,28 @@ section {
     }
 }
 
+@media (max-width: 412px) {
+    .home-screen {
+        height: 51%;
+    }
+
+    p {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer div {
+        margin-left: 0;
+    }
+
+    .social-media a {
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 390px) {
     .home-screen {
         height: 46%;
