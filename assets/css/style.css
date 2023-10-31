@@ -543,20 +543,6 @@ section {
     }
 }
 
-@media (max-width: 393px) {
-    .f-container {
-        height: 46%;
-    }
-
-    .i-container {
-        height: 46%;
-    }
-
-    .home-screen {
-        height: 48%;
-    }
-}
-
 @media (max-width: 390px) {
     .home-screen {
         height: 47%;
@@ -582,12 +568,6 @@ section {
     .feedback-bg {
         margin-left: 6%;
         width: 88%;
-    }
-}
-
-@media (max-width: 375px) {
-    .home-screen {
-        height: 35%;
     }
 }
 
