@@ -492,6 +492,11 @@ section {
     .feedback-bg {
         height: 92%;
     }
+
+    .feedback-form button {
+        margin-top: 24px;
+        height: 20%;
+    }
 }
 
 @media (max-width: 390px) {
