@@ -73,6 +73,10 @@ nav {
     padding: 40px 25px 45px 25px;
 }
 
+.topnav {
+    display: none;
+}
+
 #menu2 {
     margin-top: 50px;
     text-align: center;
