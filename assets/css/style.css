@@ -76,7 +76,6 @@ nav {
 #menu2 {
     margin-top: 50px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .topnav #menu2 {
@@ -92,7 +91,7 @@ nav {
 }
 
 .topnav a.icon {
-    background: black;
+    background-color: rgba(0, 0, 0, 0.1);
     display: block;
     position: absolute;
     padding: 10px 20px;
