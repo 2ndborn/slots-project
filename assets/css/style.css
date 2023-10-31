@@ -547,72 +547,7 @@ section {
     .home-screen {
         height: 47%;
     }
-
-    .buttons a {
-        font-size: 36px;
-    }
-
-    .footer p {
-        display: none;
-    }
-
-    .social-media {
-        margin-right: 100px;
-
-    }
-
-    #menu {
-        margin-left: 0;
-        margin-right: 0;
-        padding-right: 10px;
-    }
-
-    #menu li a {
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .inst-bg {
-        height: 90%;
-        width: 99%;
-        margin-left: 87px;
-    }
-
-    .i-container {
-    height: 45%;
-    }
-
-    .p-container p {
-        font-size: 18px;
-    }
-
-    .inst-bg {
-        margin-left: 2px;
-    }
-
-    .inst-bg h2 {
-        font-size: 22px;
-    }
-
-    .feedback-bg {
-        height: 0%;
-        width: 99%;
-        margin-left: 2px;
-    }
-
-    .feedback-bg h2 {
-        font-size: 30px;
-    }
-
-    .f-container {
-        height: 630px;
-    }
-
-    .instruct-btn {
-        margin-top: 20px;
-    }
-}
-
+    
 @media (max-width: 375px) {
     .home-screen {
         height: 35%;
