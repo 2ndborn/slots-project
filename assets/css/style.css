@@ -359,10 +359,13 @@ section {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 820px) {
     .home-screen {
         height: 46%;
-        background-color: rgb(0, 0, 0, 0.5);
+    }
+
+    .footer {
+        background-color: rgb(0, 0, 0, 0.7);
     }
 
     .buttons a {
