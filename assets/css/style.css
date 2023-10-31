@@ -524,6 +524,10 @@ section {
     .social-media a {
         font-size: 40px;
     }
+
+    .i-container {
+        height: 49%;
+    }
 }
 
 @media (max-width: 390px) {
