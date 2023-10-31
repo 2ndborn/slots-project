@@ -421,7 +421,11 @@ section {
     }
 
     .feedback-bg {
-        margin-left: 15%;
+        margin-left: 14%;
+    }
+
+    .feedback-bg h2 {
+        font-size: 65px;
     }
 
     .feedback-form button {
