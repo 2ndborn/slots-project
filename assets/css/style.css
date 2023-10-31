@@ -607,6 +607,10 @@ section {
     .f-container {
         height: 630px;
     }
+
+    .instruct-btn {
+        margin: 20px 0 25px 0;
+    }
 }
 
 @media (max-width: 280px) {
