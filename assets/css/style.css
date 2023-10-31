@@ -617,4 +617,8 @@ section {
     .feedback-bg {
         height: 98%;
     }
+
+    .social-media a {
+        font-size: 30px;
+    }
 }
