@@ -547,6 +547,20 @@ section {
     .home-screen {
         height: 47%;
     }
+
+    .i-container {
+        height: 45%;
+    }
+
+    .inst-bg {
+        margin-left: 8%;
+    }
+    
+    .inst-bg h2 {
+        font-size: 30px;
+    }
+
+
     
 @media (max-width: 375px) {
     .home-screen {
