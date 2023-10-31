@@ -615,6 +615,10 @@ section {
     .p-container p {
         font-size: 15px;
     }
+
+    .f-container {
+        height: 38%;
+    }
 }
 
 @media (max-width: 280px) {
