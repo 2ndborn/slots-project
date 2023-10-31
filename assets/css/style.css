@@ -353,19 +353,19 @@ section {
     }
 }
 
-@media (max-width: 912px) {
+@media (max-width: 820px) {
     .home-screen {
         height: 73%;
     }
-}
-
-@media (max-width: 820px) {
-    .home-screen {
-        height: 46%;
-    }
 
     .footer {
-        background-color: rgb(0, 0, 0, 0.7);
+        background-color: rgb(0, 0, 0, 0.5); 
+    }
+}
+
+@media (max-width: 390px) {
+    .home-screen {
+        height: 46%;
     }
 
     .buttons a {
