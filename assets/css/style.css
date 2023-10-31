@@ -585,24 +585,6 @@ section {
     }
 }
 
-@media (max-width: 375px) {
-    .home-screen {
-        height: 35%;
-    }
-
-    .i-container {
-        height: 33%;
-    }
-
-    .f-container {
-        height: 32%;
-    }
-
-    .feedback-bg h2 {
-        font-size: 21px;
-    }
-}
-
 @media (max-width: 360px) {
     .home-screen {
         height: 40%;
