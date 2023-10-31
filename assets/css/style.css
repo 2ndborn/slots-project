@@ -399,6 +399,22 @@ section {
     .home-screen {
         height: 62%;
     }
+
+    .i-container {
+        height: 59%;
+    }
+
+    .inst-bg {
+        margin-left: 13%;
+    }
+
+    .inst-bg h2 {
+        font-size: 53px;
+    }
+
+    .p-container p {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 390px) {
