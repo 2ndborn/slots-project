@@ -618,6 +618,10 @@ section {
         height: 98%;
     }
 
+    .footer {
+        height: 5%;
+    }
+
     .social-media a {
         font-size: 30px;
     }
