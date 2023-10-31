@@ -597,6 +597,10 @@ section {
     .f-container {
         height: 32%;
     }
+
+    .feedback-bg h2 {
+        font-size: 21px;
+    }
 }
 /*
 @media (max-width: 280px) {
