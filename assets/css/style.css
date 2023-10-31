@@ -460,6 +460,22 @@ section {
     .social-media a {
         font-size: 20px;
     }
+
+    .i-container {
+        height: 36%;
+    }
+
+    .inst-bg h2 {
+        font-size: 42px;
+    }
+
+    .p-container p {
+        font-size: 17px;
+    }
+
+    .buttons a {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 390px) {
