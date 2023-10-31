@@ -593,6 +593,10 @@ section {
     .i-container {
         height: 33%;
     }
+
+    .f-container {
+        height: 32%;
+    }
 }
 /*
 @media (max-width: 280px) {
