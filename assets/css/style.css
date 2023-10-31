@@ -611,6 +611,10 @@ section {
     .i-container {
         height: 38%;
     }
+
+    .p-container p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 280px) {
