@@ -615,4 +615,16 @@ section {
     .p-container p {
         font-size: 12px;
     }
+
+    .f-container {
+        height: 33%;
+    }
+
+    .buttons a {
+        font-size: 21px;
+    }
+
+    .feedback-bg {
+        height: 88%;
+    }
 }
