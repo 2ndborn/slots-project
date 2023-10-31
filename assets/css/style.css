@@ -353,9 +353,16 @@ section {
     }
 }
 
+@media (max-width: 912px) {
+    .home-screen {
+        height: 73%;
+    }
+}
+
 @media (max-width: 390px) {
     .home-screen {
         height: 46%;
+        background-color: rgb(0, 0, 0, 0.5);
     }
 
     .buttons a {
