@@ -560,6 +560,15 @@ section {
     .inst-bg h2 {
         font-size: 30px;
     }
+
+    .f-container {
+        height: 45%;
+    }
+
+    .feedback-bg {
+        margin-left: 6%;
+        width: 88%;
+    }
 }
 
 @media (max-width: 375px) {
