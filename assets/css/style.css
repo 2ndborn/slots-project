@@ -395,6 +395,12 @@ section {
     }
 }
 
+@media (max-width: 768px) {
+    .home-screen {
+        height: 62%;
+    }
+}
+
 @media (max-width: 390px) {
     .home-screen {
         height: 46%;
