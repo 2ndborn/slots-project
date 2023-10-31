@@ -388,6 +388,11 @@ section {
     .f-container {
         height: 70%;
     }
+
+    .feedback-bg {
+        height: 78%;
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 390px) {
