@@ -602,41 +602,13 @@ section {
         font-size: 21px;
     }
 }
-/*
+
 @media (max-width: 280px) {
     .home-screen {
         height: 26%;
     }
 
-    header {
-        flex-flow: wrap-reverse;
-        justify-content: start;
+    .inst-bg h2 {
+        font-size: 20px;
     }
-
-    nav {
-        justify-content: start;
-    }
-
-    #menu li a {
-        font-size: 7px;
-    }
-
-    #logo a img {
-        width: 58%;
-        margin-left: 45px;
-    }
-
-    .buttons a {
-        font-size: 25px;
-    }
-
-    .footer {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .social-media {
-       width: 200px;
-       height: 50px; 
-       margin-right:35px;
-    }
-}*/
+}
