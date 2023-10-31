@@ -415,6 +415,17 @@ section {
     .p-container p {
         font-size: 26px;
     }
+
+    .f-container {
+        height: 59%;
+    }
+
+    .feedback-bg {
+        margin-left: 15%;
+    }
+
+    .feedback-form button {
+        margin-top: 21px;
 }
 
 @media (max-width: 390px) {
