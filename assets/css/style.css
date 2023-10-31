@@ -613,6 +613,32 @@ section {
     }
 }
 
+@media (max-width: 375px) {
+    .home-screen {
+        height: 35%;
+    }
+
+    .i-container {
+        height: 33.5%;
+    }
+
+    .p-container p {
+        font-size: 15px;
+    }
+
+    .buttons a {
+        font-size: 31px;
+    }
+
+    .footer {
+        height: 6%;
+    }
+
+    .social-media a {
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 280px) {
     .home-screen {
         height: 26%;
