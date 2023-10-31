@@ -361,6 +361,24 @@ section {
     .footer {
         background-color: rgb(0, 0, 0, 0.5); 
     }
+
+    .i-container {
+        height: 73%;
+    }
+
+    .p-container p {
+        font-size: 31px;
+        padding: 0 4%;
+    }
+
+    .inst-bg h2 {
+        font-size: 60px;
+        margin-bottom: 17px;
+    }
+
+    .buttons a {
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 390px) {
