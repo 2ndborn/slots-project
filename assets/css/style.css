@@ -499,7 +499,7 @@ section {
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 414px) {
     .home-screen {
         height: 51%;
     }
