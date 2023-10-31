@@ -611,4 +611,8 @@ section {
     .inst-bg h2 {
         font-size: 20px;
     }
+
+    .p-container p {
+        font-size: 12px;
+    }
 }
