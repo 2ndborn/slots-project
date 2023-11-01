@@ -295,6 +295,17 @@ body {
     }
 }
 
+@media (max-width: 414px) {
+    .con a i {
+        margin: 0px 15px;
+    }
+
+    .slot-container {
+        margin-left: 0;
+        width: 95%;
+    }
+}
+
 /*@media (max-width: 390px) {
     body {
         overflow: hidden;
