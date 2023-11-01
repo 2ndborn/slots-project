@@ -162,6 +162,12 @@ body {
 /**************************Media****************************/
 
 @media (max-width: 1024px) {
+    .con a i {
+        font-size: 64px;
+        margin: 0 87px;
+    }
+
+
     .slot {
         width: 265px;
         height: 440px;
