@@ -355,4 +355,8 @@ body {
     .submit-container {
         height: 136px;
     }
+
+    #continue {
+        font-size: 25px;
+    }
 }
