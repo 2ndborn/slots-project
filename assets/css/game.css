@@ -351,4 +351,8 @@ body {
     #new-game {
         font-size: 26px;
     }
+
+    .submit-container {
+        height: 136px;
+    }
 }
