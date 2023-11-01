@@ -276,6 +276,12 @@ body {
         font-size: 32px;
     }
 
+    #continue {
+        width: 65%;
+        height: 45%;
+        font-size: 40px;
+    }
+
     .score-lives-container {
         height: 2%;
     }
