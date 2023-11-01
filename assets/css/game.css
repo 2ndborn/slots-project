@@ -9,7 +9,7 @@ body {
     background-blend-mode: lighten;
     background-color: rgb(59, 56, 56);
     transition: 0.6s;
-    padding-left: 10%;
+    padding-left: 12.5%;
     padding-top: 30px;
     overflow: hidden;
 }
