@@ -269,6 +269,12 @@ body {
         margin-top: 20px;
     }
 
+    #submit {
+        width: 65%;
+        height: 45%;
+        font-size: 32px;
+    }
+
     .score-lives-container {
         height: 2%;
     }
