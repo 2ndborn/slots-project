@@ -266,6 +266,7 @@ body {
         width: 65%;
         height: 45%;
         font-size: 35px;
+        margin-top: 20px;
     }
 
     .score-lives-container li {
