@@ -339,12 +339,16 @@ body {
         background-color: rgba(9, 9, 9, 0.8);
         margin-left: 3%;
         width: 93%;
-        margin-top: 6%;
+        margin-top: 2%;
     }
 
     .slot {
         width: 125px;
         height: 181px;
         font-size: 120px;
+    }
+
+    #new-game {
+        font-size: 26px;
     }
 }
