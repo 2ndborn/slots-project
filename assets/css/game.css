@@ -321,55 +321,13 @@ body {
     }
 }
 
-/*@media (max-width: 390px) {
+@media (max-width: 390px) {
     body {
-        overflow: hidden;
-        padding-left: 3px;
+        padding-left: 2%;
     }
 
     .slot-container {
-        height: 799px;
-        padding-left: 0%;
-        margin-left: 0;
-        overflow: hidden;
+        margin-left: 2%;
+        width: 95%;
     }
-
-    .slot-container2 {
-        height: 332px;
-    }
-
-    .slot {
-        width: 148px;
-        height: 294px;
-        font-size: 200px;
-    }
-
-    #new-game {
-        width: 80%;
-        height: 50%;
-        font-size: 40px;
-    }
-    #submit {
-        width: 80%;
-        height: 50%;
-        font-size: 40px;
-    }
-
-    #continue {
-        width: 80%;
-        height: 50%;
-        font-size: 40px;
-    }
-
-    .score-lives-container {
-        height: 100px;
-    }
-
-    .score-lives-container div p {
-        font-size: 200%;
-    }
-
-    .score-lives-container li {
-        font-size: 350%;
-    }
-}*/
+}
