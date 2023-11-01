@@ -217,6 +217,12 @@ body {
     }
 }
 
+@media (max-width: 912px) {
+    .slot-container {
+        padding-top: 93px;
+    }
+}
+
 @media (max-width: 768px) {
     .slot-container {
         padding-top: 10px;
