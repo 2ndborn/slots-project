@@ -333,3 +333,18 @@ body {
         margin-top: 14%;
     }
 }
+
+@media (max-width: 360px) {
+    .slot-container {
+        background-color: rgba(9, 9, 9, 0.8);
+        margin-left: 3%;
+        width: 98%;
+        margin-top: 6%;
+    }
+
+    .slot {
+        width: 140px;
+        height: 206px;
+        font-size: 120px;
+    }
+}
