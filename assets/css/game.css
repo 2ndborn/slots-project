@@ -26,10 +26,11 @@ body {
   
   .con a i{
     color: black;
-    background-color: red;
+    background-color: #fff;
     padding: 10px 10px;
     border-radius: 50%;
-    font-size: 25px;
+    border: 2px solid black;
+    font-size: 35px;
   }
   
   .con a i:hover {
