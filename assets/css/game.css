@@ -311,6 +311,14 @@ body {
         height: 240px;
         font-size: 150px;
     }
+
+    .score-lives-container div p {
+        font-size: 220%;
+    }
+
+    .score-lives-container li {
+        font-size: 250%;
+    }
 }
 
 /*@media (max-width: 390px) {
