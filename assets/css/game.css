@@ -387,4 +387,8 @@ body {
     .score-lives-container li {
         font-size: 139%;
     }
+
+    ul {
+        padding-left: 19px;
+    }
 }
