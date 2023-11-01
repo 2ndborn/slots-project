@@ -375,4 +375,12 @@ body {
     #new-game {
         font-size: 18px;
     }
+
+    .score-lives-container div p {
+        font-size: 150%;
+    }
+
+    .score-lives-container li {
+        font-size: 139%;
+    }
 }
