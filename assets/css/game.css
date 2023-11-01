@@ -282,14 +282,13 @@ body {
     }
 }
 
-@media (max-width: 390px) {
+/*@media (max-width: 390px) {
     body {
         overflow: hidden;
         padding-left: 3px;
     }
 
     .slot-container {
-        width: 98%;
         height: 799px;
         padding-left: 0%;
         margin-left: 0;
@@ -334,4 +333,4 @@ body {
     .score-lives-container li {
         font-size: 350%;
     }
-}
+}*/
