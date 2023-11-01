@@ -380,6 +380,14 @@ body {
         font-size: 18px;
     }
 
+    #submit {
+        font-size: 25px;
+    }
+
+    #continue {
+        font-size: 20px;
+    }
+
     .score-lives-container div p {
         font-size: 150%;
     }
