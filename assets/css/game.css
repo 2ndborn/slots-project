@@ -302,6 +302,7 @@ body {
 
     .slot-container {
         margin-left: 0;
+        margin-top: 15%;
         width: 95%;
     }
 }
