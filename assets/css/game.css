@@ -237,6 +237,19 @@ body {
 }
 
 @media (max-width: 540px) {
+    body {
+        padding-left: 6%;
+    }
+
+    .slot {
+        width: 190px;
+        height: 300px;
+    }
+
+    .slot-container2 {
+        height: 321px;
+    }
+
     .con a i {
         font-size: 45px;
         margin: 0px 55px;
