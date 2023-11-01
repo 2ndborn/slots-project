@@ -266,7 +266,7 @@ body {
     #new-game {
         width: 65%;
         height: 45%;
-        font-size: 35px;
+        font-size: 32px;
         margin-top: 20px;
     }
 
@@ -279,7 +279,7 @@ body {
     #continue {
         width: 65%;
         height: 45%;
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .score-lives-container {
