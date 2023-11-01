@@ -246,6 +246,13 @@ body {
         height: 300px;
     }
 
+    .slot-container {
+        margin-left: 2%;
+        padding-top: 10px;
+        height: 51%;
+        width: 90%;
+    }
+
     .slot-container2 {
         height: 321px;
     }
@@ -253,6 +260,12 @@ body {
     .con a i {
         font-size: 45px;
         margin: 0px 55px;
+    }
+
+    #new-game {
+        width: 80%;
+        height: 58%;
+        font-size: 42px;
     }
 }
 
