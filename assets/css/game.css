@@ -269,6 +269,10 @@ body {
         margin-top: 20px;
     }
 
+    .score-lives-container {
+        height: 2%;
+    }
+
     .score-lives-container li {
         font-size: 290%;
     }
