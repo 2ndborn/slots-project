@@ -34,8 +34,9 @@ body {
   }
   
   .con a i:hover {
-    color: white;
-    border: 2px solid black;
+    color: #fff;
+    background-color: black;
+    border: 2px solid #fff;
   }
 
 .slot-container {
