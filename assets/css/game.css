@@ -223,6 +223,11 @@ body {
         height: 72%;
         width: 90%;
     }
+
+    .slot {
+        width: 260px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 390px) {
