@@ -263,9 +263,9 @@ body {
     }
 
     #new-game {
-        width: 80%;
-        height: 58%;
-        font-size: 42px;
+        width: 65%;
+        height: 45%;
+        font-size: 35px;
     }
 
     .score-lives-container li {
