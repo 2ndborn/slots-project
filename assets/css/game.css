@@ -362,6 +362,10 @@ body {
 }
 
 @media (max-width: 280px) {
+.slot-container {
+    height: 42%;
+}
+
     .slot-container2 {
         height: 189px;
     }
