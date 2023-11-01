@@ -217,6 +217,13 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .slot-container {
+        padding-top: 10px;
+        height: 72%;
+    }
+}
+
 @media (max-width: 390px) {
     body {
         overflow: hidden;
