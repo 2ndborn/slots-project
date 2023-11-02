@@ -211,11 +211,15 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 			![JSLint](readme.doc/js.test2.png)
 		
-	-	**Performance**.
+	-	**Performance Lighthouse**.
 		-	![index.html](readme.doc/index.html.lighthouse.html).
+		![index.lighthouse](readme.doc/index.light.png)
 		-	![instruction.html](readme.doc/instruction.html.lighthouse.html).
+		![Instruction.lighthouse](readme.doc/inst.light.png)
 		-	![feedback.html](readme.doc/feedback.html.lighthouse.html).
+		![feedback.lighthouse](readme.doc/feed.light.png)
 		-	![game.html](readme.doc/game.html.lighthouse.html).
+		![game](readme.doc/game.light.png)
 
 
 -	**Test Cases** - Used Google Chrome Developer Tools to test my website on the below platforms. 
