@@ -37,7 +37,40 @@ Click ![User Stories](readme.doc/testcases.pdf) to view the test cases for the u
 -	As the user progresses through the game, the time the numbers are shown will decreases, giving the user less time to remember.
 -	Once the users light bulbs have all disappeared the game is over and the user will be show a "Game Over" message. 
 -	Once the user acknowledges to the message the new game button will reappear.
--	
+
+**User Story Test Case**
+
+-	![Homepage]() Clicking on the “Slots” logo and the Home navigation button will refresh the page. Clicking on the Instructions navigation button will take you to the Instructions page.
+-	Clicking on the Feedback navigation button will take you to the feedback page.
+-	Pressing the “Play” button will take you the main game.
+-	Clicking on the social media icons will transport the user to the Twitter, Facebook and Instagram pages.
+
+**Test Case Instructions Page**
+
+-	On the Instruction the user will see 7 instruction points explaining how to play the game.
+-	Below the instructions the user will see a red play button the takes them to the main game.
+-	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages.
+
+**Test Case Feedback Page**
+
+-	On the feedback page the user will see an opaque box with a titled question “How Are You Finding Slots?”
+-	Beneath the title the user will see the feedback form which they can complete.
+-	Beneath the form the user will see a red “Send Request” button. Pressing the button does nothing at this stage but it will be included in the future features.
+-	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages.
+
+**Test Case Main Game**
+
+- The user will see and opaque black box with 2 boxes, a green “New Game” button, a score box and 3 light bulbs.
+- Clicking on the “New Game” button starts the game generating 2 random numbers in the boxes.
+- After 1.5 seconds the number disappear and a the user can now enter the numbers they just saw back in the boxes.
+- Once the user enters a number into the first box, the cursor will move on to the next box.
+- The user enters the other number and the “Submit” button will appear for the user to press. If it is the correct number, the user is given a message. Correct answer says “Congratulations! That was the correct answer” and will add one point to the score. The “Submit” button is replaced by the continue button and the boxes are disabled.
+- Pressing the “continue” button begins a new turn generating 2 more random numbers.
+- If the user gives a wrong answer the alert messages says “Unfortunately the correct answer was x and y.” One light bulb is then removed from the window. The boxes are again disabled and the “Continue” replaces the “Submit” button.
+- Each time the user gives and incorrect answer a light bulb is removed from the window. When all the light bulbs are gone the user can the game is over.
+- When the last answer is given the user is given the message “Game Over” “Play again?”
+- If the user presses OK the window is refresh and the user can begin a new game.
+- If the player presses cancel the window closes.
 
 ## Features
 
