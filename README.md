@@ -40,10 +40,10 @@ Click ![User Stories](readme.doc/testcases.pdf) to view the test cases for the u
 
 **User Story Test Case**
 
--	![Homepage]() Clicking on the “Slots” logo and the Home navigation button will refresh the page. Clicking on the Instructions navigation button will take you to the Instructions page.
--	Clicking on the Feedback navigation button will take you to the feedback page.
--	Pressing the “Play” button will take you the main game.
--	Clicking on the social media icons will transport the user to the Twitter, Facebook and Instagram pages.
+-	![Homepage](readme.doc/homepage.png) Clicking on the “Slots” logo and the Home navigation button will refresh the page. Clicking on the Instructions navigation button will take you to the Instructions page. ![Instructions](readme.doc/instructionpage.png)
+-	Clicking on the Feedback navigation button will take you to the feedback page. ![Feedback](readme.doc/feedbackpage.png)
+-	Pressing the “Play” button will take you the main game. ![Main Game](readme.doc/gamepage.png)
+-	Clicking on the social media icons will transport the user to the Twitter, Facebook and Instagram pages. ![Social Media](readme.doc/socialmedialinks.png)
 
 **Test Case Instructions Page**
 
