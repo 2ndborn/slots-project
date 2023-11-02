@@ -38,37 +38,90 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 **User Story Test Case**
 
--	![Homepage](readme.doc/homepage.png) Clicking on the “Slots” logo and the Home navigation button will refresh the page. Clicking on the Instructions navigation button will take you to the Instructions page. ![Instructions](readme.doc/instructionpage.png)
--	Clicking on the Feedback navigation button will take you to the feedback page. ![Feedback](readme.doc/feedbackpage.png)
--	Pressing the “Play” button will take you the main game. ![Main Game](readme.doc/gamepage.png)
--	Clicking on the social media icons will transport the user to the Twitter, Facebook and Instagram pages. ![Social Media](readme.doc/socialmedialinks.png)
+![Homepage](readme.doc/homepage.png)
+
+-	Clicking on the “Slots” logo and the Home navigation button will refresh the page. Clicking on the Instructions navigation button will take you to the Instructions page.
+
+![Instructions](readme.doc/instructionpage.png)
+-	Clicking on the Feedback navigation button will take you to the feedback page.
+
+![Feedback](readme.doc/feedbackpage.png)
+-	Pressing the “Play” button will take you the main game.
+
+![Main Game](readme.doc/gamepage.png)
+
+-	Clicking on the social media icons will transport the user to the Twitter, Facebook and Instagram pages.
+
+![Social Media](readme.doc/socialmedialinks.png)
 
 **Test Case Instructions Page**
 
--	On the Instruction the user will see 7 instruction points explaining how to play the game. ![Instructions](readme.doc/instructionpage.png)
--	Below the instructions the user will see a red play button the takes them to the main game. ![Game Page](readme.doc/gamepage.png)
--	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages. ![Home Page](readme.doc/homepage.png) ![Feedback](readme.doc/feedbackpage.png) ![Social Media](readme.doc/socialmedialinks.png)
+-	On the Instruction the user will see 7 instruction points explaining how to play the game.
+
+![Instructions](readme.doc/instructionpage.png)
+
+-	Below the instructions the user will see a red play button the takes them to the main game. 
+
+![Game Page](readme.doc/gamepage.png)
+
+-	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages. 
+
+![Home Page](readme.doc/homepage.png) ![Feedback](readme.doc/feedbackpage.png) ![Social Media](readme.doc/socialmedialinks.png)
 
 **Test Case Feedback Page**
 
 -	On the feedback page the user will see an opaque box with a titled question “How Are You Finding Slots?”
 -	Beneath the title the user will see the feedback form which they can complete.
--	Beneath the form the user will see a red “Send Request” button. Pressing the button does nothing at this stage but it will be included in the future features. ![Feedback](readme.doc/feedbackpage.png)
--	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages. ![Home Page](readme.doc/homepage.png) ![Instructions](readme.doc/instructionpage.png) ![Social Media](readme.doc/socialmedialinks.png)
+-	Beneath the form the user will see a red “Send Request” button. Pressing the button does nothing at this stage but it will be included in the future features.
+
+![Feedback](readme.doc/feedbackpage.png)
+
+-	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages.
+
+![Home Page](readme.doc/homepage.png) ![Instructions](readme.doc/instructionpage.png) ![Social Media](readme.doc/socialmedialinks.png)
 
 **Test Case Main Game**
 
-- The user will see and opaque black box with 2 boxes, a green “New Game” button, a score box and 3 light bulbs. ![Game Page](readme.doc/gamepage.png)
-- Clicking on the “New Game” button starts the game generating 2 random numbers in the boxes. ![Random Numbers](readme.doc/rannumber.png)
-- After 1.5 seconds the number disappear and a the user can now enter the numbers they just saw back in the boxes. ![Remove Numbers](readme.doc/remnumber.png)
-- Once the user enters a number into the first box, the cursor will move on to the next box. ![First Number](readme.doc/firstnumber.png)
-- The user enters the other number and the “Submit” button will appear for the user to press. If it is the correct number, the user is given a message. Correct answer says “Congratulations! That was the correct answer” and will add one point to the score. The “Submit” button is replaced by the continue button and the boxes are disabled. ![Second Number](readme.doc/secondnumber.png) ![Continue](readme.doc/continue.png)
-- Pressing the “continue” button begins a new turn generating 2 more random numbers. ![More Random Number](readme.doc/morerandom.png)
-- If the user gives a wrong answer the alert messages says “Unfortunately the correct answer was x and y.” One light bulb is then removed from the window. The boxes are again disabled and the “Continue” replaces the “Submit” button. ![Wrong Answer](readme.doc/newnumber.png)
-- Each time the user gives and incorrect answer a light bulb is removed from the window. When all the light bulbs are gone the user can the game is over. ![Life One](readme.doc/lifeone.png)
-- When the last answer is given the user is given the message “Game Over” “Play again?” ![life Two](readme.doc/lifetwo.png)
+- The user will see and opaque black box with 2 boxes, a green “New Game” button, a score box and 3 light bulbs.
+
+![Game Page](readme.doc/gamepage.png)
+
+- Clicking on the “New Game” button starts the game generating 2 random numbers in the boxes.
+
+![Random Numbers](readme.doc/rannumber.png)
+
+- After 1.5 seconds the number disappear and a the user can now enter the numbers they just saw back in the boxes.
+
+![Remove Numbers](readme.doc/remnumber.png)
+
+- Once the user enters a number into the first box, the cursor will move on to the next box.
+
+![First Number](readme.doc/firstnumber.png)
+
+- The user enters the other number and the “Submit” button will appear for the user to press. If it is the correct number, the user is given a message. Correct answer says “Congratulations! That was the correct answer” and will add one point to the score. The “Submit” button is replaced by the continue button and the boxes are disabled. 
+
+![Second Number](readme.doc/secondnumber.png) ![Continue](readme.doc/continue.png)
+
+- Pressing the “continue” button begins a new turn generating 2 more random numbers. 
+
+![More Random Number](readme.doc/morerandom.png)
+
+- If the user gives a wrong answer the alert messages says “Unfortunately the correct answer was x and y.” One light bulb is then removed from the window. The boxes are again disabled and the “Continue” replaces the “Submit” button. 
+
+![Wrong Answer](readme.doc/newnumber.png)
+
+- Each time the user gives and incorrect answer a light bulb is removed from the window. When all the light bulbs are gone the user can the game is over. 
+
+![Life One](readme.doc/lifeone.png)
+
+- When the last answer is given the user is given the message “Game Over” “Play again?” 
+
+![life Two](readme.doc/lifetwo.png)
+
 - If the user presses OK the window is refresh and the user can begin a new game.
-- If the player presses cancel the window closes. ![Game Over](readme.doc/gameover.png)
+- If the player presses cancel the window closes. 
+
+![Game Over](readme.doc/gameover.png)
 
 ## Features
 
