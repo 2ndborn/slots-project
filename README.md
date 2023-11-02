@@ -167,7 +167,9 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 ## Wireframes
 
-Click ![Wireframes](readme.doc/slots.wireframe.pdf) to view the wireframe images.
+![Wireframes](readme.doc/wf.Home.png)
+![Wireframes](readme.doc/wf.inst.png)
+![Wireframes](readme.doc/wf.feedback.png)
 
 ## Technology
 
