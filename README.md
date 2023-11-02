@@ -205,9 +205,11 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 			-	The “for” and “let” have been positioned correctly and do not affect the code after testing.
 			-	The unexpected “++” has been placed before oldScore so it adds 1 to the users score. Again after numerous testing the code works perfectly.
 
+			![JSLint](readme.doc/js.test1.png)
+
 		-	**Report: Functions**
 
-		
+			![JSLint](readme.doc/js.test2.png)
 		
 	-	**Performance**.
 		-	![index.html](readme.doc/index.html.lighthouse.html).
