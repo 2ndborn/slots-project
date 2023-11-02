@@ -68,7 +68,7 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 - Each time the user gives and incorrect answer a light bulb is removed from the window. When all the light bulbs are gone the user can the game is over. ![Life One](readme.doc/lifeone.png)
 - When the last answer is given the user is given the message “Game Over” “Play again?” ![life Two](readme.doc/lifetwo.png)
 - If the user presses OK the window is refresh and the user can begin a new game.
-- If the player presses cancel the window closes. 1[Game Over](readme.doc/gameover.png)
+- If the player presses cancel the window closes. ![Game Over](readme.doc/gameover.png)
 
 ## Features
 
