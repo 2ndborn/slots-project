@@ -242,21 +242,28 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 		-	360 x 740 ![360](readme.doc/360.png)
 
-		-	280 x 653 ![280](readme.doc/280)
+		-	280 x 653 ![280](readme.doc/280.png)
 
 	-	Game Page
 
-		-	1024 x 1366
-		-	912 x 1368
-		-	820 x 1180
-		-	768 x 1024
-		-	540 x 720
-		-	414 x 720
-		-	390 x 844
-		-	360 x 740
-		-	280 x 653
-		
-Click ![Device Test](readme.doc/device.testing.pdf) for device.testing.pdf
+		-	1024 x 1366 ![game1024](readme.doc/g.1024.png)
+
+		-	912 x 1368 ![game912](readme.doc/g.912.png)
+
+		-	820 x 1180 ![game820](readme.doc/g.820.png)
+
+		-	768 x 1024 ![game768](readme.doc/g.768.png)
+
+		-	540 x 720 ![game540](readme.doc/g.540.png)
+
+		-	414 x 720 ![game414](readme.doc/g.414.png)
+
+		-	390 x 844 ![game390](readme.doc/g.390.png)
+
+		-	360 x 740 ![game360](readme.doc/g.360.png)
+
+		-	280 x 653 ![game280](readme.doc/g.280.png)		
+
 - **Test Procedure**
 	- Click ![Test Procedure](readme.doc/test.procedure.pdf) to view the test procedure.
 -	**Fixed bugs** - Click![Bugs](readme.doc/bugs.fixed.pdf) to view bugs.pdf
