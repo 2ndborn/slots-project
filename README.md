@@ -223,8 +223,31 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 
 -	**Test Cases** - Used Google Chrome Developer Tools to test my website on the below platforms. 
+
+Main Pages
+
 	-	1024 x 1366
+	-	912 x 1368
+	-	820 x 1180
+	-	768 x 1024
+	-	540 x 720
+	-	414 x 720
 	-	390 x 844
+	-	360 x 740
+	-	280 x 653
+
+Game Page
+
+	-	1024 x 1366
+	-	912 x 1368
+	-	820 x 1180
+	-	768 x 1024
+	-	540 x 720
+	-	414 x 720
+	-	390 x 844
+	-	360 x 740
+	-	280 x 653
+
 Click ![Device Test](readme.doc/device.testing.pdf) for device.testing.pdf
 - **Test Procedure**
 	- Click ![Test Procedure](readme.doc/test.procedure.pdf) to view the test procedure.
