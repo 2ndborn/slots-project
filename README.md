@@ -63,12 +63,12 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 - After 1.5 seconds the number disappear and a the user can now enter the numbers they just saw back in the boxes. ![Remove Numbers](readme.doc/remnumber.png)
 - Once the user enters a number into the first box, the cursor will move on to the next box. ![First Number](readme.doc/firstnumber.png)
 - The user enters the other number and the “Submit” button will appear for the user to press. If it is the correct number, the user is given a message. Correct answer says “Congratulations! That was the correct answer” and will add one point to the score. The “Submit” button is replaced by the continue button and the boxes are disabled. ![Second Number](readme.doc/secondnumber.png) ![Continue](readme.doc/continue.png)
-- Pressing the “continue” button begins a new turn generating 2 more random numbers. 
-- If the user gives a wrong answer the alert messages says “Unfortunately the correct answer was x and y.” One light bulb is then removed from the window. The boxes are again disabled and the “Continue” replaces the “Submit” button.
-- Each time the user gives and incorrect answer a light bulb is removed from the window. When all the light bulbs are gone the user can the game is over.
-- When the last answer is given the user is given the message “Game Over” “Play again?”
+- Pressing the “continue” button begins a new turn generating 2 more random numbers. ![More Random Number](readme.doc/morerandom.png)
+- If the user gives a wrong answer the alert messages says “Unfortunately the correct answer was x and y.” One light bulb is then removed from the window. The boxes are again disabled and the “Continue” replaces the “Submit” button. ![Wrong Answer](readme.doc/newnumber.png)
+- Each time the user gives and incorrect answer a light bulb is removed from the window. When all the light bulbs are gone the user can the game is over. ![Life One](readme.doc/lifeone.png)
+- When the last answer is given the user is given the message “Game Over” “Play again?” ![life Two](readme.doc/lifetwo.png)
 - If the user presses OK the window is refresh and the user can begin a new game.
-- If the player presses cancel the window closes.
+- If the player presses cancel the window closes. 1[Game Over](readme.doc/gameover.png)
 
 ## Features
 
