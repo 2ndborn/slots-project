@@ -17,8 +17,6 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 ## User Stories
 
-Click ![User Stories](readme.doc/testcases.pdf) to view the test cases for the user stories.
-
 -	Appealing home page that has a background image of numbers in slots.
 -	Navigation bar that features a Home, Instructions, and Feedback.
 -	Users will see a "Play" button located in the centre of the page that will take them to the main game.
@@ -47,16 +45,16 @@ Click ![User Stories](readme.doc/testcases.pdf) to view the test cases for the u
 
 **Test Case Instructions Page**
 
--	On the Instruction the user will see 7 instruction points explaining how to play the game.
--	Below the instructions the user will see a red play button the takes them to the main game.
--	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages.
+-	On the Instruction the user will see 7 instruction points explaining how to play the game. ![Instructions](readme.doc/instructionpage.png)
+-	Below the instructions the user will see a red play button the takes them to the main game. ![Game Page](readme.doc/gamepage.png)
+-	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages. ![Home Page](readme.doc/homepage.png) ![Feedback](readme.doc/feedbackpage.png) ![Social Media](readme.doc/socialmedialinks.png)
 
 **Test Case Feedback Page**
 
 -	On the feedback page the user will see an opaque box with a titled question “How Are You Finding Slots?”
 -	Beneath the title the user will see the feedback form which they can complete.
--	Beneath the form the user will see a red “Send Request” button. Pressing the button does nothing at this stage but it will be included in the future features.
--	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages.
+-	Beneath the form the user will see a red “Send Request” button. Pressing the button does nothing at this stage but it will be included in the future features. ![Feedback](readme.doc/feedbackpage.png)
+-	Pressing the Logo, Home, Feedback and Social Media button transports the user to their respective pages. ![Home Page](readme.doc/homepage.png) ![Instructions](readme.doc/instructionpage.png) ![Social Media](readme.doc/socialmedialinks.png)
 
 **Test Case Main Game**
 
