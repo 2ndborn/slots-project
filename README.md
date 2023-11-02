@@ -200,7 +200,14 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 		-	![game.css](readme.doc/game.html.validator.png).
 
 	- **JavaScript**
-		- ![game.js](readme.doc/jslint.pdf).
+		
+		-	**4 Warnings**
+			-	The “for” and “let” have been positioned correctly and do not affect the code after testing.
+			-	The unexpected “++” has been placed before oldScore so it adds 1 to the users score. Again after numerous testing the code works perfectly.
+
+		-	**Report: Functions**
+
+		
 		
 	-	**Performance**.
 		-	![index.html](readme.doc/index.html.lighthouse.html).
