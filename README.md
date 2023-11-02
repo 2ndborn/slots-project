@@ -58,12 +58,12 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 **Test Case Main Game**
 
-- The user will see and opaque black box with 2 boxes, a green “New Game” button, a score box and 3 light bulbs.
-- Clicking on the “New Game” button starts the game generating 2 random numbers in the boxes.
-- After 1.5 seconds the number disappear and a the user can now enter the numbers they just saw back in the boxes.
-- Once the user enters a number into the first box, the cursor will move on to the next box.
-- The user enters the other number and the “Submit” button will appear for the user to press. If it is the correct number, the user is given a message. Correct answer says “Congratulations! That was the correct answer” and will add one point to the score. The “Submit” button is replaced by the continue button and the boxes are disabled.
-- Pressing the “continue” button begins a new turn generating 2 more random numbers.
+- The user will see and opaque black box with 2 boxes, a green “New Game” button, a score box and 3 light bulbs. ![Game Page](readme.doc/gamepage.png)
+- Clicking on the “New Game” button starts the game generating 2 random numbers in the boxes. ![Random Numbers](readme.doc/rannumber.png)
+- After 1.5 seconds the number disappear and a the user can now enter the numbers they just saw back in the boxes. ![Remove Numbers](readme.doc/remnumber.png)
+- Once the user enters a number into the first box, the cursor will move on to the next box. ![First Number](readme.doc/firstnumber.png)
+- The user enters the other number and the “Submit” button will appear for the user to press. If it is the correct number, the user is given a message. Correct answer says “Congratulations! That was the correct answer” and will add one point to the score. The “Submit” button is replaced by the continue button and the boxes are disabled. ![Second Number](readme.doc/secondnumber.png) ![Continue](readme.doc/continue.png)
+- Pressing the “continue” button begins a new turn generating 2 more random numbers. 
 - If the user gives a wrong answer the alert messages says “Unfortunately the correct answer was x and y.” One light bulb is then removed from the window. The boxes are again disabled and the “Continue” replaces the “Submit” button.
 - Each time the user gives and incorrect answer a light bulb is removed from the window. When all the light bulbs are gone the user can the game is over.
 - When the last answer is given the user is given the message “Game Over” “Play again?”
