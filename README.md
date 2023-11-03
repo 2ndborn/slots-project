@@ -269,6 +269,21 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 	-	**Browser Tests**
 
 		-	Chrome
+			-	Home ![Chrome Home](readme.doc/chrome.home.png)
+			
+			-	Instruction ![Chrome Instructions](readme.doc/chrome.instruct.png)
+
+			-	Feedback ![Chrome Feedback](readme.doc/chrome.feed.png)
+
+			-	New Game ![Chrome New Game](readme.doc/chrome.new.png)
+
+			-	Random Numbers ![Chrome Random Number](readme.doc/chrome.random.png)
+
+			-	Remove Numbers ![Chrome Remove Numbers](readme.doc/chrome.remove.png)
+
+			-	Submit Answers ![Chrome Submit](readme.doc/chrome.submit.png)
+
+			-	Continue Game ![Chrome Continue](readme.doc/chrome.cont.png)
 
 		-	Edge
 
