@@ -269,27 +269,140 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 	-	**Browser Tests**
 
 		-	Chrome
-			-	Home ![Chrome Home](readme.doc/chrome.home.png)
+
+			-	Home 
 			
-			-	Instruction ![Chrome Instructions](readme.doc/chrome.instruct.png)
+			![Chrome Home](readme.doc/chrome.home.png)
+			
+			-	Instruction 
+			
+			![Chrome Instructions](readme.doc/chrome.instruct.png)
 
-			-	Feedback ![Chrome Feedback](readme.doc/chrome.feed.png)
+			-	Feedback 
+			
+			![Chrome Feedback](readme.doc/chrome.feed.png)
 
-			-	New Game ![Chrome New Game](readme.doc/chrome.new.png)
+			-	New Game 
+			
+			![Chrome New Game](readme.doc/chrome.new.png)
 
-			-	Random Numbers ![Chrome Random Number](readme.doc/chrome.random.png)
+			-	Random Numbers 
+			
+			![Chrome Random Number](readme.doc/chrome.random.png)
 
-			-	Remove Numbers ![Chrome Remove Numbers](readme.doc/chrome.remove.png)
+			-	Remove Numbers 
+			
+			![Chrome Remove Numbers](readme.doc/chrome.remove.png)
 
-			-	Submit Answers ![Chrome Submit](readme.doc/chrome.submit.png)
+			-	Submit Answers 
+			
+			![Chrome Submit](readme.doc/chrome.submit.png)
 
-			-	Continue Game ![Chrome Continue](readme.doc/chrome.cont.png)
+			-	Continue Game 
+			
+			![Chrome Continue](readme.doc/chrome.cont.png)
 
 		-	Edge
 
+			-	Home 
+				
+				![Edge Home](readme.doc/edge.home.png)
+				
+				-	Instruction 
+				
+				![Edge Instructions](readme.doc/edge.instruct.png)
+
+				-	Feedback 
+				
+				![Edge Feedback](readme.doc/edge.feed.png)
+
+				-	New Game 
+				
+				![Edge New Game](readme.doc/edge.new.png)
+
+				-	Random Numbers 
+				
+				![Edge Random Number](readme.doc/edge.random.png)
+
+				-	Remove Numbers 
+				
+				![Edge Remove Numbers](readme.doc/edge.remove.png)
+
+				-	Submit Answers 
+				
+				![Edge Submit](readme.doc/edge.submit.png)
+
+				-	Continue Game 
+				
+				![Edge Continue](readme.doc/edge.cont.png)
+
 		-	Firefox
 
+			-	Home 
+				
+			![Firefox Home](readme.doc/fire.home.png)
+			
+			-	Instruction 
+			
+			![Firefox Instructions](readme.doc/fire.instuct.png)
+
+			-	Feedback 
+			
+			![Firefox Feedback](readme.doc/fire.feed.png)
+
+			-	New Game 
+			
+			![Firefox New Game](readme.doc/fire.new.png)
+
+			-	Random Numbers 
+			
+			![Firefox Random Number](readme.doc/fire.random.png)
+
+			-	Remove Numbers 
+			
+			![Firefox Remove Numbers](readme.doc/fire.remove.png)
+
+			-	Submit Answers 
+			
+			![Firefox Submit](readme.doc/fire.submit.png)
+
+			-	Continue Game 
+			
+			![Firefox Continue](readme.doc/fire.cont.png)
+
 		-	Opera
+
+			-	Home 
+				
+			![Opera Home](readme.doc/op.home.png)
+			
+			-	Instruction 
+			
+			![Opera Instructions](readme.doc/op.instruct.png)
+
+			-	Feedback 
+			
+			![Opera Feedback](readme.doc/op.feed.png)
+
+			-	New Game 
+			
+			![Opera New Game](readme.doc/op.new.png)
+
+			-	Random Numbers 
+			
+			![Opera Random Number](readme.doc/op.random.png)
+
+			-	Remove Numbers 
+			
+			![Opera Remove Numbers](readme.doc/op.remove.png)
+
+			-	Submit Answers 
+			
+			![Opera Submit](readme.doc/op.submit.png)
+
+			-	Continue Game 
+			
+			![Opera Continue](readme.doc/op.cont.png)
 
 - **Test Procedure**
 	- Click ![Test Procedure](readme.doc/test.procedure.pdf) to view the test procedure.
