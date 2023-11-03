@@ -187,6 +187,16 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 ## Testing
 
+Automated testing and manual testing are two different approaches to software testing. Manual testing is where a human tester manually executes test cases without the use of any automation tools. Automated testing is where software tools or coding frameworks are employed to automatically run tests that validate code.
+
+During this project manual tests were developed to test the user’s experience. Documented evidence can be found int the Testing Procedure, User Test Case, Tablet and Mobile Device Testing and the fixing of Bugs.
+
+External websites were used to perform automated test for HTML, CSS, JavaScript and performance. Websites used were:
+
+-	[W3C](https://validator.w3.org/) to validate the HTML and CSS code
+-	[jslint](https://www.jslint.com/) to validate JavaScript to validate the JavaScript code.
+-	Google Lighthouse to test performance.
+
 - ### Code Validation
 
 	- **HTML**
