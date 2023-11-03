@@ -482,7 +482,20 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 		-	If cancel is pressed the user is transported to the home page.
 
--	**Fixed bugs** - Click![Bugs](readme.doc/bugs.fixed.pdf) to view bugs.pdf
+-	**Fixed bugs**
+
+	-	Bug 1
+
+		1. After pressing the submit button the answer boxes were still available to enter numbers. It didn’t affect the outcome, however, if you enter a number it will show up in the next round after the random numbers appeared and disappeared instead of being empty.
+		2. I needed to disable the boxes until the next round, but I wasn’t sure how to do it. I spoke to my mentor Rohit Sharma who reminded me of the disabled method and sent me a link to [https://www.w3schools.com/jsreF/prop_text_disabled.asp](https://www.w3schools.com/jsreF/prop_text_disabled.asp). I used this information to develop a method that the submitAnswer Function would call when the user presses “Submit”. This worked and now the user doesn’t have access to the answer boxes.
+
+	-	Bug 2
+
+		1.	When I got an answer right I would first get the message "Congratulations" You got the answer correctly!!!
+		2.	Immediately after I would get the message for the wrong answer "Unfortunately that was the wrong answer".
+		3.	I checked my if statement in the checkAnswer() function and found that there was  a semi-colon within the else statement.
+		4.	I removed the semi-colon and the code began to function properly.
+
 
 ## Deployment
 
