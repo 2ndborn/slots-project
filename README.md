@@ -515,19 +515,50 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 ## Deployment
 
-- GitHub: Click![Deployment](readme.doc/github.deploy.pdf) to view screenshots.
+- GitHub:
+
 	1.	Go to [GitHub-Slots Project](https://github.com/2ndborn/slots-project)
+
+		![deploy](readme.doc/git1.png)
+
 	2.	Click on **settings**.
+
+		![deploy](readme.doc/git2.png)
+
 	3.	Scroll down and click on **pages** on the left-hand side.
+
+		![deploy](readme.doc/git3.png)
+
 	4.	Scroll down to **Build and deployment**.
+
+		![deploy](readme.doc/git4.png)
+
 	5.	Where it says **“none”** change to **“main”**.
+
+		![deploy](readme.doc/git5.png)
+
 	6.	Press **“Save”** to deploy to GitHub.
 
-- Click ![Codeanywhere](readme.doc/codeanywhere.pdf) to view screenshots
+- Codeanywhere
+
 	1.	Go to [Codeanywhere](https://app.codeanywhere.com/)
+
+		![Codeanywhere](readme.doc/code1.png)
+
 	2.	Workspaces section click on **“2ndborn-slots-project-d85y6w40kn”**.
+
+		![Codeanywhere](readme.doc/code2.png)
+
 	3.	Once the page is loaded open a new terminal and type **“python3 -m http.server”**. Then press **Enter**.
+
+		![Codeanywhere](readme.doc/code3.png)
+
 	4.	Options to open the preview page or the browser will be shown. Click on the **browser**.
+
+		![Codeanywhere](readme.doc/code4.png)
+
 	5.	The browser will open and reveal the web page.
+
+		![Codeanywhere](readme.doc/code5.png)
 
 
