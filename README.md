@@ -270,137 +270,137 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 		-	Chrome
 
-			-	Home 
+			Home 
 			
 			![Chrome Home](readme.doc/chrome.home.png)
 			
-			-	Instruction 
+			Instruction 
 			
 			![Chrome Instructions](readme.doc/chrome.instruct.png)
 
-			-	Feedback 
+			Feedback 
 			
 			![Chrome Feedback](readme.doc/chrome.feed.png)
 
-			-	New Game 
+			New Game 
 			
 			![Chrome New Game](readme.doc/chrome.new.png)
 
-			-	Random Numbers 
+			Random Numbers 
 			
 			![Chrome Random Number](readme.doc/chrome.random.png)
 
-			-	Remove Numbers 
+			Remove Numbers 
 			
 			![Chrome Remove Numbers](readme.doc/chrome.remove.png)
 
-			-	Submit Answers 
+			Submit Answers 
 			
 			![Chrome Submit](readme.doc/chrome.submit.png)
 
-			-	Continue Game 
+			Continue Game 
 			
 			![Chrome Continue](readme.doc/chrome.cont.png)
 
 		-	Edge
 
-			-	Home 
-				
-				![Edge Home](readme.doc/edge.home.png)
-				
-				-	Instruction 
-				
-				![Edge Instructions](readme.doc/edge.instruct.png)
+			Home 
+			
+			![Edge Home](readme.doc/edge.home.png)
+			
+			Instruction 
+			
+			![Edge Instructions](readme.doc/edge.instruct.png)
 
-				-	Feedback 
-				
-				![Edge Feedback](readme.doc/edge.feed.png)
+			Feedback 
+			
+			![Edge Feedback](readme.doc/edge.feed.png)
 
-				-	New Game 
-				
-				![Edge New Game](readme.doc/edge.new.png)
+			New Game 
+			
+			![Edge New Game](readme.doc/edge.new.png)
 
-				-	Random Numbers 
-				
-				![Edge Random Number](readme.doc/edge.random.png)
+			Random Numbers 
+			
+			![Edge Random Number](readme.doc/edge.random.png)
 
-				-	Remove Numbers 
-				
-				![Edge Remove Numbers](readme.doc/edge.remove.png)
+			Remove Numbers 
+			
+			![Edge Remove Numbers](readme.doc/edge.remove.png)
 
-				-	Submit Answers 
-				
-				![Edge Submit](readme.doc/edge.submit.png)
+			Submit Answers 
+			
+			![Edge Submit](readme.doc/edge.submit.png)
 
-				-	Continue Game 
-				
-				![Edge Continue](readme.doc/edge.cont.png)
+			Continue Game 
+			
+			![Edge Continue](readme.doc/edge.cont.png)
 
 		-	Firefox
 
-			-	Home 
+			Home 
 				
 			![Firefox Home](readme.doc/fire.home.png)
 			
-			-	Instruction 
+			Instruction 
 			
 			![Firefox Instructions](readme.doc/fire.instuct.png)
 
-			-	Feedback 
+			Feedback 
 			
 			![Firefox Feedback](readme.doc/fire.feed.png)
 
-			-	New Game 
+			New Game 
 			
 			![Firefox New Game](readme.doc/fire.new.png)
 
-			-	Random Numbers 
+			Random Numbers 
 			
 			![Firefox Random Number](readme.doc/fire.random.png)
 
-			-	Remove Numbers 
+			Remove Numbers 
 			
 			![Firefox Remove Numbers](readme.doc/fire.remove.png)
 
-			-	Submit Answers 
+			Submit Answers 
 			
 			![Firefox Submit](readme.doc/fire.submit.png)
 
-			-	Continue Game 
+			Continue Game 
 			
 			![Firefox Continue](readme.doc/fire.cont.png)
 
 		-	Opera
 
-			-	Home 
+			Home 
 				
 			![Opera Home](readme.doc/op.home.png)
 			
-			-	Instruction 
+			Instruction 
 			
 			![Opera Instructions](readme.doc/op.instruct.png)
 
-			-	Feedback 
+			Feedback 
 			
 			![Opera Feedback](readme.doc/op.feed.png)
 
-			-	New Game 
+			New Game 
 			
 			![Opera New Game](readme.doc/op.new.png)
 
-			-	Random Numbers 
+			Random Numbers 
 			
 			![Opera Random Number](readme.doc/op.random.png)
 
-			-	Remove Numbers 
+			Remove Numbers 
 			
 			![Opera Remove Numbers](readme.doc/op.remove.png)
 
-			-	Submit Answers 
+			Submit Answers 
 			
 			![Opera Submit](readme.doc/op.submit.png)
 
-			-	Continue Game 
+			Continue Game 
 			
 			![Opera Continue](readme.doc/op.cont.png)
 
@@ -433,67 +433,83 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 
 	-	Does the “New Game” button generate 2 random number?
 
-		-	I clicked “New Game” and 2 random numbers appeared.
+		-	*I clicked “New Game” and 2 random numbers appeared.*
 	
 	-	Do the numbers disappear after 1.5 seconds?
 
-		-	The numbers disappear after 1.5 seconds.
+		-	*The numbers disappear after 1.5 seconds.*
 
 	-	When a number between 1 – 9 is inserted into the first box does the cursor move to the second box?
 
-		-	When a number between 1 – 9 is inserted into the first box the cursor moves to the second box.
+		-	*When a number between 1 – 9 is inserted into the first box the cursor moves to the second box.*
 
 	-	When a number between 1 – 9 is inserted into the second box does the “Submit” button appear?
 
-		-	When a number between 1 – 9 is inserted into the second box the “Submit” button appears.
+		-	*When a number between 1 – 9 is inserted into the second box the “Submit” button appears.*
 
 	-	When the “Submit” button is pressed is an alert notification tell the user whether they have given the correct answer?
 
-		-	When the “Submit” button is pressed a different alert is displayed depending on the answer given.
+		-	*When the “Submit” button is pressed a different alert is displayed depending on the answer given.*
 
-		-	Correct answer – “Congratulations that was the correct answer!”
+		-	*Correct answer – “Congratulations that was the correct answer!”*
 
-	-	Incorrect answer – “Unfortunately, the correct answer was “x” and “y”.
+		-	*Incorrect answer – “Unfortunately, the correct answer was “x” and “y”.*
 
 	-	After the alert has been actioned are boxes 1 and 2 disabled and the “Continue” button displayed?
 
-		-	After the alert has been actioned boxes 1 and 2 disabled and the “Continue” button appears.
+		-	*After the alert has been actioned boxes 1 and 2 disabled and the “Continue” button appears.*
 
 	-	Does the “Continue” button generate 2 new random number?
 
-		-	The “Continue” button generates 2 new random numbers.
+		-	*The “Continue” button generates 2 new random numbers.*
 
 	-	When the user gives a correct answer does it increment the score by 1?
 
-		-	The score is incremented by 1 when the user gives the correct answer.
+		-	*The score is incremented by 1 when the user gives the correct answer.*
 
 	-	When the user gives an incorrect answer does a light bulb disappear?
 
-		-	A light bulb is removed when the user gives an incorrect answer.
+		-	*A light bulb is removed when the user gives an incorrect answer.*
 
 	-	When the user gives 3 incorrect answers the user receive "Game Over" alert?
 
-		-	The "Game Over" alert is displayed when the user gives 3 incorrect answers.
+		-	*The "Game Over" alert is displayed when the user gives 3 incorrect answers.*
 
 	-	Can the user continue to play the game after the "Game Over" alert has been actioned?
-		-	The user is given the option to "Play again" when the game is over.
 
-		-	If the user presses ok the  page is refreshed so a new game can begin.
+		-	*The user is given the option to "Play again" when the game is over.*
 
-		-	If cancel is pressed the user is transported to the home page.
+		-	*If the user presses ok the  page is refreshed so a new game can begin.*
+
+		-	*If cancel is pressed the user is transported to the home page.*
 
 -	**Fixed bugs**
 
 	-	Bug 1
 
 		1. After pressing the submit button the answer boxes were still available to enter numbers. It didn’t affect the outcome, however, if you enter a number it will show up in the next round after the random numbers appeared and disappeared instead of being empty.
+
+		![Bug 1](readme.doc/bug.pic.1.png)
+
 		2. I needed to disable the boxes until the next round, but I wasn’t sure how to do it. I spoke to my mentor Rohit Sharma who reminded me of the disabled method and sent me a link to [https://www.w3schools.com/jsreF/prop_text_disabled.asp](https://www.w3schools.com/jsreF/prop_text_disabled.asp). I used this information to develop a method that the submitAnswer Function would call when the user presses “Submit”. This worked and now the user doesn’t have access to the answer boxes.
+
+		![Bug 1](readme.doc/bug.pic.2.png)
+		![Bug 1](readme.doc/bug.pic.3.png)
 
 	-	Bug 2
 
 		1.	When I got an answer right I would first get the message "Congratulations" You got the answer correctly!!!
+
+		![Bug 2](readme.doc/bug.pic.4.png)
+
 		2.	Immediately after I would get the message for the wrong answer "Unfortunately that was the wrong answer".
+
+		![Bug 2](readme.doc/bug.pic.5.png)
+
 		3.	I checked my if statement in the checkAnswer() function and found that there was  a semi-colon within the else statement.
+
+		![Bug 2](readme.doc/bug.pic.6.png)
+
 		4.	I removed the semi-colon and the code began to function properly.
 
 
