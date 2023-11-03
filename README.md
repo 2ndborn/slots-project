@@ -405,7 +405,83 @@ Slots is a memory game that encourages the user to remember a temporarily shown 
 			![Opera Continue](readme.doc/op.cont.png)
 
 - **Test Procedure**
-	- Click ![Test Procedure](readme.doc/test.procedure.pdf) to view the test procedure.
+
+	**Home, Instructions and Feedback pages.**
+	
+	-	Does the Logo refresh the page/take the use back the home page?
+
+		-	*I clicked the “logo” and it refreshed the page.*
+		-	*I clicked "Logo” on the Instructions and Contact page and it took me 	back to the Home page.*
+
+	-	Does “Home” on the navigation bar refresh the page/ take me back to the Home page?
+
+		-	*I clicked “Home” and it refreshed the page.*
+
+		-	*I clicked "Home” on the Gallery and Contact page and it took me back to the Home page.*
+
+	-	Does “Instructions” and “Feedback” on the navigation bar transfer the user to the correct page?
+
+		-	*I clicked on “Instructions” on the Home and Feedback pages, and I was taken to the Instruction page.*
+
+		-	*I clicked on “Feedback” on the Home and Instructions pages, and I was taken to the Feedback page.
+
+	-	Does the “Play” button on the Home and Instructions screen open the main game?
+
+		-	*I clicked on the “Play” button and the main game was opened.*
+
+	**Main Game**
+
+	-	Does the “New Game” button generate 2 random number?
+
+		-	I clicked “New Game” and 2 random numbers appeared.
+	
+	-	Do the numbers disappear after 1.5 seconds?
+
+		-	The numbers disappear after 1.5 seconds.
+
+	-	When a number between 1 – 9 is inserted into the first box does the cursor move to the second box?
+
+		-	When a number between 1 – 9 is inserted into the first box the cursor moves to the second box.
+
+	-	When a number between 1 – 9 is inserted into the second box does the “Submit” button appear?
+
+		-	When a number between 1 – 9 is inserted into the second box the “Submit” button appears.
+
+	-	When the “Submit” button is pressed is an alert notification tell the user whether they have given the correct answer?
+
+		-	When the “Submit” button is pressed a different alert is displayed depending on the answer given.
+
+		-	Correct answer – “Congratulations that was the correct answer!”
+
+	-	Incorrect answer – “Unfortunately, the correct answer was “x” and “y”.
+
+	-	After the alert has been actioned are boxes 1 and 2 disabled and the “Continue” button displayed?
+
+		-	After the alert has been actioned boxes 1 and 2 disabled and the “Continue” button appears.
+
+	-	Does the “Continue” button generate 2 new random number?
+
+		-	The “Continue” button generates 2 new random numbers.
+
+	-	When the user gives a correct answer does it increment the score by 1?
+
+		-	The score is incremented by 1 when the user gives the correct answer.
+
+	-	When the user gives an incorrect answer does a light bulb disappear?
+
+		-	A light bulb is removed when the user gives an incorrect answer.
+
+	-	When the user gives 3 incorrect answers the user receive "Game Over" alert?
+
+		-	The "Game Over" alert is displayed when the user gives 3 incorrect answers.
+
+	-	Can the user continue to play the game after the "Game Over" alert has been actioned?
+		-	The user is given the option to "Play again" when the game is over.
+
+		-	If the user presses ok the  page is refreshed so a new game can begin.
+
+		-	If cancel is pressed the user is transported to the home page.
+
 -	**Fixed bugs** - Click![Bugs](readme.doc/bugs.fixed.pdf) to view bugs.pdf
 
 ## Deployment
