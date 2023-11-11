@@ -568,6 +568,13 @@ section {
     }
 }
 
+@media (max-width: 414px) {
+
+    .home-screen {
+        height: 52%;
+    }
+}
+
 @media (max-width: 390px) {
     .home-screen {
         height: 47%;
