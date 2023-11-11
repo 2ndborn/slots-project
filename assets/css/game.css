@@ -295,6 +295,26 @@ body {
     }
 }
 
+@media (max-width: 430px){
+    body {
+        padding-left: 0%;
+        padding-top: 20%;
+        background-position-x: -896px;
+        background-position-y: -227px;
+    }
+
+    .slot-container {
+        height: 78vh;
+        width: 97%;
+    }
+
+    .slot {
+        width: 150px;
+        height: 258px;
+        font-size: 170px;
+    }
+}
+
 @media (max-width: 414px) {
     .con a i {
         margin: 0px 15px;
