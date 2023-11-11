@@ -346,6 +346,13 @@ body {
     }
 }
 
+@media (max-width: 412px) {
+    body {
+        background-position-x: -906px;
+        background-position-y: -234px;
+    }
+}
+
 @media (max-width: 390px) {
     body {
         padding-left: 2%;
