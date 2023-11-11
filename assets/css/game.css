@@ -369,6 +369,34 @@ body {
     }
 }
 
+@media (max-width: 375px) {
+    body {
+        background-position-x: -955px;
+        background-position-y: -263px;
+    }
+
+    .slot-container {
+        margin-left: 3%;
+        width: 95%;
+        height: 89vh;
+        margin-top: 10%;
+    }
+
+    .slot {
+        width: 133px;
+        height: 214px;
+        font-size: 135px;
+    }
+
+    .slot-container2 {
+        height: 254px;
+    }
+
+    .submit-container {
+        height: 127px;
+    }
+}
+
 @media (max-width: 360px) {
     .slot-container {
         background-color: rgba(9, 9, 9, 0.8);
