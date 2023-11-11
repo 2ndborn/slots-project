@@ -232,12 +232,20 @@ body {
     .slot-container {
         padding-top: 93px;
         height: 78%;
-        margin-top: 15%;
+        margin-top: 24%;
         margin-left: 8%;
     }
 
     .slot {
         font-size: 280px;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .slot-container {
+        height: 78%;
+        margin-top: 7%;
     }
 }
 
