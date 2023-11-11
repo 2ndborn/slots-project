@@ -500,6 +500,11 @@ section {
 }
 
 @media (max-width: 430px){
+
+    .home-screen {
+        height: 53%;
+    }
+
     footer div p {
         display: none;
     }
