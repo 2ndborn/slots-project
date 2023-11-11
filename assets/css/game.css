@@ -162,6 +162,10 @@ body {
 /**************************Media****************************/
 
 @media (max-width: 1024px) {
+    body {
+        padding-top: 129px;
+    }
+    
     .con a i {
         font-size: 64px;
         margin: 0 87px;
