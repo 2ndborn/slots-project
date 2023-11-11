@@ -434,9 +434,16 @@ body {
 }
 
 @media (max-width: 280px) {
-.slot-container {
-    height: 42%;
-}
+    body {
+        background-position-x: -1003px;
+        background-position-y: -381px;
+    }
+
+    .slot-container {
+        margin-left: 5%;
+        margin-top: 13%;
+        height: 42%;
+    }
 
     .slot-container2 {
         height: 189px;
