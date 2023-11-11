@@ -499,6 +499,25 @@ section {
     }
 }
 
+@media (max-width: 430px){
+    footer div p {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer div {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .social-media a {
+        font-size: 40px;
+    }
+}
+
 @media (max-width: 414px) {
     .home-screen {
         height: 51%;
