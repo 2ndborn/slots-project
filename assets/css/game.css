@@ -368,7 +368,7 @@ body {
         margin-top: 19%;
     }
 }
-
+/*
 @media (max-width: 375px) {
     body {
         background-position-x: -955px;
@@ -395,7 +395,7 @@ body {
     .submit-container {
         height: 127px;
     }
-}
+}*/
 
 @media (max-width: 360px) {
     .slot-container {
