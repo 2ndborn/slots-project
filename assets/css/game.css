@@ -398,6 +398,11 @@ body {
 }*/
 
 @media (max-width: 360px) {
+    body{
+        background-position-x: -987px;
+        background-position-y: -347px;
+    }
+
     .slot-container {
         background-color: rgba(9, 9, 9, 0.8);
         margin-left: 3%;
