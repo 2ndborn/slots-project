@@ -265,10 +265,7 @@ body {
 }
 
 @media (max-width: 540px) {
-    body {
-        padding-left: 6%;
-    }
-
+    
     .slot {
         width: 190px;
         height: 300px;
@@ -276,9 +273,9 @@ body {
     }
 
     .slot-container {
-        margin-left: 2%;
+        margin-left: 5%;
         padding-top: 10px;
-        height: 51%;
+        height: 49%;
         width: 90%;
     }
 
