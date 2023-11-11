@@ -320,10 +320,15 @@ body {
         margin: 0px 15px;
     }
 
+    body {
+        background-position-x: -980px;
+        background-position-y: -270px;
+    }
+
     .slot-container {
-        margin-left: 0;
-        margin-top: 34%;
-        width: 95%;
+        margin-left: 1%;
+        margin-top: 22%;
+        width: 98%;
     }
 
     .slot {
