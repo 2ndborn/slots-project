@@ -627,7 +627,7 @@ section {
 
 @media (max-width: 280px) {
     .home-screen {
-        height: 35%;
+        height: 37.1%;
     }
 
     .inst-bg h2 {
@@ -656,5 +656,6 @@ section {
 
     .social-media a {
         font-size: 30px;
+        margin: 0 8px;
     }
 }
