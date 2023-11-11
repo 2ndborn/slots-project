@@ -407,7 +407,11 @@ body {
         background-color: rgba(9, 9, 9, 0.8);
         margin-left: 3%;
         width: 93%;
-        margin-top: 2%;
+        margin-top: 18%;
+    }
+
+    .slot-container2 {
+        height: 245px;
     }
 
     .slot {
