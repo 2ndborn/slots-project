@@ -355,14 +355,17 @@ body {
 
 @media (max-width: 390px) {
     body {
-        padding-left: 2%;
-
+        padding-left: 0;
+        padding-top: 0;
+        background-position-x: -978px;
+        background-position-y: -263px;
     }
 
     .slot-container {
-        margin-left: 2%;
-        width: 95%;
-        margin-top: 14%;
+        margin-left: 1%;
+        width: 98%;
+        height: 82vh;
+        margin-top: 19%;
     }
 }
 
