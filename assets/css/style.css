@@ -514,6 +514,10 @@ section {
         margin-top: 24px;
         height: 20%;
     }
+
+    .footer {
+        background-color: rgb(0, 0, 0, 0.7); 
+    }
 }
 
 @media (max-width: 430px){
