@@ -557,7 +557,7 @@ section {
     header {
         background-color: rgb(9, 9, 9, 0.7);
     }
-    
+
     .home-screen {
         height: 49%;
     }
@@ -610,7 +610,7 @@ section {
 @media (max-width: 412px) {
 
     .home-screen {
-        height: 52%;
+        height: 51%;
     }
 }
 
