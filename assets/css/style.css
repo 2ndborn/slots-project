@@ -78,7 +78,6 @@ nav {
 }
 
 #menu2 {
-    margin-top: 50px;
     text-align: center;
 }
 
@@ -438,7 +437,7 @@ section {
 @media (max-width: 540px) {
     header {
         display: block;
-        background-color: rgb(9, 9, 9, 0.5);
+        background-color: rgb(9, 9, 9, 0.4);
     }
 
     #bg-image {
