@@ -595,6 +595,11 @@ section {
     .feedback-bg {
         margin-left: 9%;
     }
+
+    #bg-image {
+        background-position-x: -904px;
+        background-position-y: -244px;
+    }
 }
 
 @media (max-width: 414px) {
