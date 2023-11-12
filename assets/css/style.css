@@ -433,6 +433,10 @@ section {
 }
 
 @media (max-width: 540px) {
+    header {
+        display: block;
+    }
+
     .topnav {
         display: contents;
     }
