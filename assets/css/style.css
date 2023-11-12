@@ -683,8 +683,12 @@ section {
         padding-left: 0;
     }
 
+    #logo a img {
+        width: 52%;
+    }
+
     .home-screen {
-        height: 36%;
+        height: 34%;
     }
 
     .topnav a.icon {
