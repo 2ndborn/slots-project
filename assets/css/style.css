@@ -649,7 +649,7 @@ section {
 
 @media (max-width: 360px) {
     .home-screen {
-        height: 40%;
+        height: 39%;
     }
 
     .i-container {
@@ -666,6 +666,15 @@ section {
 
     .buttons a {
         font-size: 25px;
+    }
+
+    .topnav a.icon {
+        top: 29px;
+    }
+
+    #bg-image {
+        background-position-x: -933px;
+        background-position-y: -298px;
     }
 }
 
