@@ -602,7 +602,7 @@ section {
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 412px) {
 
     .home-screen {
         height: 52%;
