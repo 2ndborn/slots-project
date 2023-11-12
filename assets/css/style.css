@@ -751,7 +751,7 @@ section {
     }
 
     .f-container {
-        height: 33.2%;
+        height: 34.2%;
     }
 
     .buttons a {
@@ -760,6 +760,7 @@ section {
 
     .feedback-bg {
         height: 96%;
+        margin-top: 21px;
     }
 
     .feedback-form div {
