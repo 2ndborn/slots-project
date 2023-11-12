@@ -520,7 +520,7 @@ section {
     }
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
     header {
         background-color: rgb(9, 9, 9, 0.6);
     }
