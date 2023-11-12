@@ -638,6 +638,10 @@ section {
     .home-screen {
         height: 51%;
     }
+
+    .f-container {
+        height: 49%;
+    }
 }
 
 @media (max-width: 390px) {
