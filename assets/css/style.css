@@ -440,6 +440,7 @@ section {
 
     .active-page {
         font-weight: 900;
+        border-bottom: none;
     }
 
     .topnav {
