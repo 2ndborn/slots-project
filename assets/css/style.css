@@ -87,6 +87,7 @@ nav {
 }
 
 .topnav a {
+    text-align: right;
     color: #fff;
     text-decoration: none;
     display: block;
@@ -435,6 +436,10 @@ section {
 @media (max-width: 540px) {
     header {
         display: block;
+    }
+
+    .active-page {
+        font-weight: 900;
     }
 
     .topnav {
