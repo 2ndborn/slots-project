@@ -679,8 +679,17 @@ section {
 }
 
 @media (max-width: 280px) {
+    header {
+        padding-left: 0;
+    }
+
     .home-screen {
-        height: 37.1%;
+        height: 36%;
+    }
+
+    .topnav a.icon {
+        top: 32px;
+        font-size: 18px;
     }
 
     .inst-bg h2 {
@@ -710,5 +719,10 @@ section {
     .social-media a {
         font-size: 30px;
         margin: 0 8px;
+    }
+
+    #bg-image {
+        background-position-x: -976px;
+        background-position-y: -341px;
     }
 }
