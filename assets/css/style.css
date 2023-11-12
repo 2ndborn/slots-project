@@ -101,8 +101,10 @@ nav {
     position: absolute;
     padding: 10px 20px;
     font-size: 30px;
-    right: 1px;
-    top: 1px;
+    right: 11px;
+    top: 37px;
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 .topnav a:hover {
@@ -456,7 +458,7 @@ section {
     }
 
     .home-screen {
-        height: 38%;
+        height: 37%;
     }
 
     .buttons {
