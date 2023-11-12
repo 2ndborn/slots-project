@@ -694,6 +694,10 @@ section {
         height: 38%;
     }
 
+    .feedback-bg {
+        height: 90%;
+    }
+
     .buttons a {
         font-size: 25px;
     }
