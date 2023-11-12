@@ -616,7 +616,7 @@ section {
 
 @media (max-width: 390px) {
     .home-screen {
-        height: 47%;
+        height: 46%;
     }
 
     .i-container {
@@ -639,6 +639,11 @@ section {
     .feedback-bg {
         margin-left: 6%;
         width: 88%;
+    }
+
+    #bg-image {
+        background-position-x: -915px;
+        background-position-y: -246px;
     }
 }
 
