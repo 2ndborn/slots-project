@@ -358,7 +358,7 @@ section {
 
 @media (max-width: 820px) {
     .home-screen {
-        height: 73%;
+        height: 72%;
     }
 
     .footer {
@@ -438,6 +438,11 @@ section {
 @media (max-width: 540px) {
     header {
         display: block;
+    }
+
+    #bg-image {
+        background-position-x: -847px;
+        background-position-y: -38px;
     }
 
     .active-page {
