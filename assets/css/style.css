@@ -551,6 +551,23 @@ section {
         background-position-x: -899px;
         background-position-y: -226px;
     }
+
+    .i-container {
+        height: 51%;
+    }
+
+    .p-container p {
+        font-size: 19px;
+    }
+
+    .inst-bg {
+        margin-left: 7%;
+        width: 86%;
+    }
+
+    .instruct-btn {
+        margin: 25px 0;
+    }
 }
 
 @media (max-width: 414px) {
