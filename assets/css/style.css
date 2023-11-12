@@ -568,6 +568,15 @@ section {
     .instruct-btn {
         margin: 25px 0;
     }
+
+    .f-container {
+        height: 39%;
+    }
+
+    .feedback-bg {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
 @media (max-width: 414px) {
