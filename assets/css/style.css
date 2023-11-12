@@ -554,6 +554,10 @@ section {
 }
 
 @media (max-width: 414px) {
+    header {
+        background-color: rgb(9, 9, 9, 0.7);
+    }
+    
     .home-screen {
         height: 49%;
     }
@@ -600,6 +604,7 @@ section {
         background-position-x: -904px;
         background-position-y: -244px;
     }
+
 }
 
 @media (max-width: 412px) {
