@@ -437,7 +437,7 @@ section {
 @media (max-width: 540px) {
     header {
         display: block;
-        background-color: rgb(9, 9, 9, 0.4);
+        background-color: rgb(9, 9, 9, 0.2);
     }
 
     #bg-image {
