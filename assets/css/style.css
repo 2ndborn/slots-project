@@ -717,6 +717,18 @@ section {
         font-size: 20px;
     }
 
+    .inst-bg {
+        height: 86%;
+    }
+
+    .instruct-btn {
+        margin: 6px 0;
+    }
+
+    .i-container {
+        height: 34%;
+    }
+
     .p-container p {
         font-size: 12px;
     }
