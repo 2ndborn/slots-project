@@ -634,6 +634,10 @@ section {
     .home-screen {
         height: 51%;
     }
+    
+    .i-container {
+        height: 50%;
+    }
 
     .f-container {
         height: 50%;
