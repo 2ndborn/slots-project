@@ -193,7 +193,6 @@ section {
     padding-bottom: 0.25px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-
 }
 
 .f-container {
@@ -430,6 +429,7 @@ section {
 
     .feedback-form button {
         margin-top: 21px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -628,11 +628,9 @@ section {
         background-position-x: -904px;
         background-position-y: -244px;
     }
-
 }
 
 @media (max-width: 412px) {
-
     .home-screen {
         height: 51%;
     }
