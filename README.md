@@ -222,13 +222,16 @@ External websites were used to perform automated test for HTML, CSS, JavaScript 
 			![JSLint](readme.doc/js.test2.png)
 		
 	-	**Performance Lighthouse**.
-		-	![index.html](readme.doc/index.html.lighthouse.html).
+		-	index.html
 		![index.lighthouse](readme.doc/index.light.png)
-		-	![instruction.html](readme.doc/instruction.html.lighthouse.html).
+
+		-	instruction.html
 		![Instruction.lighthouse](readme.doc/inst.light.png)
-		-	![feedback.html](readme.doc/feedback.html.lighthouse.html).
+
+		-	feedback.html
 		![feedback.lighthouse](readme.doc/feed.light.png)
-		-	![game.html](readme.doc/game.html.lighthouse.html).
+		
+		-	game.html
 		![game](readme.doc/game.light.png)
 
 
