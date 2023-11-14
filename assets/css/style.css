@@ -677,6 +677,12 @@ section {
     }
 }
 
+@media (max-width: 375px) {
+    .home-screen {
+        height: 46%;
+    }
+}
+
 @media (max-width: 360px) {
     .home-screen {
         height: 39%;
