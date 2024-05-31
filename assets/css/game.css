@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url("../images/slots.picture.png");
@@ -75,7 +79,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 2px;
 }
 
 .score-lives-container li {
@@ -361,7 +365,7 @@ body {
     }
 
     .score-lives-container div p {
-        font-size: 220%;
+        font-size: 175%;
     }
 
     .score-lives-container li {
