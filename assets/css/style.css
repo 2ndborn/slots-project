@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    height: 100%;
 }
 
 #bg-image {
@@ -11,6 +16,8 @@ body {
     background-position: center;
     background-size: contain;
     background-color: rgb(59, 56, 56);
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -214,7 +221,8 @@ section {
 
 /**********************************Footer***********************/
 .footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: end;
     width: 100%;
@@ -679,7 +687,7 @@ section {
 
 @media (max-width: 360px) {
     .home-screen {
-        height: 39%;
+        height: 49%;
     }
 
     .i-container {
