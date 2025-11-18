@@ -1,30 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
-html {
+/* html {
     height: 100%;
-}
+} */
 
-body {
+html, body {
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    height: 100%;
-}
-
-#bg-image {
-    background-image: url("../images/slots.picture.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-color: rgb(59, 56, 56);
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;    
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 /*******************************header*****************/
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("../images/slots.picture.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(59, 56, 56);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
 header {
     position: relative;
     background-color: rgb(9, 9, 9, 0.1);
@@ -124,23 +127,35 @@ h2 {
     border-bottom: 2px solid #fff;
 }
 
-section {
-    width: 100%;
-    height: 417px;
-}
-
 .home-screen {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .buttons {
-    width: 225px;
-    height: 50px;
+    padding: 0.75rem 1.5rem;
+    min-width: 200px;
     background-color: rgb(255, 47, 0);
-    border-radius: 5px;
-    border: 3px solid;
+    border-radius: 10px;
+    border: 3px solid; 
+    animation: pulse 2s ease-in-out infinite;
+
 }
 
 .buttons:hover {
@@ -151,7 +166,7 @@ section {
 .buttons a {
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -227,7 +242,7 @@ section {
     justify-content: end;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
-    color: #fff;
+    color: #ffff;
 }
 
 .footer div {
@@ -254,11 +269,12 @@ section {
 }
 
 /***********************Media Queries********************/
+
 @media (max-width: 1024px) {
-    body {
+    /* body {
         overflow: hidden;
-        height: 1366px;        
-    }
+        height: 1366px;       
+    } */
 
     #bg-image{
         height: 1366px;
@@ -277,17 +293,6 @@ section {
 
     .home-screen {
         height: 80%;
-    }
-
-    .buttons {
-        width: 50%;
-        height: 10%;
-        border-radius: 10px;
-        border: 5px solid;
-    }
-
-    .buttons a {
-        font-size: 60px;
     }
 
     .footer {
@@ -361,12 +366,12 @@ section {
 }
 
 @media (max-width: 912px) {
-    .home-screen {
+    /* .home-screen {
         height: 83%;
-    }
+    } */
 }
 
-@media (max-width: 820px) {
+/* @media (max-width: 820px) {
     .home-screen {
         height: 72%;
     }
@@ -394,10 +399,6 @@ section {
         margin-bottom: 17px;
     }
 
-    .buttons a {
-        font-size: 50px;
-    }
-
     .f-container {
         height: 70%;
     }
@@ -406,12 +407,12 @@ section {
         height: 78%;
         margin-top: 30px;
     }
-}
+} */
 
 @media (max-width: 768px) {
-    .home-screen {
+    /* .home-screen {
         height: 62%;
-    }
+    } */
 
     .i-container {
         height: 59%;
@@ -478,10 +479,6 @@ section {
         height: 37%;
     }
 
-    .buttons {
-        height: 17%;
-    }
-
     p {
         font-size: 20px;
     }
@@ -504,10 +501,6 @@ section {
 
     .p-container p {
         font-size: 17px;
-    }
-
-    .buttons a {
-        font-size: 30px;
     }
 
     .f-container {
@@ -598,10 +591,6 @@ section {
 
     .home-screen {
         height: 49%;
-    }
-
-    .buttons {
-        height: 12%;
     }
 
     footer div p {
@@ -712,10 +701,6 @@ section {
         height: 90%;
     }
 
-    .buttons a {
-        font-size: 25px;
-    }
-
     .topnav a.icon {
         top: 29px;
     }
@@ -766,10 +751,6 @@ section {
 
     .f-container {
         height: 34.2%;
-    }
-
-    .buttons a {
-        font-size: 21px;
     }
 
     .feedback-bg {
