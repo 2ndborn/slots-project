@@ -30,35 +30,34 @@ html, body {
 
 header {
     position: relative;
-    background-color: rgb(9, 9, 9, 0.1);
+    background-color: rgba(9, 9, 9, 0.4);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 25px;
     transition: 0.3s;
 }
 
-#logo a {
-    display: block;
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: clamp(4.688rem, 3.551rem + 5.68vw, 7.813rem);
+    width: clamp(6.25rem, 2.273rem + 19.89vw, 17.188rem);
+    z-index: 2;
 }
 
 #logo a img {
-    display: block;
-    width: 20%;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    width: 100%;
+    height: 100%;
+} 
 
 #menu {
     display: flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
     z-index: 1;
     transition: 0.5s;
 }
@@ -70,7 +69,10 @@ nav {
 #menu li a {
     color: #fff;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 135px;
     padding: 40px 25px;
     font-size: 20px;
     line-height: 0.5;
@@ -131,9 +133,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 @keyframes pulse {
@@ -241,7 +242,7 @@ h2 {
     display: flex;
     justify-content: end;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #ffff;
 }
 
@@ -281,10 +282,10 @@ h2 {
         background-size: cover;
     }
 
-    #logo a img {
+    /* #logo a img {
         width: 58%;
         padding-top: 28px;
-    }
+    } */
 
     #menu li a {        
         font-size: 26px;
@@ -292,7 +293,7 @@ h2 {
     }
 
     .home-screen {
-        height: 80%;
+        height: 90%;
     }
 
     .footer {
@@ -414,6 +415,14 @@ h2 {
         height: 62%;
     } */
 
+    .topnav {
+        display: contents;
+    }
+
+    nav {
+        display: none;
+    }
+
     .i-container {
         height: 59%;
     }
@@ -463,21 +472,15 @@ h2 {
         border-bottom: none;
     }
 
-    .topnav {
-        display: contents;
-    }
+    
 
-    nav {
-        display: none;
-    }
-
-    #logo a img {
+    /* #logo a img {
         width: 40%;
-    }
+    } */
 
-    .home-screen {
+    /* .home-screen {
         height: 37%;
-    }
+    } */
 
     p {
         font-size: 20px;
@@ -526,9 +529,9 @@ h2 {
 }
 
 @media (max-width: 430px) {
-    .home-screen {
+    /* .home-screen {
         height: 53%;
-    }
+    } */
 
     footer div p {
         display: none;
@@ -589,9 +592,9 @@ h2 {
         background-color: rgb(9, 9, 9, 0.7);
     }
 
-    .home-screen {
+    /* .home-screen {
         height: 49%;
-    }
+    } */
 
     footer div p {
         display: none;
@@ -634,9 +637,9 @@ h2 {
 }
 
 @media (max-width: 412px) {
-    .home-screen {
+    /* .home-screen {
         height: 51%;
-    }
+    } */
     
     .i-container {
         height: 50%;
@@ -648,9 +651,9 @@ h2 {
 }
 
 @media (max-width: 390px) {
-    .home-screen {
+    /* .home-screen {
         height: 46%;
-    }
+    } */
 
     .i-container {
         height: 45%;
@@ -681,9 +684,9 @@ h2 {
 }
 
 @media (max-width: 360px) {
-    .home-screen {
+    /* .home-screen {
         height: 49%;
-    }
+    } */
 
     .i-container {
         height: 38%;
@@ -720,9 +723,9 @@ h2 {
         width: 52%;
     }
 
-    .home-screen {
+    /* .home-screen {
         height: 34%;
-    }
+    } */
 
     .topnav a.icon {
         top: 32px;
