@@ -173,40 +173,33 @@ h2 {
 }
 
 /**********************************Instructions***********************/
+.i-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
 .inst-bg {
     background-color: rgb(0, 0, 0, 0.8);
-    margin: 5px 175px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 2rem;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    border: #fff 2px solid;
 }
 
 .inst-bg h2 {
-    padding-top: 7px;
-}
-
-.i-container {
     text-align: center;
-}
-
-.instruct-btn {
-    margin: 0 0 25px 0;
+    margin-bottom: 1em;
 }
 
 .p-container {
-    margin: 0;
-    height: 265px;
+    padding: 0 2rem;
 }
 
-.p-container p {
-    padding: 25px 0 0 0;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.p-container span {
-    font-size: 20px;
+.instruct-btn {
+    margin-top: 2rem;
+    text-align: center;
 }
 
 /**********************************Feedback***********************/
@@ -309,31 +302,6 @@ h2 {
         height: 90%;
     }
 
-    .i-container {
-        height: 80%;
-    }
-
-    .inst-bg {
-        height: 90%;
-        width: 75%;
-        margin-left: 125px;
-    }
-
-    .inst-bg h2{
-        font-size: 75px;
-        margin-bottom: 17px;
-    }
-
-    .p-container {
-        height: 75%;
-        padding: 0 5px;
-    }
-
-    .p-container p {
-        font-size: 34px;
-        padding: 0 30px;
-    }
-
     .f-container {
         height: 80%;
     }
@@ -362,54 +330,7 @@ h2 {
     }
 }
 
-@media (max-width: 912px) {
-    /* .home-screen {
-        height: 83%;
-    } */
-}
-
-/* @media (max-width: 820px) {
-    .home-screen {
-        height: 72%;
-    }
-
-    .footer {
-        background-color: rgb(0, 0, 0, 0.5); 
-    }
-
-    .i-container {
-        height: 69%;
-    }
-
-    .p-container p {
-        font-size: 31px;
-        padding: 0 4%;
-    }
-
-    .inst-bg {
-        height: 95%;
-        margin-top: 30px;
-    }
-
-    .inst-bg h2 {
-        font-size: 60px;
-        margin-bottom: 17px;
-    }
-
-    .f-container {
-        height: 70%;
-    }
-
-    .feedback-bg {
-        height: 78%;
-        margin-top: 30px;
-    }
-} */
-
 @media (max-width: 768px) {
-    /* .home-screen {
-        height: 62%;
-    } */
 
     .topnav {
         display: contents;
@@ -420,19 +341,7 @@ h2 {
     }
 
     .i-container {
-        height: 59%;
-    }
-
-    .inst-bg {
-        margin-left: 13%;
-    }
-
-    .inst-bg h2 {
-        font-size: 53px;
-    }
-
-    .p-container p {
-        font-size: 26px;
+        padding-top: 7rem;
     }
 
     .f-container {
@@ -479,262 +388,5 @@ h2 {
     .social-media a {
         margin: 0 3.5rem;
         font-size: 1.3rem;
-    }
-
-    /* #logo a img {
-        width: 40%;
-    } */
-
-    /* .home-screen {
-        height: 37%;
-    } */
-
-
-    /* .social-media a {
-        font-size: 20px;
-    } */
-
-    .i-container {
-        height: 36%;
-    }
-
-    .inst-bg h2 {
-        font-size: 42px;
-    }
-
-    .p-container {
-        height: 68%;
-    }
-
-    .p-container p {
-        font-size: 17px;
-    }
-
-    .f-container {
-        height: 36%;
-    }
-
-    .feedback-bg h2 {
-        font-size: 29px;
-    }
-
-    .feedback-bg {
-        height: 92%;
-    }
-
-    .feedback-form button {
-        margin-top: 24px;
-        height: 20%;
-    }
-}
-
-@media (max-width: 430px) {
-
-    header {
-        background-color: rgb(9, 9, 9, 0.6);
-    }
-
-    #bg-image {
-        background-position-x: -899px;
-        background-position-y: -226px;
-    }
-
-    .i-container {
-        height: 51%;
-    }
-
-    .p-container p {
-        font-size: 19px;
-    }
-
-    .inst-bg {
-        margin-left: 7%;
-        width: 86%;
-    }
-
-    .instruct-btn {
-        margin: 25px 0;
-    }
-
-    .f-container {
-        height: 51%;
-    }
-
-    .feedback-bg {
-        width: 90%;
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 414px) {
-    header {
-        background-color: rgb(9, 9, 9, 0.7);
-    }
-
-    /* .home-screen {
-        height: 49%;
-    } */
-
-   
-
-    .social-media a {
-        font-size: 40px;
-    }
-
-    .i-container {
-        height: 49%;
-    }
-
-    .f-container {
-        height: 49%;
-    }
-
-    .feedback-bg {
-        height: 79%;
-        width: 85%;
-    }
-
-    .feedback-bg {
-        margin-left: 9%;
-    }
-
-    #bg-image {
-        background-position-x: -904px;
-        background-position-y: -244px;
-    }
-}
-
-@media (max-width: 412px) {
-    /* .home-screen {
-        height: 51%;
-    } */
-    
-    .i-container {
-        height: 50%;
-    }
-
-    .f-container {
-        height: 50%;
-    }
-}
-
-@media (max-width: 390px) {
-    /* .home-screen {
-        height: 46%;
-    } */
-
-    .i-container {
-        height: 45%;
-    }
-
-    .inst-bg {
-        width: 88%;
-        margin-left: 7%;
-    }
-    
-    .inst-bg h2 {
-        font-size: 30px;
-    }
-
-    .f-container {
-        height: 45%;
-    }
-
-    .feedback-bg {
-        margin-left: 6%;
-        width: 88%;
-    }
-
-    #bg-image {
-        background-position-x: -915px;
-        background-position-y: -246px;
-    }
-}
-
-@media (max-width: 360px) {
-    /* .home-screen {
-        height: 49%;
-    } */
-
-    .i-container {
-        height: 38%;
-    }
-
-    .p-container p {
-        font-size: 15px;
-    }
-
-    .f-container {
-        height: 38%;
-    }
-
-    .feedback-bg {
-        height: 90%;
-    }
-
-    .topnav a.icon {
-        top: 29px;
-    }
-
-    #bg-image {
-        background-position-x: -933px;
-        background-position-y: -298px;
-    }
-}
-
-@media (max-width: 280px) {
-    header {
-        padding-left: 0;
-    }
-
-    #logo a img {
-        width: 52%;
-    }
-
-    /* .home-screen {
-        height: 34%;
-    } */
-
-    .topnav a.icon {
-        top: 32px;
-        font-size: 18px;
-    }
-
-    .inst-bg h2 {
-        font-size: 20px;
-    }
-
-    .inst-bg {
-        height: 86%;
-    }
-
-    .instruct-btn {
-        margin: 6px 0;
-    }
-
-    .i-container {
-        height: 34%;
-    }
-
-    .p-container p {
-        font-size: 12px;
-    }
-
-    .f-container {
-        height: 34.2%;
-    }
-
-    .feedback-bg {
-        height: 96%;
-        margin-top: 21px;
-    }
-
-    .feedback-form div {
-        margin: 5px 0;
-    }
-
-    #bg-image {
-        background-position-x: -976px;
-        background-position-y: -341px;
     }
 }
