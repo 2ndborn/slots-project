@@ -15,76 +15,75 @@
 </head>
 
 <body>
-    <div id="bg-image">
-        <header>
-            <div id="logo">
-                <a href="index.html">
-                    <img src="assets/images/slots.logo.png" alt="">
+    <div class="background"></div>
+    <div id="logo">
+        <a href="index.html">
+            <img src="assets/images/slots.logo.png" alt="">
+        </a>
+    </div>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="instruction.html">Instructions</a>
+                </li>
+                <li>
+                    <a class="active-page" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="topnav">
+            <div id="menu2">
+                <a href="index.html">Home</a>
+                <a href="instruction.html">Instructions</a>
+                <a class="active-page" href="feedback.html">Feedback</a>
+            </div>
+            <div>
+                <a href="#" class="icon" onclick="hamIcon()">
+                    <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <nav>
-                <ul id="menu">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="instruction.html">Instructions</a>
-                    </li>
-                    <li>
-                        <a class="active-page" href="feedback.html">Feedback</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="topnav">
-                <div id="menu2">
-                    <a href="index.html">Home</a>             
-                    <a href="instruction.html">Instructions</a>                   
-                    <a class="active-page" href="feedback.html">Feedback</a>
-                </div>
-                <div>
-                    <a href="#" class="icon" onclick="hamIcon()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </div> 
-        </header>
-        <section class="f-container">
-            <div class="feedback-bg">
-                <div>
-                    <h2>How Are You Finding Slots?</h2>
-                </div>
-                <form class="feedback-form">
-                    <div>
-                        <input type="text" class="form-control" name="full_name" placeholder="Name" required>
-                    </div>
-                    <div>
-                        <input type="email" class="form-control" name="email" placeholder="Email" required>
-                    </div>
-                    <div>
-                        <textarea class="form-control" name="feedback" id="feedback" cols="30" rows="5" placeholder="Please tell us what you think..."></textarea>
-                    </div>
-                    <div>
-                        <button class="buttons">
-                            <a href="">Send Request</a>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <footer class="footer">
+        </div>
+    </header>
+    <section class="f-container">
+        <div class="feedback-bg">
             <div>
-                <p>Follow us on Social Media</p>
+                <h2>How Are You Finding Slots?</h2>
             </div>
-            <div class="social-media">
-                <a href="https://twitter.com/?lang=en" target="_blank"><span><i class="fa fa-twitter"
-                aria-hidden="true"></i></span></a>
-                <a href="https://www.instagram.com/" target="_blank"><span><i class="fa fa-instagram"
-                aria-hidden="true"></i></span></a>
-                <a href="https://www.facebook.com/" target="_blank"><span><i class="fa fa-facebook"
-                aria-hidden="true"></i></span></a>
-            </div>
-        </footer>
-    </div>
+            <form class="feedback-form">
+                <div>
+                    <input type="text" class="form-control" name="full_name" placeholder="Name" required>
+                </div>
+                <div>
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <textarea class="form-control" name="feedback" id="feedback" cols="30" rows="5"
+                        placeholder="Please tell us what you think..."></textarea>
+                </div>
+                <div>
+                    <button class="ibuttons">
+                        <a href="">Send Request</a>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div id="foot"></div>
+        <div id="foot">
+            <h5>Follow us on Social Media</h5>
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/?lang=en" target="_blank"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+            <a href="https://www.instagram.com/" target="_blank"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+            <a href="https://www.facebook.com/" target="_blank"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

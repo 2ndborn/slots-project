@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
-/* html {
-    height: 100%;
-} */
-
 html, body {
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -228,30 +224,35 @@ h2 {
 }
 
 /**********************************Feedback***********************/
-.feedback-bg {
-    background-color: rgba(9, 8, 8, 0.5);
-    margin: 10px 310px;
-    padding-top: 1px;
-    padding-bottom: 0.25px;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-}
-
 .f-container {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: min(5rem,5%);
+    padding-right: min(5rem,5%);
     text-align: center;
 }
 
-.feedback-form {
-    margin-left: 7.5%;
-    width: 85%;
+.feedback-bg {
+    background-color: rgba(9, 8, 8, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    border: #fff solid 2px;
+    color: rgb(255, 255, 255);
 }
+
+.feedback-bg h2 {
+    margin-bottom: 1rem;
+}
+
 
 .feedback-form div {
-    margin: 10px 0;
+    margin: 0.5rem 0;
 }
 
-.feedback-button {
-    width: 10%;
+.feedback-form button {
+    margin-top: 1rem;
 }
 
 /**********************************Footer***********************/
@@ -266,24 +267,12 @@ h2 {
     color: #ffff;
 }
 
-/* .footer div {
-    padding: 10px;
-} */
-
 .footer div {
     width: 33.33333%;
     display: flex;
     justify-content: center;
     padding: 10px 0 5px 0;
 }
-
-/* .social-media {
-    margin: 0 45px;
-} */
-
-/* .social-media i {
-    margin: 0 20px;
-} */
 
 .social-media a {
     text-decoration: none;
@@ -295,9 +284,6 @@ h2 {
 .social-media a:hover {
     transform: scale(1.2);
     transition: all ease-in-out 0.5s;
-    /* box-shadow: 0 -10px 10px #fff inset,
-        500px 0 0 rgba(218, 215, 215, 0.03) inset;
-    padding: 20px 12.5px 22.5px 12.5px; */
 }
 
 /***********************Media Queries********************/
@@ -308,32 +294,6 @@ h2 {
         height: 90%;
     }
 
-    .f-container {
-        height: 80%;
-    }
-
-    .feedback-bg {
-        height: 90%;
-        width: 75%;
-        margin-left: 125px;
-    }
-
-    .feedback-bg h2{
-        font-size: 75px;
-        margin-bottom: 25px;
-    }
-
-    .feedback-form {
-        height: 75%;
-        margin-top: 50px;
-    }
-
-    .feedback-form button {
-        font-size: 10px;
-        height: 100px;
-        width: 75%;
-        margin-top: 50px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -351,19 +311,7 @@ h2 {
     }
 
     .f-container {
-        height: 59%;
-    }
-
-    .feedback-bg {
-        margin-left: 14%;
-    }
-
-    .feedback-bg h2 {
-        font-size: 65px;
-    }
-
-    .feedback-form button {
-        margin-top: 21px;
+        height: 100%;
     }
 }
 
@@ -371,11 +319,6 @@ h2 {
     header {
         display: block;
         background-color: rgb(9, 9, 9, 0.2);
-    }
-
-    #bg-image {
-        background-position-x: -847px;
-        background-position-y: -38px;
     }
 
     .active-page {
