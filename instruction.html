@@ -15,75 +15,72 @@
 </head>
 
 <body>
-    <div id="bg-image">
-        <header>
-            <div id="logo">
-                <a href="index.html">
-                    <img src="assets/images/slots.logo.png" alt="">
+    <div class="background"></div>
+    <div id="logo">
+        <a href="index.html">
+            <img src="assets/images/slots.logo.png" alt="">
+        </a>
+    </div>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="active-page" href="instruction.html">Instructions</a>
+                </li>
+                <li>
+                    <a href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="topnav">
+            <div id="menu2">
+                <a href="index.html">Home</a>             
+                <a class="active-page" href="instruction.html">Instructions</a>                   
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div>
+                <a href="#" class="icon" onclick="hamIcon()">
+                    <i class="fa fa-bars"></i>
                 </a>
             </div>
-            <nav>
-                <ul id="menu">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="active-page" href="instruction.html">Instructions</a>
-                    </li>
-                    <li>
-                        <a href="feedback.html">Feedback</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="topnav">
-                <div id="menu2">
-                    <a href="index.html">Home</a>             
-                    <a class="active-page" href="instruction.html">Instructions</a>                   
-                    <a href="feedback.html">Feedback</a>
-                </div>
-                <div>
-                    <a href="#" class="icon" onclick="hamIcon()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </div> 
-        </header>
-        <section class="i-container">
-            <div class="inst-bg">
-                <div>
-                    <h2>How To Play</h2>
-                </div>
-                <div class="p-container">
-                    <p>1. Access the game by pressing the "Play" button.<br>
-                    2. Press "New Game" begin playing.<br>
-                    3. Random numbers will appear on screen for a select period of time.<br>
-                    4. When the numbers have disappeared, enter the numbers that were previously onscreen.<br>
-                    5. If your answer is correct you'll earn a point.<br>
-                    6. If your answer is incorrect you'll lose one of your 3 lightbulbs.<br>
-                    7. When all your light bulbs are gone the game is over.
-                    </p>
-                </div>
-                <div class="instruct-btn">    
-                    <button class="buttons">
-                        <a href="game.html">Play</a>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
+        </div> 
+    </header>
+    <section class="i-container">
+        <div class="inst-bg">
             <div>
-                <p>Follow us on Social Media</p>
+                <h2>How To Play</h2>
             </div>
-            <div class="social-media">
-                <a href="https://twitter.com/?lang=en" target="_blank"><span><i class="fa fa-twitter"
-                aria-hidden="true"></i></span></a>
-                <a href="https://www.instagram.com/" target="_blank"><span><i class="fa fa-instagram"
-                aria-hidden="true"></i></span></a>
-                <a href="https://www.facebook.com/" target="_blank"><span><i class="fa fa-facebook"
-                aria-hidden="true"></i></span></a>
-            </div>        
-        </footer>
-    </div>
+            <div class="p-container">
+                <p>1. Access the game by pressing the "Play" button.<br>
+                2. Press "New Game" begin playing.<br>
+                3. Random numbers will appear on screen for a select period of time.<br>
+                4. When the numbers have disappeared, enter the numbers that were previously onscreen.<br>
+                5. If your answer is correct you'll earn a point.<br>
+                6. If your answer is incorrect you'll lose one of your 3 lightbulbs.<br>
+                7. When all your light bulbs are gone the game is over.
+                </p>
+            </div>
+            <div class="instruct-btn">    
+                <button class="buttons">
+                    <a href="game.html">Play</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div id="foot"></div>
+        <div id="foot">
+            <h5>Follow us on Social Media</h5>
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/?lang=en" target="_blank"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+            <a href="https://www.instagram.com/" target="_blank"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+            <a href="https://www.facebook.com/" target="_blank"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>    
 </html>
