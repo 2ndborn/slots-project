@@ -24,7 +24,7 @@ html, body {
     overflow: hidden;
 }
 
-header {
+nav {
     position: relative;
     background-color: rgba(9, 9, 9, 0.4);
     width: 100%;

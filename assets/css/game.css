@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
-html {
-    height: 100%;
+.backbtn {
+    background-color: black;
+    position: relative;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("../images/slots.picture.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
-    background-color: rgb(59, 56, 56);
-    transition: 0.6s;
-    padding-left: 12.5%;
-    padding-top: 30px;
-    overflow: hidden;
+.backbtn a {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.backbtn:hover a {
+    color: yellowgreen;
+    transform: scale(1.2);
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .con {
@@ -44,6 +52,10 @@ body {
   }
 
 .slot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 85%;
     height: 85%;
     background-color: rgba(9, 8, 8, 0.5);
