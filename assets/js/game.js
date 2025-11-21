@@ -136,6 +136,16 @@ function recordNumbers() {
     checkAnswers();
 }
 
+function key(num) {
+    const display = document.getElementById("display");
+    display.value += num
+}
+
+function del() {
+    const display = document.getElementById("display");
+    display.value = ""
+}
+
 /**This function records the values of the users answers
  *  and converts them from strings to integers.
  * Defines what a correct answer is and displays a difference

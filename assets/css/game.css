@@ -32,6 +32,17 @@
     align-items: center;
 }
 
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 2px;
+}
+
+.cal {
+    display: flex;
+    flex-direction: column;
+}
+
 .con {
     text-align: center;
     padding: 20px 0;
