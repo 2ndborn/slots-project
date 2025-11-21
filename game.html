@@ -26,43 +26,68 @@
     <div class="backbtn">
       <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
     </div>
+    <div class="refreshbtn">
+      <a href="game.html">Refresh</a>
+    </div>
     <div class="main">
-    <div class="slot-container bg-image">
-      <div class="con">
-        <a href="index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <a href="game.html" title="Refresh"><i class="fa fa-repeat" aria-hidden="true"></i></a>
-      </div> 
-      <div class="slot-container2">
+      <div class="slot-container">
+        <!-- <div class="con">
+          <a href="index.html" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+          <a href="game.html" title="Refresh"><i class="fa fa-repeat" aria-hidden="true"></i></a>
+        </div>  -->
+        <div class="slot-container2">
           <span id="operand1" class="slot"></span>
           <span id="operand2" class="slot"></span>
-          <input id="answer-box1" class="slot hide" type="number" maxlength="1"/>
-          <input id="answer-box2" class="slot hide" type="number" maxlength="1"/>
-      </div>
-      <div class="submit-container">
+          <input id="answer-box1" class="slot hide" type="number" maxlength="1" />
+          <input id="answer-box2" class="slot hide" type="number" maxlength="1" />
+        </div>
+        <div class="submit-container">
           <button id="new-game">NEW GAME</button>
-          <button  id="submit" class="hide">SUBMIT</button>
+          <button id="submit" class="hide">SUBMIT</button>
           <button id="continue" class="hide">CONTINUE</button>
-      </div>      
-      <div class="score-lives-container">
+        </div>
+        <div class="score-lives-container">
           <div>
-          <p>Score:<span id="score">0</span></p>
+            <p>Score:<span id="score">0</span></p>
           </div>
           <div>
-              <p class="hide">incorrect:<span id="incorrect">0</span></p>
-          <ul>
+            <p class="hide">incorrect:<span id="incorrect">0</span></p>
+            <ul>
               <li>
-              <span><i id="life1" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+                <span><i id="life1" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
               </li>
               <li>
-              <span><i id="life2" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+                <span><i id="life2" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
               </li>
               <li>
-              <span><i id="life3" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+                <span><i id="life3" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
               </li>
-          </ul>
+            </ul>
           </div>
+        </div>
       </div>
-    </div>
+      <div class="keypad">
+        <div class="row-one">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+        </div>
+        <div class="row-two">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+        </div>
+        <div class="row-three">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+        </div>
+        <div class="row-four">
+          <button>Del</button>
+          <button><i class="fa fa-check" aria-hidden="true"></i></button>
+          <button><i class="fa fa-repeat" aria-hidden="true"></i></button>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"

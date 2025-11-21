@@ -19,6 +19,12 @@
     transform: scale(1.2);
 }
 
+.refreshbtn {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+
 .main {
     height: 100%;
     display: flex;
@@ -69,16 +75,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: max-content;
-    height: 210px;
-    padding: 0 10px;
-    margin: auto;
 }
 
 .slot {
-    font-size: 100px;
-    width: 100px;
-    height: 150px;
+    font-size: 1rem;
+    padding: 2.5rem 2rem;
     background-color: #fff;
     border-radius: 10px;
     border: solid 2px;
@@ -177,7 +178,7 @@
 
 /**************************Media****************************/
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     body {
         padding-top: 129px;
     }
@@ -489,4 +490,4 @@
     ul {
         padding-left: 19px;
     }
-}
+} */
