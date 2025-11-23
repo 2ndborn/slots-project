@@ -3,6 +3,42 @@ let num1;
 let num2;
 let correct = [];
 let incorrect = [];
+let currentBox = 1
+
+document.addEventListener("keydown", function (event) {
+    if (event.key >= "1" && event.key <= "9") {
+        const num = parseInt(event.key);
+        event.preventDefault()
+        key(num);
+
+        const btn = document.getElementById("btn" + num);
+        if (btn) {
+            btn.classList.add("active");
+            setTimeout(() => btn.classList.remove("active"), 150);
+        }
+    }
+
+    if (event.key === "Backspace") {
+        event.preventDefault()
+        del();
+
+        const delBtn = document.getElementById("btnDel");
+        if (delBtn) {
+            delBtn.classList.add("active");
+            setTimeout(() => delBtn.classList.remove("active"), 150);
+        }
+    }
+
+    if (event.key === "Enter") {
+        submitAnswer();
+
+        const sub = document.getElementById("btnSub");
+        if (sub) {
+            sub.classList.add("active");
+            setTimeout(() => sub.classList.remove("active"))
+        }
+    }
+})
 
 /**Initializes click functions that increments the game.*/
 function initializeGame() {
@@ -18,6 +54,7 @@ function initializeGame() {
  * The new game button is then replaced with the submit button.*/
 function newGame() {
     hideElement("new-game");
+    hideElement("game-overlay");
     runGame();
     moveCursor();
     revealSubmit();
@@ -65,6 +102,7 @@ function continuePlaying() {
     document.getElementById("answer-box2").value = "";
     enableElement("answer-box1");
     enableElement("answer-box2");
+    currentBox = 1
     newTurn();
 }
 
@@ -137,13 +175,35 @@ function recordNumbers() {
 }
 
 function key(num) {
-    const display = document.getElementById("display");
-    display.value += num
+  const box1 = document.getElementById("answer-box1");
+  const box2 = document.getElementById("answer-box2");
+
+  if (currentBox === 1) {
+    box1.value += num;
+    if (box1.value.length >= box1.maxLength) {
+      currentBox = 2;   // switch to box2
+      box2.focus();
+    }
+  } else {
+    box2.value += num;
+  }
 }
 
 function del() {
-    const display = document.getElementById("display");
-    display.value = ""
+    const box1 = document.getElementById("answer-box1");
+    const box2 = document.getElementById("answer-box2");
+
+    if (currentBox === 2 && box2.value.length > 0) {
+        box2.value = box2.value.slice(0, -1);
+        if (box2.value.length === 0) {
+            currentBox = 1
+            box1.focus()
+        }
+    } else {
+        box1.value = box1.value.slice(0, -1);
+        currentBox = 1
+        box1.focus();
+    }
 }
 
 /**This function records the values of the users answers

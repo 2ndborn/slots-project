@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700');
 
+#game-overlay {
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
 .backbtn {
     background-color: black;
     position: relative;
@@ -34,9 +45,27 @@
 
 .keypad {
     display: grid;
-    grid-template-columns: repeat(3, 50px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2px;
 }
+
+.keypad button {
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.keypad button:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+.keypad button.active {
+    background-color: hsl(0, 0%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+#btnSub {grid-column: 2 / span 2 ;}
 
 .cal {
     display: flex;
@@ -184,7 +213,7 @@
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /**************************Media****************************/
