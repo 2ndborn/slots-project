@@ -45,8 +45,23 @@
           <input id="answer-box2" class="slot hide" type="text" maxlength="1" inputmode="numeric" required />
         </div>
         <div class="submit-container">
-          <button id="submit" class="hide">SUBMIT</button>
-          <button id="continue" class="hide">CONTINUE</button>
+          <!-- <button id="submit" class="hide">SUBMIT</button> -->
+          <div id="cal" class="hide">
+            <div class="keypad">
+              <button id="btn1" onclick="key(1)">1</button>
+              <button id="btn2" onclick="key(2)">2</button>
+              <button id="btn3" onclick="key(3)">3</button>
+              <button id="btn4" onclick="key(4)">4</button>
+              <button id="btn5" onclick="key(5)">5</button>
+              <button id="btn6" onclick="key(6)">6</button>
+              <button id="btn7" onclick="key(7)">7</button>
+              <button id="btn8" onclick="key(8)">8</button>
+              <button id="btn9" onclick="key(9)">9</button>
+              <button id="btnDel" onclick="del()"><i class="fa fa-times" aria-hidden="true"></i></button>
+              <button id="btn-sub" onclick="submitAnswer()" disabled><i class="fa fa-check" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <button onclick="continuePlaying()" id="continue" class="hide">CONTINUE</button>
         </div>
         <div class="score-lives-container">
           <div>
@@ -66,21 +81,6 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div class="cal">
-        <div class="keypad">
-          <button id="btn1" onclick="key(1)">1</button>
-          <button id="btn2" onclick="key(2)">2</button>
-          <button id="btn3" onclick="key(3)">3</button>
-          <button id="btn4" onclick="key(4)">4</button>
-          <button id="btn5" onclick="key(5)">5</button>
-          <button id="btn6" onclick="key(6)">6</button>
-          <button id="btn7" onclick="key(7)">7</button>
-          <button id="btn8" onclick="key(8)">8</button>
-          <button id="btn9" onclick="key(9)">9</button>
-          <button id="btnDel" onclick="del()"><i class="fa fa-times" aria-hidden="true"></i></button>
-          <button id="btnSub" onclick="submitAnswer()"><i class="fa fa-check" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>

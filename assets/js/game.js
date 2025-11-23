@@ -65,7 +65,7 @@ function newGame() {
  * Then it calls the record answer function.*/
 function submitAnswer() {
     unhideElement("continue");
-    hideElement("submit");
+    hideElement("cal");
     disableElement("answer-box1");
     disableElement("answer-box2");
     recordNumbers();
@@ -84,14 +84,14 @@ function moveCursor() {
 
 /**When a number is entered this function
  *  unhides the "Submit" button*/
-function revealSubmit() {
-    let reveal = document.getElementById("answer-box2");
-    reveal.addEventListener("keyup", function (event) {
-        if (event.key <= 9) {
-            unhideElement("submit");
-        }
-    });
-}
+// function revealSubmit() {
+//     let reveal = document.getElementById("answer-box2");
+//     reveal.addEventListener("keyup", function (event) {
+//         if (event.key <= 9) {
+//             unhideElement("submit");
+//         }
+//     });
+// }
 
 /**This function allows the user to generate another set of random numbers.
  * The continue button is replaced with the submit button.
@@ -160,6 +160,7 @@ function displayNumbers(operand1, operand2) {
         hideElement("operand2");
         unhideElement("answer-box1");
         unhideElement("answer-box2");
+        unhideElement("cal");
         document.getElementById("answer-box1").focus();
     }, 1500);
 }
@@ -177,6 +178,7 @@ function recordNumbers() {
 function key(num) {
   const box1 = document.getElementById("answer-box1");
   const box2 = document.getElementById("answer-box2");
+  const btnSub = document.getElementById("btn-sub")
 
   if (currentBox === 1) {
     box1.value += num;
@@ -186,6 +188,12 @@ function key(num) {
     }
   } else {
     box2.value += num;
+  }
+
+  if (box1.value.trim() !== "" && box2.value.trim() !== "") {
+    btnSub.disabled = false;
+  } else {
+    btnSub.disabled = true;
   }
 }
 
