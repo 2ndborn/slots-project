@@ -1,9 +1,115 @@
 
-let num1;
-let num2;
-let correct = [];
-let incorrect = [];
-let currentBox = 1
+
+let operands = [];
+let currentBox = 0;
+let correctCount = 0; // tracks the correct answers
+let livesRemaining = 3;
+const lifeIds = ["life1", "life2", "life3"];
+
+/**Initializes click functions that increments the game.*/
+function initializeGame() {
+    let newG = document.getElementById("new-game");
+    newG.addEventListener("click", newGame);
+    let sub = document.getElementById("submit");
+    sub.addEventListener("click", submitAnswer);
+    let con = document.getElementById("continue");
+    con.addEventListener("click", continuePlaying);
+}
+
+function runGame() {
+    // difficulty scaling: +1 box every 10 correct answers. Max is 9.
+    const numOperands = Math.min(2 + Math.floor(correctCount / 10), 9);
+
+    operands = Array.from({length: numOperands}, () => Math.floor(Math.random() * 9) + 1);
+    displayOperands(operands);
+}
+
+function displayOperands(operands) {
+    const container = document.getElementById("slot-container2");
+    container.innerHTML = "";
+
+    // show operands
+    operands.forEach((num, i) => {
+        const span = document.createElement("span");
+        span.className = "slot";
+        span.id = `operand${i}`;
+        span.textContent = num;
+        container.appendChild(span)
+    });
+
+    // after delay, relace with inputs
+    setTimeout(() => {
+        container.innerHTML = "";
+        operands.forEach((_, i) => {
+            const input = document.createElement("input");
+            input.className = "slot";
+            input.id = `answer-box${i}`;
+            input.type = "text";
+            input.maxLength = 1
+            input.inputMode = "numeric";
+            container.appendChild(input);
+        });
+
+        document.getElementById("answer-box0").focus();
+        currentBox = 0;
+    }, 1500)
+    unhideElement("cal");
+}
+
+function key(num) {
+    const input = document.getElementById(`answer-box${currentBox}`);
+    if (input) {
+        input.value = num;
+        if (currentBox < operands.length - 1) {
+            currentBox++;
+            document.getElementById(`answer-box${currentBox}`).focus();
+        }
+    }
+
+    // enable submit only if all boxes are filled
+    const allFilled = operands.every((_, i) => {
+        const box = document.getElementById(`answer-box${i}`);
+        return box && box.value.trim() !== "";
+    });
+    document.getElementById("btn-sub").disabled = !allFilled;
+}
+
+function del() {
+    const input = document.getElementById(`answer-box${currentBox}`);
+    if (input && input.value.length > 0) {
+        input.value = "";
+    } else if (currentBox > 0) {
+        currentBox--;
+        document.getElementById(`answer-box${currentBox}`).focus();
+        document.getElementById(`answer-box${currentBox}`).value = "";
+    }
+}
+
+function checkAnswers() {
+    const userAnswers = operands.map((_, i) => parseInt(document.getElementById(`answer-box${i}`).value));
+    const allCorrect = userAnswers.every((val, i) => val === operands[i]);
+
+    if (allCorrect) {
+        alert("Congratulation! You answered correctly!!!");
+        incrementScore();
+        correctCount++
+    } else {
+        alert(`Unfortunately, the correct answers were: ${operands.join(", ")}`);
+        incrementWrongAnswer();
+    }
+}
+
+/**Gets the current score and increases by 1 point.*/
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+    correct.push(oldScore);
+}
+
+/**Get the wrong answers and push to incorrect array.*/
+function incrementWrongAnswer() {
+    removeLife();
+}
 
 document.addEventListener("keydown", function (event) {
     if (event.key >= "1" && event.key <= "9") {
@@ -66,8 +172,9 @@ function newGame() {
 function submitAnswer() {
     unhideElement("continue");
     hideElement("cal");
-    disableElement("answer-box1");
-    disableElement("answer-box2");
+    operands.forEach((_, i) => {
+        disableElement(`answer-box${i}`)
+    });
     recordNumbers();
 }
 
@@ -82,28 +189,15 @@ function moveCursor() {
     });
 }
 
-/**When a number is entered this function
- *  unhides the "Submit" button*/
-// function revealSubmit() {
-//     let reveal = document.getElementById("answer-box2");
-//     reveal.addEventListener("keyup", function (event) {
-//         if (event.key <= 9) {
-//             unhideElement("submit");
-//         }
-//     });
-// }
-
 /**This function allows the user to generate another set of random numbers.
  * The continue button is replaced with the submit button.
  * Answer boxes 1 & 2 are reset to zero.*/
 function continuePlaying() {
     hideElement("continue");
-    document.getElementById("answer-box1").value = "";
-    document.getElementById("answer-box2").value = "";
-    enableElement("answer-box1");
-    enableElement("answer-box2");
-    currentBox = 1
-    newTurn();
+    const container = document.getElementById("slot-container2");
+    container.innerHTML = "";
+    currentBox = 0
+    runGame();
 }
 
 /**Hides an element when called.*/
@@ -129,155 +223,24 @@ function enableElement(elementId) {
 /**loaded the DOM and initializes the game.*/
 document.addEventListener("DOMContentLoaded", initializeGame);
 
-/**This function generates 2 random numbers
- * and calls the displayNumbers function*/
-function runGame() {
-    num1 = Math.floor(Math.random() * 9) + 1;
-    num2 = Math.floor(Math.random() * 9) + 1;
-    displayNumbers(num1, num2);
-}
-
-/**This function calls the run game function
- *so the user can have another turn.
- *hides answer box 1 & 2 and replaces them
- *with operand 1 & 2.*/
-function newTurn() {
-    hideElement("answer-box1");
-    hideElement("answer-box2");
-    unhideElement("operand1");
-    unhideElement("operand2");
-    runGame();
-}
-
-/**This function add the randomly generated number to window.
- *After 3 seconds operand 1 & 2 are hidden and replaced with
- *answer box 1 & 2.*/
-function displayNumbers(operand1, operand2) {
-    document.getElementById("operand1").textContent = operand1;
-    document.getElementById("operand2").textContent = operand2;
-    setTimeout(function () {
-        hideElement("operand1");
-        hideElement("operand2");
-        unhideElement("answer-box1");
-        unhideElement("answer-box2");
-        unhideElement("cal");
-        document.getElementById("answer-box1").focus();
-    }, 1500);
-}
-
-/**This function records the numbers displayed by
- * the by operands 1 and 2 * and converts them from
- * strings to integers.
- * Calls the function check answer*/
 function recordNumbers() {
-    let operand1 = parseInt(document.getElementById("operand1").innerText);
-    let operand2 = parseInt(document.getElementById("operand2").innerText);
     checkAnswers();
-}
-
-function key(num) {
-  const box1 = document.getElementById("answer-box1");
-  const box2 = document.getElementById("answer-box2");
-  const btnSub = document.getElementById("btn-sub")
-
-  if (currentBox === 1) {
-    box1.value += num;
-    if (box1.value.length >= box1.maxLength) {
-      currentBox = 2;   // switch to box2
-      box2.focus();
-    }
-  } else {
-    box2.value += num;
-  }
-
-  if (box1.value.trim() !== "" && box2.value.trim() !== "") {
-    btnSub.disabled = false;
-  } else {
-    btnSub.disabled = true;
-  }
-}
-
-function del() {
-    const box1 = document.getElementById("answer-box1");
-    const box2 = document.getElementById("answer-box2");
-
-    if (currentBox === 2 && box2.value.length > 0) {
-        box2.value = box2.value.slice(0, -1);
-        if (box2.value.length === 0) {
-            currentBox = 1
-            box1.focus()
-        }
-    } else {
-        box1.value = box1.value.slice(0, -1);
-        currentBox = 1
-        box1.focus();
-    }
-}
-
-/**This function records the values of the users answers
- *  and converts them from strings to integers.
- * Defines what a correct answer is and displays a difference
- *  alert based on the users answer.*/
-function checkAnswers() {
-    let userAnswer1 = parseInt(document.getElementById("answer-box1").value);
-    let userAnswer2 = parseInt(document.getElementById("answer-box2").value);
-    let correctAnswer1 = userAnswer1 === num1;
-    let correctAnswer2 = userAnswer2 === num2;
-
-    if (correctAnswer1 && correctAnswer2) {
-        alert("Congratulation! You answered correctly!!!");
-        incrementScore();
-    } else {
-        alert(`Unfortunately  the correct answer was ${num1} and ${num2}.`);
-        incrementWrongAnswer();
-    }
-}
-
-/**Gets the current score and increases by 1 point.*/
-function incrementScore() {
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-    correct.push(oldScore);
-}
-
-/**Get the wrong answers and push to incorrect array.*/
-function incrementWrongAnswer() {
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
-    incorrect.push(oldScore);
-    removeLife();
 }
 
 /**Removes a users life after ever incorrect answer.*/
 function removeLife() {
-    for(let i of incorrect) {
-        if (i === 1) {
-            hideElement("life1");
-        } else if (i === 2) {
-            hideElement("life2");
-        } else if (i === 3) {
-            hideElement("life3");
-            gameOver();
-        };
-    };
+    livesRemaining--;
+    hideElement(lifeIds[lifeIds.length - livesRemaining - 1]);
+
+    if (livesRemaining === 0) {
+        gameOver();
+    }
 }
 
-/** * This function ends the game.*/
-function gameOver() {
-    hideElement("answer-box1");
-    hideElement("answer-box2");
-    hideElement("continue");
-    finish();
-}
 
 /** * Allows the user to refresh the page and continue playing*/
-function finish() {
-    let playAgain = confirm("Game Over\n\nPlay again?");
-    let close = window.location.href="index.html";
-
-    if (playAgain == true) {
-        location.reload();
-    } else {
-        close;
-    };
+function gameOver() {
+  operands.forEach((_, i) => hideElement(`answer-box${i}`));
+  hideElement("continue");
+  finish();
 }
