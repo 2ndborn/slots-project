@@ -142,13 +142,13 @@
 
 .slot {
     width: 75px;
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     font-weight: bold;
     padding: 1.5rem 1rem;
     background-color: #fff;
     border-radius: 10px;
     border: solid 2px;
-    margin: 0 10px;
+    margin: 0 2px;
     text-align: center;
     font-family: inherit;   /* ensure same font */
     box-sizing: border-box; /* consistent sizing */

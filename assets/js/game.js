@@ -2,7 +2,6 @@
 
 let operands = [];
 let currentBox = 0;
-let correctCount = 0; // tracks the correct answers
 let livesRemaining = 3;
 const lifeIds = ["life1", "life2", "life3"];
 
@@ -18,7 +17,8 @@ function initializeGame() {
 
 function runGame() {
     // difficulty scaling: +1 box every 10 correct answers. Max is 9.
-    const numOperands = Math.min(2 + Math.floor(correctCount / 10), 9);
+    const score = parseInt(document.getElementById("score").innerText)
+    const numOperands = Math.min(2 + Math.floor(score / 5), 9);
 
     operands = Array.from({length: numOperands}, () => Math.floor(Math.random() * 9) + 1);
     displayOperands(operands);
@@ -92,7 +92,6 @@ function checkAnswers() {
     if (allCorrect) {
         alert("Congratulation! You answered correctly!!!");
         incrementScore();
-        correctCount++
     } else {
         alert(`Unfortunately, the correct answers were: ${operands.join(", ")}`);
         incrementWrongAnswer();
@@ -103,7 +102,6 @@ function checkAnswers() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-    correct.push(oldScore);
 }
 
 /**Get the wrong answers and push to incorrect array.*/
@@ -136,14 +134,24 @@ document.addEventListener("keydown", function (event) {
     }
 
     if (event.key === "Enter") {
-        submitAnswer();
+        event.preventDefault();
 
-        const sub = document.getElementById("btnSub");
-        if (sub) {
-            sub.classList.add("active");
-            setTimeout(() => sub.classList.remove("active"))
+        const continueBtn = document.getElementById("continue");
+        const submitBtn = document.getElementById("btn-sub"); // keypad submit button
+
+        // If Continue is visible, trigger continuePlaying
+        if (continueBtn && !continueBtn.classList.contains("hide")) {
+            continuePlaying();
+        }
+        // Otherwise, if Submit is visible and enabled, trigger submitAnswer
+        else if (submitBtn && !submitBtn.disabled) {
+            submitAnswer();
+
+            submitBtn.classList.add("active");
+            setTimeout(() => submitBtn.classList.remove("active"), 150);
         }
     }
+
 })
 
 /**Initializes click functions that increments the game.*/
@@ -154,6 +162,13 @@ function initializeGame() {
     sub.addEventListener("click", submitAnswer);
     let con = document.getElementById("continue");
     con.addEventListener("click", continuePlaying);
+
+    // // Add enter key support for the continue button
+    // document.addEventListener("keydown", function (event) {
+    //     if (event.key === "Enter" && !document.getElementById("continue").classList.contains("hide")) {
+    //         continuePlaying();
+    //     }
+    // })
 }
 
 /**This function starts a new game by calling the newGame() function.
@@ -162,8 +177,6 @@ function newGame() {
     hideElement("new-game");
     hideElement("game-overlay");
     runGame();
-    moveCursor();
-    revealSubmit();
 }
 
 /**This function submits the users answer and replaces
@@ -176,17 +189,6 @@ function submitAnswer() {
         disableElement(`answer-box${i}`)
     });
     recordNumbers();
-}
-
-/**When a number is entered this function
- *  moves the cursor to the next input box*/
-function moveCursor() {
-    let move = document.getElementById("answer-box1");
-    move.addEventListener("keyup", function (event) {
-        if (event.key <= 9) {
-            document.getElementById("answer-box2").focus();
-        }
-    });
 }
 
 /**This function allows the user to generate another set of random numbers.
@@ -229,18 +231,25 @@ function recordNumbers() {
 
 /**Removes a users life after ever incorrect answer.*/
 function removeLife() {
-    livesRemaining--;
-    hideElement(lifeIds[lifeIds.length - livesRemaining - 1]);
-
-    if (livesRemaining === 0) {
-        gameOver();
-    }
+  livesRemaining--;
+  hideElement(lifeIds[livesRemaining]); // hides bulbs in reverse order
+  if (livesRemaining === 0) {
+    gameOver();
+  }
 }
-
 
 /** * Allows the user to refresh the page and continue playing*/
 function gameOver() {
   operands.forEach((_, i) => hideElement(`answer-box${i}`));
   hideElement("continue");
   finish();
+}
+
+function finish() {
+  let playAgain = confirm("Game Over\n\nPlay again?");
+  if (playAgain) {
+    location.reload();
+  } else {
+    window.location.href = "index.html";
+  }
 }
