@@ -1,9 +1,28 @@
+const { createElement } = require("react");
 
 
 let operands = [];
 let currentBox = 0;
 let livesRemaining = 3;
 const lifeIds = ["life1", "life2", "life3"];
+let playerName = "Player"
+
+document.getElementById("name-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const input = document.getElementById("player").value.trim();
+    if (input) {
+        playerName = input
+    }
+    hideElement("name-form")
+    // unhideElement("new-game")
+})
+
+function header() {
+    const overlay = document.getElementById("game-overlay");
+    const header = document.createElement("h1");
+    header.textContent = "Let's play!!!"
+    overlay.appendChild(header)
+}
 
 /**Initializes click functions that increments the game.*/
 function initializeGame() {
@@ -90,7 +109,7 @@ function checkAnswers() {
     const allCorrect = userAnswers.every((val, i) => val === operands[i]);
 
     if (allCorrect) {
-        alert("Congratulation! You answered correctly!!!");
+        alert(`Congratulation ${playerName}! You answered correctly!!!`);
         incrementScore();
     } else {
         alert(`Unfortunately, the correct answers were: ${operands.join(", ")}`);
