@@ -265,7 +265,8 @@ function gameOver() {
 }
 
 function finish() {
-  let playAgain = confirm("Game Over\n\nPlay again?");
+    let score = document.getElementById("score").innerText;
+  let playAgain = confirm(`Game Over ${playerName}\n\nYou scored ${score}\n\nPlay again?`);
   if (playAgain) {
     location.reload();
   } else {
