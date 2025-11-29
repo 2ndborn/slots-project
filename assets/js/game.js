@@ -1,6 +1,3 @@
-const { createElement } = require("react");
-
-
 let operands = [];
 let currentBox = 0;
 let livesRemaining = 3;
@@ -13,15 +10,18 @@ document.getElementById("name-form").addEventListener("submit", function (event)
     if (input) {
         playerName = input
     }
+    header();
     hideElement("name-form")
-    // unhideElement("new-game")
+    unhideElement("new-game")
 })
 
 function header() {
     const overlay = document.getElementById("game-overlay");
     const header = document.createElement("h1");
-    header.textContent = "Let's play!!!"
-    overlay.appendChild(header)
+    header.className
+    header.textContent = `Let's play ${playerName}!!!`
+    const newGameBtn = document.getElementById("new-game");
+    overlay.insertBefore(header, newGameBtn);
 }
 
 /**Initializes click functions that increments the game.*/

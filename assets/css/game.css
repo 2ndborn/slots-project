@@ -12,6 +12,42 @@
     z-index: 100;
 }
 
+#game-overlay h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #00ff00; /* bright green to match your theme */
+}
+
+#name-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#name-form input {    /* grow/shrink, minimum width */
+    padding-top: min(0.5vw, 0.25rem);
+    padding-bottom: min(0.5vw, 0.25rem);
+    padding-left: min(1.5vw, 1rem);
+    padding-right: min(1.5vw, 1rem);
+    border-radius: 5px;
+    border: none;
+    font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+    min-width: 0;
+}
+
+#name-form button {
+    padding-top: min(0.5vw, 0.25rem);
+    padding-bottom: min(0.5vw, 0.25rem);
+    padding-left: min(1.5vw, 1rem);
+    padding-right: min(1.5vw, 1rem);
+    border-radius: 5px;
+    border: none;
+    font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+    background-color: rgb(0, 98, 255);
+}
+
 .backbtn a {
     position: absolute;
     top: 5px;
@@ -272,318 +308,3 @@
     display: none !important;
 }
 
-/**************************Media****************************/
-
-/* @media (max-width: 1024px) {
-    body {
-        padding-top: 129px;
-    }
-
-    .con a i {
-        font-size: 64px;
-        margin: 0 87px;
-    }
-
-    .slot {
-        width: 265px;
-        height: 440px;
-        font-size: 250px;
-    }
-
-    .slot-container {
-        padding-top: 107px;
-        height: 89%;
-    }
-
-    .submit-container {
-        height: 150px;
-    }
-
-    #new-game {
-        width: 80%;
-        height: 75%;
-        font-size: 60px;
-    }
-
-    #continue {
-        width: 80%;
-        height: 75%;
-        font-size: 60px;
-    }
-
-    #submit {
-        width: 80%;
-        height: 75%;
-        font-size: 60px;
-    }
-
-    .slot-container2 {
-        height: 489px;
-    }
-
-    .score-lives-container {
-        height: 167px;
-    }
-
-    .score-lives-container div p {
-        font-size: 325%;
-    }
-
-    .score-lives-container li {
-        font-size: 372%;
-    }
-}
-
-@media (max-width: 912px) {
-    body {
-        padding-top: 0;
-        padding-left: 0;
-    }
-
-    .slot-container {
-        padding-top: 93px;
-        height: 78%;
-        margin-top: 17%;
-        margin-left: 8%;
-    }
-
-    .slot {
-        font-size: 280px;
-    }
-}
-
-@media (max-width: 820px) {
-    .slot-container {
-        height: 78%;
-        margin-top: 8%;
-    }
-}
-
-@media (max-width: 768px) {
-    .slot-container {
-        padding-top: 10px;
-        height: 70%;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 5%;
-    }
-
-    .slot {
-        width: 260px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 540px) {    
-    .slot {
-        width: 190px;
-        height: 300px;
-        font-size: 200px;
-    }
-
-    .slot-container {
-        margin-left: 5%;
-        padding-top: 10px;
-        height: 49%;
-        width: 90%;
-    }
-
-    .slot-container2 {
-        height: 321px;
-    }
-
-    .con a i {
-        font-size: 45px;
-        margin: 0px 55px;
-    }
-
-    #new-game {
-        width: 65%;
-        height: 45%;
-        font-size: 32px;
-        margin-top: 20px;
-    }
-
-    #submit {
-        width: 65%;
-        height: 45%;
-        font-size: 32px;
-    }
-
-    #continue {
-        width: 65%;
-        height: 45%;
-        font-size: 32px;
-    }
-
-    .score-lives-container {
-        height: 2%;
-    }
-
-    .score-lives-container li {
-        font-size: 290%;
-    }
-
-    .score-lives-container div p {
-        font-size: 233%;
-    }
-}
-
-@media (max-width: 430px) {
-    body {
-        padding-left: 0%;
-        padding-top: 0%;
-        background-position-x: -982px;
-        background-position-y: -270px;
-    }
-
-    .slot-container {
-        height: 78vh;
-        width: 97%;
-        margin-left: 1.5%;
-        margin-top: 24%;
-    }
-
-    .slot {
-        width: 150px;
-        height: 258px;
-        font-size: 170px;
-    }
-}
-
-@media (max-width: 414px) {
-    .con a i {
-        margin: 0px 15px;
-    }
-
-    body {
-        background-position-x: -994px;
-        background-position-y: -278px;
-    }
-
-    .slot-container {
-        margin-left: 1%;
-        margin-top: 26%;
-        width: 98%;
-    }
-
-    .slot {
-        width: 147px;
-        height: 240px;
-        font-size: 150px;
-    }
-
-    .score-lives-container div p {
-        font-size: 175%;
-    }
-
-    .score-lives-container li {
-        font-size: 250%;
-    }
-}
-
-@media (max-width: 412px) {
-    body {
-        background-position-x: -994px;
-        background-position-y: -280px;
-    }
-}
-
-@media (max-width: 390px) {
-    body {
-        padding-left: 0;
-        padding-top: 0;
-        background-position-x: -978px;
-        background-position-y: -263px;
-    }
-
-    .slot-container {
-        margin-left: 1%;
-        width: 98%;
-        height: 82vh;
-        margin-top: 19%;
-    }
-}
-
-@media (max-width: 360px) {
-    body{
-        background-position-x: -987px;
-        background-position-y: -347px;
-    }
-
-    .slot-container {
-        background-color: rgba(9, 9, 9, 0.8);
-        margin-left: 3%;
-        width: 93%;
-        margin-top: 18%;
-    }
-
-    .slot-container2 {
-        height: 245px;
-    }
-
-    .slot {
-        width: 125px;
-        height: 181px;
-        font-size: 120px;
-    }
-
-    #new-game {
-        font-size: 26px;
-    }
-
-    .submit-container {
-        height: 136px;
-    }
-
-    #continue {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 280px) {
-    body {
-        background-position-x: -1003px;
-        background-position-y: -381px;
-    }
-
-    .slot-container {
-        margin-left: 4%;
-        margin-top: 13%;
-        height: 42%;
-    }
-
-    .slot-container2 {
-        height: 189px;
-    }
-
-    .slot {
-        width: 88px;
-        height: 142px;
-        font-size: 90px;
-    }
-
-    #new-game {
-        font-size: 18px;
-    }
-
-    #submit {
-        font-size: 25px;
-    }
-
-    #continue {
-        font-size: 20px;
-    }
-
-    .score-lives-container div p {
-        font-size: 150%;
-    }
-
-    .score-lives-container li {
-        font-size: 139%;
-    }
-
-    ul {
-        padding-left: 19px;
-    }
-} */
