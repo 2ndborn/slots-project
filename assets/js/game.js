@@ -18,7 +18,7 @@ document.getElementById("name-form").addEventListener("submit", function (event)
 function header() {
     const overlay = document.getElementById("game-overlay");
     const header = document.createElement("h1");
-    header.className
+    header.id = "game-header";
     header.textContent = `Let's play ${playerName}!!!`
     const newGameBtn = document.getElementById("new-game");
     overlay.insertBefore(header, newGameBtn);
@@ -195,6 +195,8 @@ function initializeGame() {
 function newGame() {
     hideElement("new-game");
     hideElement("game-overlay");
+    const header = document.getElementById("game-header");
+    if (header) header.remove();
     runGame();
 }
 
@@ -265,11 +267,34 @@ function gameOver() {
 }
 
 function finish() {
-    let score = document.getElementById("score").innerText;
-  let playAgain = confirm(`Game Over ${playerName}\n\nYou scored ${score}\n\nPlay again?`);
-  if (playAgain) {
-    location.reload();
-  } else {
-    window.location.href = "index.html";
-  }
+    unhideElement("game-overlay")
+    const overlay = document.getElementById("game-overlay")
+    const head = document.createElement("h1")
+    head.textContent = "Game Over"
+    head.id = "game-header"
+    head.style.color = "red"
+    overlay.appendChild(head)
+    const subHead = document.createElement("h2")
+    const score = document.getElementById("score").innerText;
+    subHead.textContent = `You scored ${score}`
+    subHead.id = "game-header"
+    subHead.style.color = "hsl(0, 100%, 40%)"
+    overlay.appendChild(subHead)
+    const buttons = document.createElement("div");
+    buttons.innerHTML = `
+    <button class="play-again" onclick="location.reload()">
+        <i class="fa fa-repeat" aria-hidden="true"></i>
+    </button>
+    <button class="home-btn" onclick="window.location.href='index.html'">
+        <i class="fa fa-home" aria-hidden="true"></i>
+    </button>
+    `
+    overlay.appendChild(buttons);
+    // let score = document.getElementById("score").innerText;
+    // let playAgain = confirm(`Game Over ${playerName}\n\nYou scored ${score}\n\nPlay again?`);
+    // if (playAgain) {
+    //     location.reload();
+    // } else {
+    //     window.location.href = "index.html";
+    // }
 }
