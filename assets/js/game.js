@@ -3,6 +3,7 @@ let currentBox = 0;
 let livesRemaining = 3;
 const lifeIds = ["life1", "life2", "life3"];
 let playerName = "Player"
+let level = 0;
 
 document.getElementById("name-form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -112,7 +113,7 @@ function checkAnswers() {
     const allCorrect = userAnswers.every((val, i) => val === operands[i]);
 
     if (allCorrect) {
-        alert(`Congratulation ${playerName}! You answered correctly!!!`);
+        // alert(`Congratulation ${playerName}! You answered correctly!!!`);
         incrementScore();
     } else {
         alert(`Unfortunately, the correct answers were: ${operands.join(", ")}`);
@@ -124,11 +125,39 @@ function checkAnswers() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
+    if (oldScore % 5 === 0) {
+        incrementStage();
+    } else {
+        showFadeMessage("You're correct!")
+    }
 }
 
 /**Get the wrong answers and push to incorrect array.*/
 function incrementWrongAnswer() {
     removeLife();
+}
+
+function incrementStage() {
+    ++level;
+    showFadeMessage(`Level ${level} achieved`)
+}
+
+function showFadeMessage(message) {
+    const div = document.createElement("div");
+    document.body.appendChild(div);
+    const msg = document.createElement("h1");
+    msg.className = "fade-message";
+    msg.textContent = message;
+    div.appendChild(msg);
+
+    // fade in
+    setTimeout(() => msg.classList.add("show"), 50);
+
+    // fade out
+    setTimeout(() => {
+        msg.classList.remove("show");
+        setTimeout(() => msg.remove(), 500);
+    }, 1500)
 }
 
 document.addEventListener("keydown", function (event) {
@@ -184,13 +213,6 @@ function initializeGame() {
     sub.addEventListener("click", submitAnswer);
     let con = document.getElementById("continue");
     con.addEventListener("click", continuePlaying);
-
-    // // Add enter key support for the continue button
-    // document.addEventListener("keydown", function (event) {
-    //     if (event.key === "Enter" && !document.getElementById("continue").classList.contains("hide")) {
-    //         continuePlaying();
-    //     }
-    // })
 }
 
 /**This function starts a new game by calling the newGame() function.
@@ -293,11 +315,4 @@ function finish() {
     </button>
     `
     overlay.appendChild(buttons);
-    // let score = document.getElementById("score").innerText;
-    // let playAgain = confirm(`Game Over ${playerName}\n\nYou scored ${score}\n\nPlay again?`);
-    // if (playAgain) {
-    //     location.reload();
-    // } else {
-    //     window.location.href = "index.html";
-    // }
 }
