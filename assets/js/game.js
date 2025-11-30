@@ -39,6 +39,9 @@ function runGame() {
     const score = parseInt(document.getElementById("score").innerText)
     const numOperands = Math.min(2 + Math.floor(score / 5), 9);
 
+    const submitBtn = document.getElementById("btn-sub");
+    if (submitBtn) submitBtn.disabled = true;
+
     operands = Array.from({length: numOperands}, () => Math.floor(Math.random() * 9) + 1);
     displayOperands(operands);
 }
