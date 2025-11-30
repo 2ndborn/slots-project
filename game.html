@@ -25,7 +25,7 @@
       <div id="game-overlay">
         <div class="wrap">
           <form id="name-form">
-            <input id="player" type="text" placeholder="What's your name?" />
+            <input id="player" type="text" placeholder="What's your name?" aria-label="Player name" />
             <button type="submit">Submit</button>
           </form>
         </div>
@@ -33,32 +33,42 @@
       </div>
       <div class="background"></div>
       <div class="backbtn">
-        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="index.html" aria-label="Home page">
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="refreshbtn">
-        <a href="game.html"><i class="fa fa-repeat" aria-hidden="true"></i></a>
+        <a href="game.html" aria-label="Restart game">
+          <i class="fa fa-repeat" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="score-lives">
-        <div class="score-lives-container">
+        <div class="score-lives-container" aria-live="polite">
           <div>
             <h6>Score:<span id="score">0</span></h6>
           </div>
           <div>
             <ul>
               <li>
-                <span><i id="life1" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+                <span role="img" aria-label="Life 1 available">
+                  <i id="life1" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                </span>
               </li>
               <li>
-                <span><i id="life2" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+                <span role="img" aria-label="Life 2 available">
+                  <i id="life2" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                </span>
               </li>
               <li>
-                <span><i id="life3" class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+                <span role="img" aria-label="Life 3 available">
+                  <i id="life3" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main">
+      <main class="main">
         <div class="slot-container">
           <div id="slot-container2">
             <!-- <span id="operand1" class="slot">1</span>
@@ -78,14 +88,18 @@
                 <button id="btn7" onclick="key(7)">7</button>
                 <button id="btn8" onclick="key(8)">8</button>
                 <button id="btn9" onclick="key(9)">9</button>
-                <button id="btnDel" onclick="del()"><i class="fa fa-times" aria-hidden="true"></i></button>
-                <button id="btn-sub" onclick="submitAnswer()" disabled><i class="fa fa-check" aria-hidden="true"></i></button>
+                <button id="btnDel" onclick="del()" aria-label="Delete">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <button id="btn-sub" onclick="submitAnswer()" aria-label="Submit answer" disabled>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                </button>
               </div>
             </div>
             <button onclick="continuePlaying()" id="continue" class="hide">CONTINUE</button>
           </div>
         </div>
-      </div>
+      </main>
       <script
         src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
