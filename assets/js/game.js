@@ -56,11 +56,20 @@ function displayOperands(operands) {
         const span = document.createElement("span");
         span.className = "slot";
         span.id = `operand${i}`;
-        span.textContent = num;
-        container.appendChild(span)
+        container.appendChild(span);
+
+        let count = 0
+        const interval = setInterval(() => {
+            span.textContent = Math.floor(Math.random() * 9) + 1;
+            count++;
+            if (count > 10) { // after 10 cycles
+                clearInterval(interval);
+                span.textContent = num; // reveal actual number
+            }
+        }, 100)
     });
 
-    // after delay, relace with inputs
+    // after reveal, replace with inputs
     setTimeout(() => {
         container.innerHTML = "";
         operands.forEach((_, i) => {
@@ -72,10 +81,9 @@ function displayOperands(operands) {
             input.inputMode = "numeric";
             container.appendChild(input);
         });
-
         document.getElementById("answer-box0").focus();
         currentBox = 0;
-    }, 1500)
+    }, 3000)
     unhideElement("cal");
 }
 

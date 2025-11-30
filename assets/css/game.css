@@ -112,7 +112,9 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
-    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    color: #00ff00;
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: 300;
@@ -225,20 +227,9 @@
     font-weight: bold;
 }
 
-/* .slot-container2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 75px);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    height: 60%;
-    font: bold;
-} */
-
 .slot {
     width: 75px;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: bold;
     padding: 1.5rem 1rem;
     background-color: #fff;
