@@ -76,11 +76,11 @@
     border-radius: 5px;
     border: none;
     font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
-    background-color: rgb(0, 98, 255);
+    background-color: hsl(192, 100%, 50%);
 }
 
 #name-form:hover button {
-    background-color: hsl(217, 100%, 30%);
+    background-color: hsl(192, 100%, 30%);
 }
 
 .backbtn a {
@@ -177,7 +177,7 @@
     box-sizing: border-box;
 }
 
-.con {
+/* .con {
     text-align: center;
     padding: 20px 0;
   }
@@ -200,7 +200,7 @@
     color: #fff;
     background-color: black;
     border: 2px solid #fff;
-  }
+  } */
 
 .slot-container {
     display: flex;
@@ -257,6 +257,11 @@
   );
 }
 
+.slot:focus {
+    box-shadow: 2px 2px 4px #00ff00,
+    -2px -2px 4px #00ff00;
+}
+
 .score-lives {
     position: relative;
 }
@@ -307,7 +312,7 @@
 #new-game {
     width: 225px;
     height: 50px;
-    background-color: rgb(0, 128, 0);
+    background-color: hsl(96, 97%, 58%);
     border-radius: 5px;
     font-size: 25px;
     font-weight: 700;
@@ -315,12 +320,12 @@
 }
 
 #new-game:hover {
-    background-color: rgb(128, 252, 45);
+    background-color: hsl(96, 97%, 38%);
     font-size: 25px;
     font-weight: 800;
 }
 
-#submit {
+/* #submit {
     width: 225px;
     height: 50px;
     background-color: rgb(192, 7, 7);
@@ -334,12 +339,12 @@
     background-color: rgb(255, 0, 0);
     font-size: 25px;
     font-weight: 800;
-}
+} */
 
 #continue {
     width: 225px;
     height: 50px;
-    background-color: rgb(245, 110, 0);
+    background-color: hsl(192, 100%, 50%);
     border-radius: 5px;
     font-size: 25px;
     font-weight: 700;
@@ -347,7 +352,7 @@
 }
 
 #continue:hover {
-    background-color: rgb(245, 217, 78);
+    background-color: hsl(192, 100%, 30%);
     font-size: 25px;
     font-weight: 800;
 }
