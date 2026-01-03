@@ -25,16 +25,6 @@ function header() {
     overlay.insertBefore(header, newGameBtn);
 }
 
-/**Initializes click functions that increments the game.*/
-function initializeGame() {
-    let newG = document.getElementById("new-game");
-    newG.addEventListener("click", newGame);
-    let sub = document.getElementById("submit");
-    sub.addEventListener("click", submitAnswer);
-    let con = document.getElementById("continue");
-    con.addEventListener("click", continuePlaying);
-}
-
 function runGame() {
     // difficulty scaling: +1 box every 10 correct answers. Max is 9.
     const score = parseInt(document.getElementById("score").innerText)
