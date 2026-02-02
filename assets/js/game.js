@@ -69,6 +69,7 @@ function displayOperands(operands) {
             input.type = "text";
             input.maxLength = 1
             input.inputMode = "numeric";
+            input.readOnly = true;
             input.setAttribute("aria-label", `Answer box ${i + 1}`);
             container.appendChild(input);
         });
