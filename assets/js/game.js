@@ -16,6 +16,8 @@ document.getElementById("name-form").addEventListener("submit", function (event)
     unhideElement("new-game")
 })
 
+
+
 function header() {
     const overlay = document.getElementById("game-overlay");
     const header = document.createElement("h1");
@@ -68,7 +70,7 @@ function displayOperands(operands) {
             input.id = `answer-box${i}`;
             input.type = "text";
             input.maxLength = 1
-            input.inputMode = "numeric";
+            input.inputMode = "none";
             input.readOnly = true;
             input.setAttribute("aria-label", `Answer box ${i + 1}`);
             container.appendChild(input);
